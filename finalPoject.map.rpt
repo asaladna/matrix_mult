@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Fri Dec 02 00:10:52 2016
+Fri Dec 02 17:33:29 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -13,26 +13,27 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. State Machine - |transmult|controller:inst2|pstate
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Source assignments for MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
- 12. Source assignments for MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
- 13. Parameter Settings for User Entity Instance: controller:inst2
- 14. Parameter Settings for User Entity Instance: lpm_mux1:inst13|lpm_mux:lpm_mux_component
- 15. Parameter Settings for User Entity Instance: MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component
- 16. Parameter Settings for User Entity Instance: MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
- 17. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst
- 18. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component
- 19. Parameter Settings for User Entity Instance: lpm_mux0:inst7|lpm_mux:lpm_mux_component
- 20. Parameter Settings for User Entity Instance: MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component
- 21. Parameter Settings for User Entity Instance: MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
- 22. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst
- 23. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component
- 24. Parameter Settings for User Entity Instance: lpm_mux0:inst9|lpm_mux:lpm_mux_component
- 25. Parameter Settings for User Entity Instance: lpm_mux0:inst8|lpm_mux:lpm_mux_component
- 26. lpm_mult Parameter Settings by Entity Instance
- 27. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Source assignments for MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
+ 13. Source assignments for MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
+ 14. Parameter Settings for User Entity Instance: controller:inst2
+ 15. Parameter Settings for User Entity Instance: lpm_mux1:inst13|lpm_mux:lpm_mux_component
+ 16. Parameter Settings for User Entity Instance: MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component
+ 17. Parameter Settings for User Entity Instance: MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
+ 18. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst
+ 19. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component
+ 20. Parameter Settings for User Entity Instance: lpm_mux0:inst7|lpm_mux:lpm_mux_component
+ 21. Parameter Settings for User Entity Instance: MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component
+ 22. Parameter Settings for User Entity Instance: MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
+ 23. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst
+ 24. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component
+ 25. Parameter Settings for User Entity Instance: lpm_mux0:inst9|lpm_mux:lpm_mux_component
+ 26. Parameter Settings for User Entity Instance: lpm_mux0:inst8|lpm_mux:lpm_mux_component
+ 27. lpm_mult Parameter Settings by Entity Instance
+ 28. Analysis & Synthesis Messages
 
 
 
@@ -58,13 +59,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Dec 02 00:10:52 2016        ;
+; Analysis & Synthesis Status ; Successful - Fri Dec 02 17:33:29 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 0                                            ;
-; Total pins                  ; 36                                           ;
+; Total logic elements        ; 300                                          ;
+; Total pins                  ; 66                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
 +-----------------------------+----------------------------------------------+
@@ -144,11 +145,11 @@ applicable agreement for further details.
 ; MAC.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/MAC.bdf                            ;
 ; controller.v                     ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/controller.v                       ;
 ; reg8bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg8bit.bdf                        ;
-; reg96bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg96bit.bdf                       ;
 ; demux1to12.v                     ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/demux1to12.v                       ;
 ; demux1to12_16bit.v               ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/demux1to12_16bit.v                 ;
 ; reg16bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg16bit.bdf                       ;
 ; reg160bitFinal.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg160bitFinal.bdf                 ;
+; reg96bitV.v                      ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/reg96bitV.v                        ;
 ; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/altera/90sp2/quartus/finalProject/lpm_mux1.tdf                       ;
 ; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.inc             ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.tdf             ;
@@ -188,298 +189,363 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 0     ;
-;     -- Combinational with no register       ; 0     ;
-;     -- Register only                        ; 0     ;
-;     -- Combinational with a register        ; 0     ;
+; Total logic elements                        ; 300   ;
+;     -- Combinational with no register       ; 191   ;
+;     -- Register only                        ; 107   ;
+;     -- Combinational with a register        ; 2     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- 2 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 81    ;
+;     -- 3 input functions                    ; 109   ;
+;     -- 2 input functions                    ; 3     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
+;     -- normal mode                          ; 300   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
+;     -- asynchronous clear/load mode         ; 13    ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-; I/O pins                                    ; 36    ;
+; Total registers                             ; 109   ;
+; I/O pins                                    ; 66    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 109   ;
+; Total fan-out                               ; 1019  ;
+; Average fan-out                             ; 2.78  ;
 +---------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |transmult                 ; 0 (0)       ; 0            ; 0          ; 36   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult          ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                        ; Library Name ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+--------------+
+; |transmult                        ; 300 (0)     ; 109          ; 0          ; 66   ; 0            ; 191 (0)      ; 107 (0)           ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |transmult                                                                 ; work         ;
+;    |controller:inst2|             ; 32 (32)     ; 13           ; 0          ; 0    ; 0            ; 19 (19)      ; 11 (11)           ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                ; work         ;
+;    |demux1to12:inst|              ; 108 (108)   ; 0            ; 0          ; 0    ; 0            ; 108 (108)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                 ; work         ;
+;    |lpm_mux0:inst7|               ; 64 (0)      ; 0            ; 0          ; 0    ; 0            ; 64 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                  ; work         ;
+;       |lpm_mux:lpm_mux_component| ; 64 (0)      ; 0            ; 0          ; 0    ; 0            ; 64 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component                        ; work         ;
+;          |mux_9bc:auto_generated| ; 64 (64)     ; 0            ; 0          ; 0    ; 0            ; 64 (64)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component|mux_9bc:auto_generated ; work         ;
+;    |reg96bitV:inst18|             ; 96 (96)     ; 96           ; 0          ; 0    ; 0            ; 0 (0)        ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|reg96bitV:inst18                                                ; work         ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------+
-; State Machine - |transmult|controller:inst2|pstate        ;
-+-----------+-----------+-----------+-----------+-----------+
-; Name      ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
-+-----------+-----------+-----------+-----------+-----------+
-; pstate.S0 ; 0         ; 0         ; 0         ; 0         ;
-; pstate.S1 ; 0         ; 0         ; 1         ; 1         ;
-; pstate.S2 ; 0         ; 1         ; 0         ; 1         ;
-; pstate.S3 ; 1         ; 0         ; 0         ; 1         ;
-+-----------+-----------+-----------+-----------+-----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |transmult|controller:inst2|pstate                                                                                                                        ;
++------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name       ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
++------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; pstate.S0  ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; pstate.S1  ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; pstate.S2  ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; pstate.S3  ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; pstate.S4  ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S5  ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S6  ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S7  ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S8  ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S9  ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S10 ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S11 ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S12 ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                            ;
-+------------------------------------------------------------------------+--------------------------------------+
-; Register name                                                          ; Reason for Removal                   ;
-+------------------------------------------------------------------------+--------------------------------------+
-; inst6                                                                  ; Stuck at GND due to stuck port clock ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0..15]           ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst9|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst8|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst7|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst6|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst5|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst4|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst3|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst2|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst6|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst7|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst5|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst4|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst3|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst2|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst12|reg1bit:inst1|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst6|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst7|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst5|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst4|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst3|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst2|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst11|reg1bit:inst1|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst6|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst7|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst5|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst4|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst3|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst2|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst10|reg1bit:inst1|inst1                     ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst6|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst7|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst5|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst4|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst3|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst2|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst|inst1                       ; Stuck at GND due to stuck port clear ;
-; reg96bit:inst15|reg8bit:inst1|reg1bit:inst1|inst1                      ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
-; Total Number of Removed Registers = 297                                ;                                      ;
-+------------------------------------------------------------------------+--------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                        ;
++------------------------------------------------------+----------------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal        ; Free of Timing Hazards ;
++------------------------------------------------------+----------------------------+------------------------+
+; controller:inst2|demuxto12_sel[3]                    ; controller:inst2|pstate.S0 ; yes                    ;
+; controller:inst2|demuxto12_sel[2]                    ; controller:inst2|pstate.S0 ; yes                    ;
+; controller:inst2|demuxto12_sel[1]                    ; controller:inst2|pstate.S0 ; yes                    ;
+; controller:inst2|demuxto12_sel[0]                    ; controller:inst2|pstate.S0 ; yes                    ;
+; controller:inst2|mux_select1[3]                      ; controller:inst2|pstate.S0 ; yes                    ;
+; controller:inst2|mux_select1[0]                      ; controller:inst2|pstate.S0 ; yes                    ;
+; controller:inst2|mux_select1[1]                      ; controller:inst2|pstate.S0 ; yes                    ;
+; controller:inst2|mux_select1[2]                      ; controller:inst2|pstate.S0 ; yes                    ;
+; demux1to12:inst|Data_out2[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out10[7]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out11[7]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out9[7]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out12[7]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out2[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out11[6]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out10[6]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out9[6]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out12[6]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out2[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out10[5]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out11[5]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out9[5]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out12[5]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out2[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out11[4]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out10[4]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out9[4]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out12[4]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out2[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out10[3]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out11[3]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out9[3]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out12[3]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out2[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out11[2]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out10[2]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out9[2]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out12[2]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out2[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out10[1]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out11[1]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out9[1]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out12[1]                        ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out2[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out3[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out1[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out4[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out7[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out6[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out5[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; demux1to12:inst|Data_out8[0]                         ; demux1to12:inst|Equal0     ; yes                    ;
+; Number of user-specified and inferred latches = 104  ;                            ;                        ;
++------------------------------------------------------+----------------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                             ;
++-------------------------------------------------------------------------+--------------------------------------+
+; Register name                                                           ; Reason for Removal                   ;
++-------------------------------------------------------------------------+--------------------------------------+
+; inst6                                                                   ; Stuck at GND due to stuck port clock ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst6|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst7|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst5|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst4|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst3|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst2|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst|inst1    ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst1|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[15]               ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[14]               ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[13]               ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[12]               ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[11]               ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[10]               ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[8]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[9]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[7]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[6]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[5]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[4]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[3]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[2]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
+; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[1]                ; Lost fanout                          ;
+; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
+; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
+; Total Number of Removed Registers = 197                                 ;                                      ;
++-------------------------------------------------------------------------+--------------------------------------+
 * Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                  ;
-+-------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+
-; Register name                                                           ; Reason for Removal      ; Registers Removed due to This Register                                   ;
-+-------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[15]               ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6|inst1,  ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst6|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst6|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst6|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst6|inst1    ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[14]               ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7|inst1,  ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst7|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst7|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst7|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst7|inst1    ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[13]               ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst5|inst1,  ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst5|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst5|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst5|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst5|inst1    ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[12]               ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst4|inst1,  ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst4|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst4|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst4|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst4|inst1    ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[11]               ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst3|inst1,  ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst3|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst3|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst3|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst3|inst1    ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[10]               ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst2|inst1,  ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst2|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst2|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst2|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst2|inst1    ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[9]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst1|inst1,  ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst1|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst1|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst1|inst1, ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst1|inst1    ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[8]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[7]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst6|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst6|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst6|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst6|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst6|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[6]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst7|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst7|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst7|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst7|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst7|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[5]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst5|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst5|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst5|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst5|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst5|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[4]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst4|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst4|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst4|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst4|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst4|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[3]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst3|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst3|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst3|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst3|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst3|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[2]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst2|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst2|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst2|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst2|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst2|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[1]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst1|inst1,   ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst1|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst1|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst1|inst1,  ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst1|inst1     ;
-; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0]                ; Stuck at GND            ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst|inst1,    ;
-;                                                                         ; due to stuck port clear ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst|inst1,   ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst|inst1,   ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst|inst1,   ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst|inst1,   ;
-;                                                                         ;                         ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst|inst1      ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[15]                ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[14]                ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[13]                ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[12]                ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[11]                ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[10]                ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[8]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[9]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[7]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[6]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[5]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[4]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[3]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[2]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[1]                 ;
-;                                                                         ; due to stuck port clear ;                                                                          ;
-+-------------------------------------------------------------------------+-------------------------+--------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                   ;
++-------------------------------------------------------------------------+-------------------------+-----------------------------------------------------------+
+; Register name                                                           ; Reason for Removal      ; Registers Removed due to This Register                    ;
++-------------------------------------------------------------------------+-------------------------+-----------------------------------------------------------+
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[7]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[6]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[5]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[4]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[3]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[2]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[1]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[15] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[14] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[13] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[12] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[11] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[10] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[8]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND            ; MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[9]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[15] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[14] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[13] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[12] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[11] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[10] ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[8]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[9]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[7]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[6]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[5]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[4]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[3]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[2]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
+; reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND            ; MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[1]  ;
+;                                                                         ; due to stuck port clear ;                                                           ;
++-------------------------------------------------------------------------+-------------------------+-----------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -487,12 +553,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 109   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 13    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 96    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -834,7 +900,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Dec 02 00:10:50 2016
+    Info: Processing started: Fri Dec 02 17:33:26 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -856,18 +922,22 @@ Info: Found 1 design units, including 1 entities, in source file reg16bit.bdf
     Info: Found entity 1: reg16bit
 Info: Found 1 design units, including 1 entities, in source file reg160bitFinal.bdf
     Info: Found entity 1: reg160bitFinal
+Info: Found 1 design units, including 1 entities, in source file reg96bitV.v
+    Info: Found entity 1: reg96bitV
 Info: Elaborating entity "transmult" for the top level hierarchy
 Warning: Port "CLK" of type SRFF and instance "inst6" is missing source signal
+Warning: Pin "load_input" not connected
 Info: Elaborating entity "controller" for hierarchy "controller:inst2"
-Warning (10036): Verilog HDL or VHDL warning at controller.v(34): object "MAC_Reset1" assigned a value but never read
-Warning (10270): Verilog HDL Case Statement warning at controller.v(44): incomplete case statement has no default case item
-Info (10264): Verilog HDL Case Statement information at controller.v(44): all case item expressions in this case statement are onehot
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "nstate", which holds its previous value in one or more paths through the always construct
+Warning (10036): Verilog HDL or VHDL warning at controller.v(39): object "output_set" assigned a value but never read
+Warning (10235): Verilog HDL Always Construct warning at controller.v(47): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "demuxto12_sel", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "mux_select1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "demux16bit_sel1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "final_mux_sel", which holds its previous value in one or more paths through the always construct
+Warning (10034): Output port "output_set" at controller.v(6) has no driver
+Warning (10034): Output port "reg106_ld" at controller.v(7) has no driver
 Warning (10034): Output port "MAC_Reset1" at controller.v(7) has no driver
+Warning (10034): Output port "MAC_Reset2" at controller.v(7) has no driver
+Warning (10034): Output port "demux16bit_sel1[1]" at controller.v(10) has no driver
+Warning (10034): Output port "demux16bit_sel1[0]" at controller.v(10) has no driver
 Warning (10034): Output port "demux16bit_sel2[2]" at controller.v(11) has no driver
 Warning (10034): Output port "demux16bit_sel2[1]" at controller.v(11) has no driver
 Warning (10034): Output port "demux16bit_sel2[0]" at controller.v(11) has no driver
@@ -879,12 +949,10 @@ Warning (10034): Output port "mux_select3[3]" at controller.v(12) has no driver
 Warning (10034): Output port "mux_select3[2]" at controller.v(12) has no driver
 Warning (10034): Output port "mux_select3[1]" at controller.v(12) has no driver
 Warning (10034): Output port "mux_select3[0]" at controller.v(12) has no driver
-Info (10041): Inferred latch for "final_mux_sel[0]" at controller.v(30)
-Info (10041): Inferred latch for "final_mux_sel[1]" at controller.v(30)
-Info (10041): Inferred latch for "final_mux_sel[2]" at controller.v(30)
-Info (10041): Inferred latch for "final_mux_sel[3]" at controller.v(30)
-Info (10041): Inferred latch for "demux16bit_sel1[0]" at controller.v(30)
-Info (10041): Inferred latch for "demux16bit_sel1[1]" at controller.v(30)
+Warning (10034): Output port "final_mux_sel[3]" at controller.v(13) has no driver
+Warning (10034): Output port "final_mux_sel[2]" at controller.v(13) has no driver
+Warning (10034): Output port "final_mux_sel[1]" at controller.v(13) has no driver
+Warning (10034): Output port "final_mux_sel[0]" at controller.v(13) has no driver
 Info (10041): Inferred latch for "mux_select1[0]" at controller.v(30)
 Info (10041): Inferred latch for "mux_select1[1]" at controller.v(30)
 Info (10041): Inferred latch for "mux_select1[2]" at controller.v(30)
@@ -893,10 +961,6 @@ Info (10041): Inferred latch for "demuxto12_sel[0]" at controller.v(30)
 Info (10041): Inferred latch for "demuxto12_sel[1]" at controller.v(30)
 Info (10041): Inferred latch for "demuxto12_sel[2]" at controller.v(30)
 Info (10041): Inferred latch for "demuxto12_sel[3]" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S3" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S2" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S1" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S0" at controller.v(30)
 Warning: Using design file lpm_mux1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: lpm_mux1
 Info: Elaborating entity "lpm_mux1" for hierarchy "lpm_mux1:inst13"
@@ -1148,181 +1212,173 @@ Info: Instantiated megafunction "lpm_mux0:inst7|lpm_mux:lpm_mux_component" with 
 Info: Found 1 design units, including 1 entities, in source file db/mux_9bc.tdf
     Info: Found entity 1: mux_9bc
 Info: Elaborating entity "mux_9bc" for hierarchy "lpm_mux0:inst7|lpm_mux:lpm_mux_component|mux_9bc:auto_generated"
-Info: Elaborating entity "reg96bit" for hierarchy "reg96bit:inst15"
+Info: Elaborating entity "reg96bitV" for hierarchy "reg96bitV:inst18"
 Info: Elaborating entity "demux1to12" for hierarchy "demux1to12:inst"
-Warning (10270): Verilog HDL Case Statement warning at demux1to12.v(19): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out12", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out11", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out10", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out9", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out8", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out7", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out6", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out5", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out4", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out3", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out2", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(17): inferring latch(es) for variable "Data_out1", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "Data_out1[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out1[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out1[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out1[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out1[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out1[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out1[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out1[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out2[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out3[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out4[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out5[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out6[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out7[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out8[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out9[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out10[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out11[7]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[0]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[1]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[2]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[3]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[4]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[5]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[6]" at demux1to12.v(17)
-Info (10041): Inferred latch for "Data_out12[7]" at demux1to12.v(17)
-Warning: LATCH primitive "demux1to12:inst|Data_out5[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out5[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out5[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out5[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out5[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out5[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out5[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out5[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out6[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out7[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out8[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out9[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out10[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out11[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12:inst|Data_out12[7]" is permanently disabled
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out3", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out4", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out5", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out6", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out7", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out8", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out9", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out10", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out11", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out12", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "Data_out12[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out12[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out12[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out12[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out12[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out12[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out12[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out12[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out11[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out10[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out9[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out8[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out7[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out6[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out5[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out4[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out3[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out2[7]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[0]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[1]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[2]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[3]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[4]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[5]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[6]" at demux1to12.v(21)
+Info (10041): Inferred latch for "Data_out1[7]" at demux1to12.v(21)
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out5[1]" is permanently enabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out5[0]" is permanently enabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[9]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[10]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[11]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[12]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[13]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[14]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[15]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[0]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[1]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[2]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[3]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[4]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[5]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[6]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[7]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[8]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[9]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[10]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[11]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[12]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[13]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[14]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[15]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[0]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[1]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[2]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[3]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[4]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[5]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[6]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[7]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[8]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[9]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[10]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[11]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[12]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[13]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[14]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[15]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[0]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[1]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[2]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[3]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[4]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[5]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[6]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[7]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[8]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[9]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[10]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[11]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[12]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[13]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[14]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[15]" is permanently disabled
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[0]" is permanently enabled
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[1]" is permanently enabled
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[2]" is permanently enabled
@@ -1387,6 +1443,7 @@ Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[12]" is permanently 
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[13]" is permanently disabled
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[14]" is permanently disabled
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[15]" is permanently disabled
+Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[8]" is permanently disabled
 Warning: Synthesized away the following node(s):
     Warning: Synthesized away the following LCELL buffer node(s):
         Warning (14320): Synthesized away node "MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated|le2a[8]"
@@ -1497,15 +1554,23 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "dout[2]" is stuck at GND
     Warning (13410): Pin "dout[1]" is stuck at GND
     Warning (13410): Pin "dout[0]" is stuck at GND
-    Warning (13410): Pin "test[7]" is stuck at GND
-    Warning (13410): Pin "test[6]" is stuck at GND
-    Warning (13410): Pin "test[5]" is stuck at GND
-    Warning (13410): Pin "test[4]" is stuck at GND
-    Warning (13410): Pin "test[3]" is stuck at GND
-    Warning (13410): Pin "test[2]" is stuck at GND
-    Warning (13410): Pin "test[1]" is stuck at GND
-    Warning (13410): Pin "test[0]" is stuck at GND
-Info: 24 registers lost all their fanouts during netlist optimizations. The first 24 are displayed below.
+Info: 36 registers lost all their fanouts during netlist optimizations. The first 36 are displayed below.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "MAC:inst5|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[1]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[15]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[14]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[13]" lost all its fanouts during netlist optimizations.
@@ -1522,33 +1587,20 @@ Info: 24 registers lost all their fanouts during netlist optimizations. The firs
     Info: Register "MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[2]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[0]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst4|lpm_dff1:inst1|lpm_ff:lpm_ff_component|dffs[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate.S0" lost all its fanouts during netlist optimizations.
     Info: Register "controller:inst2|pstate~10" lost all its fanouts during netlist optimizations.
     Info: Register "controller:inst2|pstate~11" lost all its fanouts during netlist optimizations.
     Info: Register "controller:inst2|pstate~12" lost all its fanouts during netlist optimizations.
     Info: Register "controller:inst2|pstate~13" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate.S1" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate.S2" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate.S3" lost all its fanouts during netlist optimizations.
-Warning: Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "din[7]"
-    Warning (15610): No output dependent on input pin "din[6]"
-    Warning (15610): No output dependent on input pin "din[5]"
-    Warning (15610): No output dependent on input pin "din[4]"
-    Warning (15610): No output dependent on input pin "din[3]"
-    Warning (15610): No output dependent on input pin "din[2]"
-    Warning (15610): No output dependent on input pin "din[1]"
-    Warning (15610): No output dependent on input pin "din[0]"
-    Warning (15610): No output dependent on input pin "clk"
-    Warning (15610): No output dependent on input pin "reset"
-    Warning (15610): No output dependent on input pin "cf_load"
-Info: Implemented 36 device resources after synthesis - the final resource count might be different
-    Info: Implemented 11 input pins
-    Info: Implemented 25 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 308 warnings
-    Info: Peak virtual memory: 224 megabytes
-    Info: Processing ended: Fri Dec 02 00:10:52 2016
-    Info: Elapsed time: 00:00:02
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "load_input"
+Info: Implemented 366 device resources after synthesis - the final resource count might be different
+    Info: Implemented 12 input pins
+    Info: Implemented 54 output pins
+    Info: Implemented 300 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 290 warnings
+    Info: Peak virtual memory: 229 megabytes
+    Info: Processing ended: Fri Dec 02 17:33:29 2016
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

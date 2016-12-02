@@ -307,3 +307,4 @@ applicable agreement for further details.
 	(bus)
 )
 (junction (pt 680 168))
+(text "NOTE: Will need to clear inputs" (rect 688 88 903 104)(font "Arial" (font_size 8)))
