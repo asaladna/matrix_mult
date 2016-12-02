@@ -1,5 +1,5 @@
 Flow report for finalPoject
-Wed Nov 30 21:50:46 2016
+Fri Dec 02 00:10:55 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -35,25 +35,22 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------+
-; Flow Summary                                                            ;
-+--------------------------+----------------------------------------------+
-; Flow Status              ; Flow Failed - Wed Nov 30 21:50:46 2016       ;
-; Quartus II Version       ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
-; Revision Name            ; finalPoject                                  ;
-; Top-level Entity Name    ; transmult                                    ;
-; Family                   ; Stratix                                      ;
-; Device                   ; EP1S10F484C5                                 ;
-; Timing Models            ; Final                                        ;
-; Met timing requirements  ; N/A                                          ;
-; Total logic elements     ; N/A until Partition Merge                    ;
-; Total pins               ; N/A until Partition Merge                    ;
-; Total virtual pins       ; N/A until Partition Merge                    ;
-; Total memory bits        ; N/A until Partition Merge                    ;
-; DSP block 9-bit elements ; N/A until Partition Merge                    ;
-; Total PLLs               ; N/A until Partition Merge                    ;
-; Total DLLs               ; N/A until Partition Merge                    ;
-+--------------------------+----------------------------------------------+
++------------------------------------------------------------------------+
+; Flow Summary                                                           ;
++-------------------------+----------------------------------------------+
+; Flow Status             ; Successful - Fri Dec 02 00:10:55 2016        ;
+; Quartus II Version      ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name           ; finalPoject                                  ;
+; Top-level Entity Name   ; transmult                                    ;
+; Family                  ; MAX II                                       ;
+; Device                  ; EPM1270F256A5                                ;
+; Timing Models           ; Final                                        ;
+; Met timing requirements ; Yes                                          ;
+; Total logic elements    ; 0 / 1,270 ( 0 % )                            ;
+; Total pins              ; 36 / 212 ( 17 % )                            ;
+; Total virtual pins      ; 0                                            ;
+; UFM blocks              ; 0 / 1 ( 0 % )                                ;
++-------------------------+----------------------------------------------+
 
 
 +-----------------------------------------+
@@ -61,75 +58,91 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2016 21:50:46 ;
+; Start date & time ; 12/02/2016 00:10:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; finalPoject         ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                 ;
-+------------------------------------+------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                        ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 165023370536.148056424606252 ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_FF                       ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MULT                     ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_FF                       ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_ADD_SUB                  ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                      ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                           ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                            ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff0.tdf                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff0.bsf                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff0.inc                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.tdf                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.bsf                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.inc                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff1.tdf                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff1.bsf                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff1.inc                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.tdf             ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.bsf             ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.inc             ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.tdf                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.bsf                 ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.inc                 ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                     ; --            ; transmult   ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                       ; --            ; transmult   ; Top            ;
-; TOP_LEVEL_ENTITY                   ; transmult                    ; finalPoject   ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                          ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++---------------------------------------+------------------------------+---------------+-------------+----------------+
+; Assignment Name                       ; Value                        ; Default Value ; Entity Name ; Section Id     ;
++---------------------------------------+------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                 ; 165023370536.148065905010672 ; --            ; --          ; --             ;
+; FITTER_EFFORT                         ; Standard Fit                 ; Auto Fit      ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_FF                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MULT                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_FF                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_ADD_SUB                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP                ; 125                          ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                ; -40                          ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff0.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff0.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff0.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mult0.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mult0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mult0.inc                ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff1.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff1.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff1.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_add_sub0.tdf             ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_add_sub0.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_add_sub0.inc             ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux0.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux0.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux0.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux1.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux1.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux1.inc                 ; --            ; --          ; --             ;
+; PARTITION_COLOR                       ; 16764057                     ; --            ; transmult   ; Top            ;
+; PARTITION_NETLIST_TYPE                ; SOURCE                       ; --            ; transmult   ; Top            ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                         ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                      ; transmult                    ; finalPoject   ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                          ; --            ; --          ; eda_blast_fpga ;
++---------------------------------------+------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:00     ; 1.0                     ; 208 MB              ; 00:00:00                           ;
-; Total                ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 224 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 214 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 193 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 167 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                       ;
-+----------------------+------------------+---------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
-+----------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
-+----------------------+------------------+---------------+------------+----------------+
++------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                          ;
++-------------------------+------------------+---------------+------------+----------------+
+; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++-------------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis    ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
+; Fitter                  ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
+; Assembler               ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
+; Classic Timing Analyzer ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
++-------------------------+------------------+---------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
+quartus_fit --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
+quartus_asm --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
+quartus_tan --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
 
 
 

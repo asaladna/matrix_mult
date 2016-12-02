@@ -517,11 +517,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 272 0)
-	(pt 272 136)
-	(bus)
-)
-(connector
 	(pt 272 136)
 	(pt 272 272)
 	(bus)
@@ -897,6 +892,11 @@ applicable agreement for further details.
 	(text "dout[7]" (rect 586 944 629 959)(font "Arial" ))
 	(pt 576 960)
 	(pt 664 960)
+)
+(connector
+	(pt 272 0)
+	(pt 272 136)
+	(bus)
 )
 (junction (pt 272 272))
 (junction (pt 272 136))

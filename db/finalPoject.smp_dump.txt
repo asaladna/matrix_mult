@@ -1,0 +1,7 @@
+
+State Machine - |transmult|controller:inst2|pstate
+Name pstate.S3 pstate.S2 pstate.S1 pstate.S0 
+pstate.S0 0 0 0 0 
+pstate.S1 0 0 1 1 
+pstate.S2 0 1 0 1 
+pstate.S3 1 0 0 1 
