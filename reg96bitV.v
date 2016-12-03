@@ -7,7 +7,7 @@ module reg96bitV (ld, reset, CLK, Dout1, Dout2, Dout3, Dout4, Dout5, Dout6, Dout
 	output [7:0] Dout1, Dout2, Dout3, Dout4, Dout5, Dout6, Dout7, Dout8, Dout9, Dout10, Dout11, Dout12;
 	reg [7:0] Dout1, Dout2, Dout3, Dout4, Dout5, Dout6, Dout7, Dout8, Dout9, Dout10, Dout11, Dout12;
 	
-	always @ (posedge CLK )
+	always @ (negedge CLK )
 		begin
 			/*if(reset)
 				begin

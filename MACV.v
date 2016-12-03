@@ -1,21 +1,32 @@
 module MACV(mplier, mcand, aclr, clk, dout);
 
-input [7:0] mplier, mcand;
+input signed [7:0] mplier, mcand;
 input aclr, clk;
 
 output [15:0] dout;
-reg [15:0] dout;
-
-assign dout = mplier * mcand + dout;
+reg signed [15:0] dout;
+wire signed [15:0] feedback, temp;
+/*
+assign temp = mplier * mcand;
+assign signed feedback = temp + feedback;
 
 always @ (posedge clk)
 	begin
 		if(aclr == 1'b1)
 			begin
-				dout = 16'b0000000000000000;
+				dout = feedback;
+				assign feedback = 16'b0000000000000000;
 			end
 	end
+	
+	*/
 endmodule
+
+
+
+
+
+
 /*
 always @(posedge clk or negedge aclr)
 	begin

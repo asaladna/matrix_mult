@@ -1,16 +1,18 @@
 
 State Machine - |transmult|controller:inst2|pstate
-Name pstate.S12 pstate.S11 pstate.S10 pstate.S9 pstate.S8 pstate.S7 pstate.S6 pstate.S5 pstate.S4 pstate.S3 pstate.S2 pstate.S1 pstate.S0 
-pstate.S0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-pstate.S1 0 0 0 0 0 0 0 0 0 0 0 1 1 
-pstate.S2 0 0 0 0 0 0 0 0 0 0 1 0 1 
-pstate.S3 0 0 0 0 0 0 0 0 0 1 0 0 1 
-pstate.S4 0 0 0 0 0 0 0 0 1 0 0 0 1 
-pstate.S5 0 0 0 0 0 0 0 1 0 0 0 0 1 
-pstate.S6 0 0 0 0 0 0 1 0 0 0 0 0 1 
-pstate.S7 0 0 0 0 0 1 0 0 0 0 0 0 1 
-pstate.S8 0 0 0 0 1 0 0 0 0 0 0 0 1 
-pstate.S9 0 0 0 1 0 0 0 0 0 0 0 0 1 
-pstate.S10 0 0 1 0 0 0 0 0 0 0 0 0 1 
-pstate.S11 0 1 0 0 0 0 0 0 0 0 0 0 1 
-pstate.S12 1 0 0 0 0 0 0 0 0 0 0 0 1 
+Name pstate.S14 pstate.S13 pstate.S12 pstate.S11 pstate.S10 pstate.S9 pstate.S8 pstate.S7 pstate.S6 pstate.S5 pstate.S4 pstate.S3 pstate.S2 pstate.S1 pstate.S0 
+pstate.S0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+pstate.S1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+pstate.S2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+pstate.S3 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+pstate.S4 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+pstate.S5 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+pstate.S6 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+pstate.S7 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+pstate.S8 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+pstate.S9 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+pstate.S10 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+pstate.S11 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+pstate.S12 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+pstate.S13 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pstate.S14 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

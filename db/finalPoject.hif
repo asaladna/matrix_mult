@@ -4997,42 +4997,6 @@ AUTO
 
 # end
 # entity
-reg96bitV
-# storage
-db|finalPoject.(29).cnf
-db|finalPoject.(29).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-reg96bitV.v
-7d438c431552d3be1395533984b3dee2
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-reg96bitV:inst18
-}
-# macro_sequence
-
-# end
-# entity
 demux1to12
 # storage
 db|finalPoject.(28).cnf
@@ -5255,153 +5219,6 @@ clock
 # include_file {
 ..|libraries|megafunctions|lpm_ff.inc
 97d9d437829a4e214661a824cb57479
-}
-# macro_sequence
-
-# end
-# entity
-transmult
-# storage
-db|finalPoject.(0).cnf
-db|finalPoject.(0).cnf
-# case_insensitive
-# source_file
-transmult.bdf
-a863dd681d32035593d4c892721cf2d
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-MAC_Checker
-# storage
-db|finalPoject.(31).cnf
-db|finalPoject.(31).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-MAC_Checker.v
-45ca215145d9e94bedc8491eb9abc
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-MAC:inst4|MAC_Checker:inst1
-MAC:inst5|MAC_Checker:inst1
-}
-# macro_sequence
-
-# end
-# entity
-controller
-# storage
-db|finalPoject.(1).cnf
-db|finalPoject.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-controller.v
-2df660da4d82de981665f56163cfae1
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-S0
-0000
-PARAMETER_UNSIGNED_BIN
-USR
-S1
-0001
-PARAMETER_UNSIGNED_BIN
-USR
-S2
-0010
-PARAMETER_UNSIGNED_BIN
-USR
-S3
-0011
-PARAMETER_UNSIGNED_BIN
-USR
-S4
-0100
-PARAMETER_UNSIGNED_BIN
-USR
-S5
-0101
-PARAMETER_UNSIGNED_BIN
-USR
-S6
-0110
-PARAMETER_UNSIGNED_BIN
-USR
-S7
-0111
-PARAMETER_UNSIGNED_BIN
-USR
-S8
-1000
-PARAMETER_UNSIGNED_BIN
-USR
-S9
-1001
-PARAMETER_UNSIGNED_BIN
-USR
-S10
-1010
-PARAMETER_UNSIGNED_BIN
-USR
-S11
-1011
-PARAMETER_UNSIGNED_BIN
-USR
-S12
-1100
-PARAMETER_UNSIGNED_BIN
-USR
-}
-# hierarchies {
-controller:inst2
 }
 # macro_sequence
 
@@ -5873,27 +5690,6 @@ ff795e21e4847824c03218724f1a1252
 
 # end
 # entity
-MAC
-# storage
-db|finalPoject.(11).cnf
-db|finalPoject.(11).cnf
-# case_insensitive
-# source_file
-MAC.bdf
-ed5f49c47239ffe1a87389577d76145d
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-MAC:inst4
-MAC:inst5
-}
-# macro_sequence
-
-# end
-# entity
 lpm_add_sub0
 # storage
 db|finalPoject.(14).cnf
@@ -6056,6 +5852,255 @@ dataa0
 # hierarchies {
 MAC:inst4|lpm_add_sub0:inst6
 MAC:inst5|lpm_add_sub0:inst6
+}
+# macro_sequence
+
+# end
+# entity
+dontCareFilter
+# storage
+db|finalPoject.(35).cnf
+db|finalPoject.(35).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+dontCareFilter.v
+d1f67bb12ad2dfea92227c55d560ae
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+MAC:inst4|dontCareFilter:inst2
+MAC:inst5|dontCareFilter:inst2
+}
+# macro_sequence
+
+# end
+# entity
+MAC
+# storage
+db|finalPoject.(11).cnf
+db|finalPoject.(11).cnf
+# case_insensitive
+# source_file
+MAC.bdf
+4c64d8fd845b84d08b7117f56097dbe4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MAC:inst4
+MAC:inst5
+}
+# macro_sequence
+
+# end
+# entity
+MAC_Checker
+# storage
+db|finalPoject.(31).cnf
+db|finalPoject.(31).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+MAC_Checker.v
+2ffe5ce51a9f64a59590ded8761dc546
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+MAC:inst4|MAC_Checker:inst1
+MAC:inst5|MAC_Checker:inst1
+}
+# macro_sequence
+
+# end
+# entity
+transmult
+# storage
+db|finalPoject.(0).cnf
+db|finalPoject.(0).cnf
+# case_insensitive
+# source_file
+transmult.bdf
+6572e450843aba1fca97fadc61598d37
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+reg96bitV
+# storage
+db|finalPoject.(29).cnf
+db|finalPoject.(29).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+reg96bitV.v
+c62759c326ea7a1fad386a226a8a3c5
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+reg96bitV:inst18
+}
+# macro_sequence
+
+# end
+# entity
+controller
+# storage
+db|finalPoject.(1).cnf
+db|finalPoject.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+controller.v
+7fd28e3630d94e136f34fdd2cdbf36df
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+S0
+0000
+PARAMETER_UNSIGNED_BIN
+USR
+S1
+0001
+PARAMETER_UNSIGNED_BIN
+USR
+S2
+0010
+PARAMETER_UNSIGNED_BIN
+USR
+S3
+0011
+PARAMETER_UNSIGNED_BIN
+USR
+S4
+0100
+PARAMETER_UNSIGNED_BIN
+USR
+S5
+0101
+PARAMETER_UNSIGNED_BIN
+USR
+S6
+0110
+PARAMETER_UNSIGNED_BIN
+USR
+S7
+0111
+PARAMETER_UNSIGNED_BIN
+USR
+S8
+1000
+PARAMETER_UNSIGNED_BIN
+USR
+S9
+1001
+PARAMETER_UNSIGNED_BIN
+USR
+S10
+1010
+PARAMETER_UNSIGNED_BIN
+USR
+S11
+1011
+PARAMETER_UNSIGNED_BIN
+USR
+S12
+1100
+PARAMETER_UNSIGNED_BIN
+USR
+S13
+1101
+PARAMETER_UNSIGNED_BIN
+DEF
+S14
+1110
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+controller:inst2
 }
 # macro_sequence
 

@@ -150,23 +150,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 280 -456 296 -280)
-	(text "OUTPUT" (rect 3 1 16 51)(font "Arial" (font_size 6))(vertical))
-	(text "test1[7..0]" (rect 1 90 16 152)(font "Arial" )(vertical))
-	(pt 8 0)
-	(drawing
-		(line (pt 8 0)(pt 8 52)(line_width 1))
-		(line (pt 12 52)(pt 12 78)(line_width 1))
-		(line (pt 4 52)(pt 4 78)(line_width 1))
-		(line (pt 4 52)(pt 12 52)(line_width 1))
-		(line (pt 12 78)(pt 8 82)(line_width 1))
-		(line (pt 8 82)(pt 4 78)(line_width 1))
-		(line (pt 4 78)(pt 8 82)(line_width 1))
-	)
-	(rotate270)
-)
-(pin
-	(output)
 	(rect 784 -440 800 -264)
 	(text "OUTPUT" (rect 3 1 16 51)(font "Arial" (font_size 6))(vertical))
 	(text "test0[7..0]" (rect 1 90 16 152)(font "Arial" )(vertical))
@@ -217,9 +200,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 8 -528 24 -352)
+	(rect 1136 -464 1152 -272)
 	(text "OUTPUT" (rect 3 1 16 51)(font "Arial" (font_size 6))(vertical))
-	(text "test3[7..0]" (rect 1 90 16 152)(font "Arial" )(vertical))
+	(text "MACsqrd[15..0]" (rect 1 90 16 187)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52)(line_width 1))
@@ -234,9 +217,26 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1136 -464 1152 -272)
+	(rect 696 -136 712 40)
 	(text "OUTPUT" (rect 3 1 16 51)(font "Arial" (font_size 6))(vertical))
-	(text "MACsqrd[15..0]" (rect 1 90 16 187)(font "Arial" )(vertical))
+	(text "test3[3..0]" (rect 2 89 17 151)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52)(line_width 1))
+		(line (pt 12 52)(pt 12 78)(line_width 1))
+		(line (pt 4 52)(pt 4 78)(line_width 1))
+		(line (pt 4 52)(pt 12 52)(line_width 1))
+		(line (pt 12 78)(pt 8 82)(line_width 1))
+		(line (pt 8 82)(pt 4 78)(line_width 1))
+		(line (pt 4 78)(pt 8 82)(line_width 1))
+	)
+	(rotate270)
+)
+(pin
+	(output)
+	(rect 312 -64 328 112)
+	(text "OUTPUT" (rect 3 1 16 51)(font "Arial" (font_size 6))(vertical))
+	(text "test1[7..0]" (rect 1 90 16 152)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 8 0)(pt 8 52)(line_width 1))
@@ -2181,11 +2181,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 680 -112)
-	(pt 680 432)
-	(bus)
-)
-(connector
 	(pt 344 432)
 	(pt 680 432)
 	(bus)
@@ -2238,11 +2233,6 @@ applicable agreement for further details.
 (connector
 	(pt 48 -32)
 	(pt 112 -32)
-	(bus)
-)
-(connector
-	(pt 48 -16)
-	(pt 112 -16)
 	(bus)
 )
 (connector
@@ -2345,12 +2335,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "dout12[7..0]" (rect 312 -80 387 -65)(font "Arial" ))
-	(pt 312 -64)
-	(pt 336 -64)
-	(bus)
-)
-(connector
 	(pt 208 176)
 	(pt 208 40)
 )
@@ -2427,11 +2411,6 @@ applicable agreement for further details.
 	(pt 248 16)
 )
 (connector
-	(pt 288 -456)
-	(pt 288 -472)
-	(bus)
-)
-(connector
 	(pt -488 -64)
 	(pt -488 -128)
 	(bus)
@@ -2454,27 +2433,6 @@ applicable agreement for further details.
 (connector
 	(pt 48 -176)
 	(pt 112 -176)
-	(bus)
-)
-(connector
-	(pt 320 -472)
-	(pt 288 -472)
-	(bus)
-)
-(connector
-	(pt 320 -472)
-	(pt 320 -224)
-	(bus)
-)
-(connector
-	(pt 312 -224)
-	(pt 320 -224)
-	(bus)
-)
-(connector
-	(text "dout2[7..0]" (rect 312 -240 379 -225)(font "Arial" ))
-	(pt 320 -224)
-	(pt 384 -224)
 	(bus)
 )
 (connector
@@ -2501,37 +2459,6 @@ applicable agreement for further details.
 	(text "dout3[7..0]" (rect 312 -224 379 -209)(font "Arial" ))
 	(pt 336 -208)
 	(pt 312 -208)
-	(bus)
-)
-(connector
-	(pt 48 -160)
-	(pt 112 -160)
-	(bus)
-)
-(connector
-	(pt 352 -536)
-	(pt 352 -192)
-	(bus)
-)
-(connector
-	(text "dout4[7..0]" (rect 312 -208 379 -193)(font "Arial" ))
-	(pt 400 -192)
-	(pt 352 -192)
-	(bus)
-)
-(connector
-	(pt 352 -192)
-	(pt 312 -192)
-	(bus)
-)
-(connector
-	(pt 16 -536)
-	(pt 16 -528)
-	(bus)
-)
-(connector
-	(pt 352 -536)
-	(pt 16 -536)
 	(bus)
 )
 (connector
@@ -2580,6 +2507,59 @@ applicable agreement for further details.
 	(pt 1104 -208)
 	(bus)
 )
+(connector
+	(text "dout4[7..0]" (rect 312 -208 379 -193)(font "Arial" ))
+	(pt 312 -192)
+	(pt 400 -192)
+	(bus)
+)
+(connector
+	(pt 704 -136)
+	(pt 704 -144)
+	(bus)
+)
+(connector
+	(pt 680 -144)
+	(pt 704 -144)
+	(bus)
+)
+(connector
+	(pt 680 -144)
+	(pt 680 -112)
+	(bus)
+)
+(connector
+	(pt 680 -112)
+	(pt 680 432)
+	(bus)
+)
+(connector
+	(text "dout2[7..0]" (rect 312 -240 379 -225)(font "Arial" ))
+	(pt 312 -224)
+	(pt 384 -224)
+	(bus)
+)
+(connector
+	(pt 48 -160)
+	(pt 112 -160)
+	(bus)
+)
+(connector
+	(pt 48 -16)
+	(pt 112 -16)
+	(bus)
+)
+(connector
+	(pt 312 -64)
+	(pt 320 -64)
+	(bus)
+)
+(connector
+	(text "dout12[7..0]" (rect 312 -80 387 -65)(font "Arial" ))
+	(pt 320 -64)
+	(pt 336 -64)
+	(bus)
+)
 (junction (pt 760 -208))
 (junction (pt -8 416))
 (junction (pt 352 504))
@@ -2588,8 +2568,8 @@ applicable agreement for further details.
 (junction (pt 208 176))
 (junction (pt 264 112))
 (junction (pt -232 -64))
-(junction (pt 320 -224))
 (junction (pt 336 -208))
-(junction (pt 352 -192))
 (junction (pt 712 -232))
 (junction (pt 1056 -208))
+(junction (pt 680 -112))
+(junction (pt 320 -64))
