@@ -4997,42 +4997,6 @@ AUTO
 
 # end
 # entity
-demux1to12
-# storage
-db|finalPoject.(28).cnf
-db|finalPoject.(28).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-demux1to12.v
-62b52655367f882c1b385c894d0734e
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-demux1to12:inst
-}
-# macro_sequence
-
-# end
-# entity
 lpm_dff1
 # storage
 db|finalPoject.(30).cnf
@@ -5952,26 +5916,6 @@ MAC:inst5|MAC_Checker:inst1
 
 # end
 # entity
-transmult
-# storage
-db|finalPoject.(0).cnf
-db|finalPoject.(0).cnf
-# case_insensitive
-# source_file
-transmult.bdf
-6572e450843aba1fca97fadc61598d37
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 reg96bitV
 # storage
 db|finalPoject.(29).cnf
@@ -6008,6 +5952,62 @@ reg96bitV:inst18
 
 # end
 # entity
+transmult
+# storage
+db|finalPoject.(0).cnf
+db|finalPoject.(0).cnf
+# case_insensitive
+# source_file
+transmult.bdf
+9d3ab9437dd311a3dcfce02272c9ab8b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+demux1to12
+# storage
+db|finalPoject.(28).cnf
+db|finalPoject.(28).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+demux1to12.v
+d98eff84862544d94c2cbc98b9e26efb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+demux1to12:inst
+}
+# macro_sequence
+
+# end
+# entity
 controller
 # storage
 db|finalPoject.(1).cnf
@@ -6019,7 +6019,7 @@ ON
 # case_sensitive
 # source_file
 controller.v
-7fd28e3630d94e136f34fdd2cdbf36df
+63e96cf185f764365514aee90cea946
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6091,11 +6091,19 @@ S12
 PARAMETER_UNSIGNED_BIN
 USR
 S13
-1101
+01101
 PARAMETER_UNSIGNED_BIN
 DEF
 S14
-1110
+01110
+PARAMETER_UNSIGNED_BIN
+DEF
+s15
+01111
+PARAMETER_UNSIGNED_BIN
+DEF
+s16
+10000
 PARAMETER_UNSIGNED_BIN
 DEF
 }

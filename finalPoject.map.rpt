@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Sat Dec 03 12:37:30 2016
+Sat Dec 03 14:10:36 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -57,12 +57,12 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 03 12:37:30 2016        ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 03 14:10:36 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 474                                          ;
+; Total logic elements        ; 467                                          ;
 ; Total pins                  ; 78                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
@@ -185,33 +185,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 474   ;
-;     -- Combinational with no register       ; 315   ;
-;     -- Register only                        ; 126   ;
+; Total logic elements                        ; 467   ;
+;     -- Combinational with no register       ; 211   ;
+;     -- Register only                        ; 223   ;
 ;     -- Combinational with a register        ; 33    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 121   ;
-;     -- 3 input functions                    ; 185   ;
+;     -- 4 input functions                    ; 120   ;
+;     -- 3 input functions                    ; 82    ;
 ;     -- 2 input functions                    ; 34    ;
 ;     -- 1 input functions                    ; 8     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 418   ;
+;     -- normal mode                          ; 411   ;
 ;     -- arithmetic mode                      ; 56    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 15    ;
+;     -- asynchronous clear/load mode         ; 16    ;
 ;                                             ;       ;
-; Total registers                             ; 159   ;
+; Total registers                             ; 256   ;
 ; Total logic cells in carry chains           ; 62    ;
 ; I/O pins                                    ; 78    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 159   ;
-; Total fan-out                               ; 1576  ;
-; Average fan-out                             ; 2.86  ;
+; Maximum fan-out                             ; 256   ;
+; Total fan-out                               ; 1554  ;
+; Average fan-out                             ; 2.85  ;
 +---------------------------------------------+-------+
 
 
@@ -220,7 +220,7 @@ applicable agreement for further details.
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                             ; Library Name ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |transmult                                   ; 474 (0)     ; 159          ; 0          ; 78   ; 0            ; 315 (0)      ; 126 (0)           ; 33 (0)           ; 62 (0)          ; 0 (0)      ; |transmult                                                                                                      ; work         ;
+; |transmult                                   ; 467 (0)     ; 256          ; 0          ; 78   ; 0            ; 211 (0)      ; 223 (0)           ; 33 (0)           ; 62 (0)          ; 0 (0)      ; |transmult                                                                                                      ; work         ;
 ;    |MAC:inst4|                               ; 142 (0)     ; 48           ; 0          ; 0    ; 0            ; 94 (0)       ; 16 (0)            ; 32 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
 ;       |MAC_Checker:inst1|                    ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |transmult|MAC:inst4|MAC_Checker:inst1                                                                          ; work         ;
 ;       |dontCareFilter:inst2|                 ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; 16 (16)         ; 0 (0)      ; |transmult|MAC:inst4|dontCareFilter:inst2                                                                       ; work         ;
@@ -231,8 +231,8 @@ applicable agreement for further details.
 ;       |lpm_mult0:inst|                       ; 78 (0)      ; 0            ; 0          ; 0    ; 0            ; 78 (0)       ; 0 (0)             ; 0 (0)            ; 30 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst                                                                             ; work         ;
 ;          |lpm_mult:lpm_mult_component|       ; 78 (0)      ; 0            ; 0          ; 0    ; 0            ; 78 (0)       ; 0 (0)             ; 0 (0)            ; 30 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
 ;             |mult_0km:auto_generated|        ; 78 (78)     ; 0            ; 0          ; 0    ; 0            ; 78 (78)      ; 0 (0)             ; 0 (0)            ; 30 (30)         ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
-;    |controller:inst2|                        ; 61 (61)     ; 15           ; 0          ; 0    ; 0            ; 46 (46)      ; 14 (14)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
-;    |demux1to12:inst|                         ; 108 (108)   ; 0            ; 0          ; 0    ; 0            ; 108 (108)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
+;    |controller:inst2|                        ; 54 (54)     ; 16           ; 0          ; 0    ; 0            ; 38 (38)      ; 15 (15)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
+;    |demux1to12:inst|                         ; 108 (108)   ; 96           ; 0          ; 0    ; 0            ; 12 (12)      ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
 ;    |lpm_mux0:inst7|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                                                       ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component                                                             ; work         ;
 ;          |mux_9bc:auto_generated|            ; 67 (67)     ; 0            ; 0          ; 0    ; 0            ; 67 (67)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component|mux_9bc:auto_generated                                      ; work         ;
@@ -242,137 +242,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                  ;
-+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; Name       ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
-+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
-; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
-; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
-; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
-; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S11 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S12 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S13 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S14 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                               ;
++------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name       ; pstate.s15 ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
++------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S11 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S12 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S13 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S14 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.s15 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                         ;
-+------------------------------------------------------+-----------------------------+------------------------+
-; Latch Name                                           ; Latch Enable Signal         ; Free of Timing Hazards ;
-+------------------------------------------------------+-----------------------------+------------------------+
-; controller:inst2|reg96_ld                            ; controller:inst2|reg96_ld~0 ; yes                    ;
-; controller:inst2|demuxto12_sel[3]                    ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|demuxto12_sel[2]                    ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|demuxto12_sel[1]                    ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|demuxto12_sel[0]                    ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|mux_select1[3]                      ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|mux_select1[0]                      ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|mux_select1[1]                      ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|mux_select1[2]                      ; controller:inst2|Selector17 ; yes                    ;
-; controller:inst2|MAC_Reset1                          ; controller:inst2|Selector48 ; yes                    ;
-; demux1to12:inst|Data_out2[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out5[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out8[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out10[7]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out11[7]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out9[7]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out12[7]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out2[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out5[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out8[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out11[6]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out10[6]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out9[6]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out12[6]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out2[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out5[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out8[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out10[5]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out11[5]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out9[5]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out12[5]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out2[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out5[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out8[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out11[4]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out10[4]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out9[4]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out12[4]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out2[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out5[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out8[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out10[3]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out11[3]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out9[3]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out12[3]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out2[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out5[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out8[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out11[2]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out10[2]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out9[2]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out12[2]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out2[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out5[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out8[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out10[1]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out11[1]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out9[1]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out12[1]                        ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out2[0]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out3[0]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out1[0]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out4[0]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out7[0]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; demux1to12:inst|Data_out6[0]                         ; demux1to12:inst|Equal0      ; yes                    ;
-; Number of user-specified and inferred latches = 121  ;                             ;                        ;
-+------------------------------------------------------+-----------------------------+------------------------+
-Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++---------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                           ;
++-----------------------------------------------------+--------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal            ; Free of Timing Hazards ;
++-----------------------------------------------------+--------------------------------+------------------------+
+; controller:inst2|reg96_ld                           ; controller:inst2|mux_select1~0 ; yes                    ;
+; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector9     ; yes                    ;
+; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector42    ; yes                    ;
+; controller:inst2|nstate.S0_419                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S14_307                     ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.s15_299                     ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S2_403                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S3_395                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S4_387                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S5_379                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S6_371                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S7_363                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S8_355                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S9_347                      ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S10_339                     ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S11_331                     ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S12_323                     ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S13_315                     ; controller:inst2|pstate.s15    ; yes                    ;
+; controller:inst2|nstate.S1_411                      ; controller:inst2|pstate.s15    ; yes                    ;
+; Number of user-specified and inferred latches = 26  ;                                ;                        ;
++-----------------------------------------------------+--------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
@@ -480,7 +407,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear        ;
 ; reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear        ;
 ; reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear        ;
-; Total Number of Removed Registers = 213                                 ;                                             ;
+; Total Number of Removed Registers = 214                                 ;                                             ;
 +-------------------------------------------------------------------------+---------------------------------------------+
 * Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -610,12 +537,12 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 159   ;
+; Total registers                              ; 256   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 15    ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 112   ;
+; Number of registers using Clock Enable       ; 208   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -656,8 +583,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; S10            ; 1010  ; Unsigned Binary                      ;
 ; S11            ; 1011  ; Unsigned Binary                      ;
 ; S12            ; 1100  ; Unsigned Binary                      ;
-; S13            ; 1101  ; Unsigned Binary                      ;
-; S14            ; 1110  ; Unsigned Binary                      ;
+; S13            ; 01101 ; Unsigned Binary                      ;
+; S14            ; 01110 ; Unsigned Binary                      ;
+; s15            ; 01111 ; Unsigned Binary                      ;
+; s16            ; 10000 ; Unsigned Binary                      ;
 +----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -921,7 +850,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 03 12:37:27 2016
+    Info: Processing started: Sat Dec 03 14:10:33 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -952,12 +881,13 @@ Info: Found 1 design units, including 1 entities, in source file MACV.v
 Info: Found 1 design units, including 1 entities, in source file dontCareFilter.v
     Info: Found entity 1: dontCareFilter
 Info: Elaborating entity "transmult" for the top level hierarchy
-Warning: Pin "load_in" overlaps another pin, block, or symbol
 Warning: Port "CLK" of type SRFF and instance "inst6" is missing source signal
 Warning: Pin "load_input" not connected
 Info: Elaborating entity "controller" for hierarchy "controller:inst2"
 Warning (10036): Verilog HDL or VHDL warning at controller.v(39): object "output_set" assigned a value but never read
 Warning (10235): Verilog HDL Always Construct warning at controller.v(47): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at controller.v(45): incomplete case statement has no default case item
+Info (10264): Verilog HDL Case Statement information at controller.v(45): all case item expressions in this case statement are onehot
 Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "MAC_Reset1", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "nstate", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "demuxto12_sel", which holds its previous value in one or more paths through the always construct
@@ -992,6 +922,7 @@ Info (10041): Inferred latch for "demuxto12_sel[0]" at controller.v(30)
 Info (10041): Inferred latch for "demuxto12_sel[1]" at controller.v(30)
 Info (10041): Inferred latch for "demuxto12_sel[2]" at controller.v(30)
 Info (10041): Inferred latch for "demuxto12_sel[3]" at controller.v(30)
+Info (10041): Inferred latch for "nstate.s15" at controller.v(30)
 Info (10041): Inferred latch for "nstate.S14" at controller.v(30)
 Info (10041): Inferred latch for "nstate.S13" at controller.v(30)
 Info (10041): Inferred latch for "nstate.S12" at controller.v(30)
@@ -1254,114 +1185,6 @@ Info: Found 1 design units, including 1 entities, in source file db/mux_9bc.tdf
 Info: Elaborating entity "mux_9bc" for hierarchy "lpm_mux0:inst7|lpm_mux:lpm_mux_component|mux_9bc:auto_generated"
 Info: Elaborating entity "reg96bitV" for hierarchy "reg96bitV:inst18"
 Info: Elaborating entity "demux1to12" for hierarchy "demux1to12:inst"
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out2", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out3", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out4", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out5", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out6", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out7", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out8", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out9", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out10", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out11", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12.v(20): inferring latch(es) for variable "Data_out12", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "Data_out12[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out12[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out12[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out12[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out12[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out12[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out12[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out12[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out11[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out10[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out9[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out8[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out7[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out6[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out5[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out4[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out3[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out2[7]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[0]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[1]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[2]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[3]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[4]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[5]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[6]" at demux1to12.v(21)
-Info (10041): Inferred latch for "Data_out1[7]" at demux1to12.v(21)
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[0]" is permanently enabled
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[1]" is permanently enabled
 Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[2]" is permanently enabled
@@ -1477,12 +1300,11 @@ Info: Ignored 110 buffer(s)
     Info: Ignored 110 SOFT buffer(s)
 Info: Ignored 78 buffer(s)
     Info: Ignored 78 SOFT buffer(s)
-Warning: Latch controller:inst2|reg96_ld has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S13
-Warning: Latch controller:inst2|mux_select1[3] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S0
-Warning: Latch controller:inst2|mux_select1[2] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S0
+Info: Duplicate LATCH primitives merged into single LATCH primitive
+    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[3]" merged with LATCH primitive "controller:inst2|demuxto12_sel[3]"
+    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[2]" merged with LATCH primitive "controller:inst2|demuxto12_sel[2]"
+    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[1]" merged with LATCH primitive "controller:inst2|demuxto12_sel[1]"
+    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[0]" merged with LATCH primitive "controller:inst2|demuxto12_sel[0]"
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "output_rdy" is stuck at GND
     Warning (13410): Pin "dout[15]" is stuck at GND
@@ -1501,7 +1323,7 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "dout[2]" is stuck at GND
     Warning (13410): Pin "dout[1]" is stuck at GND
     Warning (13410): Pin "dout[0]" is stuck at GND
-Info: 36 registers lost all their fanouts during netlist optimizations. The first 36 are displayed below.
+Info: 37 registers lost all their fanouts during netlist optimizations. The first 37 are displayed below.
     Info: Register "MAC:inst5|dontCareFilter:inst2|dout[0]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst5|dontCareFilter:inst2|dout[1]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst5|dontCareFilter:inst2|dout[2]" lost all its fanouts during netlist optimizations.
@@ -1538,15 +1360,16 @@ Info: 36 registers lost all their fanouts during netlist optimizations. The firs
     Info: Register "controller:inst2|pstate~11" lost all its fanouts during netlist optimizations.
     Info: Register "controller:inst2|pstate~12" lost all its fanouts during netlist optimizations.
     Info: Register "controller:inst2|pstate~13" lost all its fanouts during netlist optimizations.
+    Info: Register "controller:inst2|pstate~14" lost all its fanouts during netlist optimizations.
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
-Info: Implemented 552 device resources after synthesis - the final resource count might be different
+Info: Implemented 545 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
     Info: Implemented 66 output pins
-    Info: Implemented 474 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 195 warnings
+    Info: Implemented 467 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 177 warnings
     Info: Peak virtual memory: 229 megabytes
-    Info: Processing ended: Sat Dec 03 12:37:30 2016
+    Info: Processing ended: Sat Dec 03 14:10:36 2016
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.062 ns
-From           : cf_load
-To             : controller:inst2|nstate.S1_386
+Actual Time    : 2.289 ns
+From           : din[5]
+To             : demux1to12:inst|Data_out11[5]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 22.994 ns
-From           : controller:inst2|mux_select1[0]
-To             : test0[0]
+Actual Time    : 16.223 ns
+From           : controller:inst2|demuxto12_sel[2]
+To             : load_test[2]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.439 ns
-From           : din[6]
-To             : demux1to12:inst|Data_out9[6]
+Actual Time    : 4.463 ns
+From           : cf_load
+To             : controller:inst2|nstate.S0_419
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 32.67 MHz ( period = 30.607 ns )
-From           : controller:inst2|mux_select1[0]
-To             : MAC:inst4|dontCareFilter:inst2|dout[13]
+Actual Time    : 33.37 MHz ( period = 29.966 ns )
+From           : controller:inst2|demuxto12_sel[3]
+To             : demux1to12:inst|Data_out11[5]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
@@ -46,11 +46,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : controller:inst2|pstate.S12
-To             : controller:inst2|reg96_ld
+From           : controller:inst2|pstate.S14
+To             : controller:inst2|nstate.s15_299
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 39
+Failed Paths   : 32
 
 Type           : Total number of failed paths
 Slack          : 
@@ -60,7 +60,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 39
+Failed Paths   : 32
 
 --------------------------------------------------------------------------------------
 
