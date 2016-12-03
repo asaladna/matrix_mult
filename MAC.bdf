@@ -213,35 +213,6 @@ applicable agreement for further details.
 		(line (pt 64 80)(pt 64 32)(line_width 1))
 	)
 )
-(symbol
-	(rect 248 80 432 176)
-	(text "dontCareFilter" (rect 5 0 97 15)(font "Arial" ))
-	(text "inst2" (rect 8 77 39 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "din[15..0]" (rect 0 0 59 15)(font "Arial" ))
-		(text "din[15..0]" (rect 21 27 80 42)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 17 15)(font "Arial" ))
-		(text "clk" (rect 21 43 38 58)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "dout[15..0]" (rect 0 0 67 15)(font "Arial" ))
-		(text "dout[15..0]" (rect 96 27 163 42)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 168 80)(line_width 1))
-	)
-)
 (connector
 	(text "dataa[15..0]" (rect 658 216 733 231)(font "Arial" ))
 	(pt 744 208)
@@ -325,16 +296,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 432 112)
-	(pt 440 112)
-	(bus)
-)
-(connector
-	(pt 200 112)
-	(pt 248 112)
-	(bus)
-)
-(connector
 	(pt 200 112)
 	(pt 200 144)
 	(bus)
@@ -348,22 +309,6 @@ applicable agreement for further details.
 	(pt 440 144)
 	(pt 440 112)
 	(bus)
-)
-(connector
-	(pt 248 128)
-	(pt 216 128)
-)
-(connector
-	(pt 216 128)
-	(pt 216 256)
-)
-(connector
-	(pt 216 256)
-	(pt 224 256)
-)
-(connector
-	(pt -72 256)
-	(pt 216 256)
 )
 (connector
 	(pt 952 176)
@@ -390,4 +335,12 @@ applicable agreement for further details.
 	(pt 456 304)
 	(bus)
 )
-(junction (pt 216 256))
+(connector
+	(pt -72 256)
+	(pt 224 256)
+)
+(connector
+	(pt 200 112)
+	(pt 440 112)
+	(bus)
+)

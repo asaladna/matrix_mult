@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Sat Dec 03 14:10:36 2016
+Sat Dec 03 15:28:48 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -57,12 +57,12 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 03 14:10:36 2016        ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 03 15:28:48 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 467                                          ;
+; Total logic elements        ; 483                                          ;
 ; Total pins                  ; 78                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
@@ -149,7 +149,6 @@ applicable agreement for further details.
 ; reg160bitFinal.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg160bitFinal.bdf                 ;
 ; reg96bitV.v                      ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/reg96bitV.v                        ;
 ; MAC_Checker.v                    ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/MAC_Checker.v                      ;
-; dontCareFilter.v                 ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/dontCareFilter.v                   ;
 ; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/altera/90sp2/quartus/finalProject/lpm_mux1.tdf                       ;
 ; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.inc             ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.tdf             ;
@@ -185,33 +184,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 467   ;
-;     -- Combinational with no register       ; 211   ;
-;     -- Register only                        ; 223   ;
-;     -- Combinational with a register        ; 33    ;
+; Total logic elements                        ; 483   ;
+;     -- Combinational with no register       ; 241   ;
+;     -- Register only                        ; 225   ;
+;     -- Combinational with a register        ; 17    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 120   ;
-;     -- 3 input functions                    ; 82    ;
-;     -- 2 input functions                    ; 34    ;
+;     -- 4 input functions                    ; 125   ;
+;     -- 3 input functions                    ; 88    ;
+;     -- 2 input functions                    ; 37    ;
 ;     -- 1 input functions                    ; 8     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 411   ;
+;     -- normal mode                          ; 427   ;
 ;     -- arithmetic mode                      ; 56    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 16    ;
+;     -- asynchronous clear/load mode         ; 18    ;
 ;                                             ;       ;
-; Total registers                             ; 256   ;
+; Total registers                             ; 242   ;
 ; Total logic cells in carry chains           ; 62    ;
 ; I/O pins                                    ; 78    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 256   ;
-; Total fan-out                               ; 1554  ;
-; Average fan-out                             ; 2.85  ;
+; Maximum fan-out                             ; 242   ;
+; Total fan-out                               ; 1588  ;
+; Average fan-out                             ; 2.83  ;
 +---------------------------------------------+-------+
 
 
@@ -220,18 +219,17 @@ applicable agreement for further details.
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                             ; Library Name ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |transmult                                   ; 467 (0)     ; 256          ; 0          ; 78   ; 0            ; 211 (0)      ; 223 (0)           ; 33 (0)           ; 62 (0)          ; 0 (0)      ; |transmult                                                                                                      ; work         ;
-;    |MAC:inst4|                               ; 142 (0)     ; 48           ; 0          ; 0    ; 0            ; 94 (0)       ; 16 (0)            ; 32 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
+; |transmult                                   ; 483 (0)     ; 242          ; 0          ; 78   ; 0            ; 241 (0)      ; 225 (0)           ; 17 (0)           ; 62 (0)          ; 0 (0)      ; |transmult                                                                                                      ; work         ;
+;    |MAC:inst4|                               ; 142 (0)     ; 32           ; 0          ; 0    ; 0            ; 110 (0)      ; 16 (0)            ; 16 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
 ;       |MAC_Checker:inst1|                    ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |transmult|MAC:inst4|MAC_Checker:inst1                                                                          ; work         ;
-;       |dontCareFilter:inst2|                 ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; 16 (16)         ; 0 (0)      ; |transmult|MAC:inst4|dontCareFilter:inst2                                                                       ; work         ;
 ;       |lpm_add_sub0:inst6|                   ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6                                                                         ; work         ;
 ;          |lpm_add_sub:lpm_add_sub_component| ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component                                       ; work         ;
 ;             |addcore:adder|                  ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder                         ; work         ;
 ;                |a_csnbuffer:result_node|     ; 16 (16)     ; 0            ; 0          ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 0 (0)            ; 16 (16)         ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder|a_csnbuffer:result_node ; work         ;
-;       |lpm_mult0:inst|                       ; 78 (0)      ; 0            ; 0          ; 0    ; 0            ; 78 (0)       ; 0 (0)             ; 0 (0)            ; 30 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst                                                                             ; work         ;
-;          |lpm_mult:lpm_mult_component|       ; 78 (0)      ; 0            ; 0          ; 0    ; 0            ; 78 (0)       ; 0 (0)             ; 0 (0)            ; 30 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
-;             |mult_0km:auto_generated|        ; 78 (78)     ; 0            ; 0          ; 0    ; 0            ; 78 (78)      ; 0 (0)             ; 0 (0)            ; 30 (30)         ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
-;    |controller:inst2|                        ; 54 (54)     ; 16           ; 0          ; 0    ; 0            ; 38 (38)      ; 15 (15)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
+;       |lpm_mult0:inst|                       ; 94 (0)      ; 0            ; 0          ; 0    ; 0            ; 94 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst                                                                             ; work         ;
+;          |lpm_mult:lpm_mult_component|       ; 94 (0)      ; 0            ; 0          ; 0    ; 0            ; 94 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
+;             |mult_0km:auto_generated|        ; 94 (94)     ; 0            ; 0          ; 0    ; 0            ; 94 (94)      ; 0 (0)             ; 0 (0)            ; 46 (46)         ; 0 (0)      ; |transmult|MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
+;    |controller:inst2|                        ; 70 (70)     ; 18           ; 0          ; 0    ; 0            ; 52 (52)      ; 17 (17)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
 ;    |demux1to12:inst|                         ; 108 (108)   ; 96           ; 0          ; 0    ; 0            ; 12 (12)      ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
 ;    |lpm_mux0:inst7|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                                                       ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component                                                             ; work         ;
@@ -242,63 +240,67 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                               ;
-+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; Name       ; pstate.s15 ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
-+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
-; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
-; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
-; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
-; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S11 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S12 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S13 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S14 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.s15 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                                                         ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name       ; pstate.S17 ; pstate.S16 ; pstate.S15 ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S13 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S14 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S15 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S16 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S17 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                           ;
-+-----------------------------------------------------+--------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal            ; Free of Timing Hazards ;
-+-----------------------------------------------------+--------------------------------+------------------------+
-; controller:inst2|reg96_ld                           ; controller:inst2|mux_select1~0 ; yes                    ;
-; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector9     ; yes                    ;
-; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector42    ; yes                    ;
-; controller:inst2|nstate.S0_419                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S14_307                     ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.s15_299                     ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S2_403                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S3_395                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S4_387                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S5_379                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S6_371                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S7_363                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S8_355                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S9_347                      ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S10_339                     ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S11_331                     ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S12_323                     ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S13_315                     ; controller:inst2|pstate.s15    ; yes                    ;
-; controller:inst2|nstate.S1_411                      ; controller:inst2|pstate.s15    ; yes                    ;
-; Number of user-specified and inferred latches = 26  ;                                ;                        ;
-+-----------------------------------------------------+--------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; controller:inst2|reg96_ld                           ; controller:inst2|WideOr39   ; yes                    ;
+; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector17 ; yes                    ;
+; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector17 ; yes                    ;
+; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector17 ; yes                    ;
+; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector17 ; yes                    ;
+; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector7  ; yes                    ;
+; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector7  ; yes                    ;
+; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector7  ; yes                    ;
+; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector7  ; yes                    ;
+; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector54 ; yes                    ;
+; controller:inst2|nstate.S0_454                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S14_342                     ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S15_334                     ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S16_326                     ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S17_318                     ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S1_446                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S2_438                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S3_430                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S4_422                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S5_414                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S6_406                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S7_398                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S8_390                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S13_350                     ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S9_382                      ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S10_374                     ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S11_366                     ; controller:inst2|pstate.S17 ; yes                    ;
+; controller:inst2|nstate.S12_358                     ; controller:inst2|pstate.S17 ; yes                    ;
+; Number of user-specified and inferred latches = 28  ;                             ;                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -407,129 +409,129 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear        ;
 ; reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear        ;
 ; reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear        ;
-; Total Number of Removed Registers = 214                                 ;                                             ;
+; Total Number of Removed Registers = 198                                 ;                                             ;
 +-------------------------------------------------------------------------+---------------------------------------------+
 * Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                               ;
-+--------------------------------------+--------------------------------+-----------------------------------------------------------------------------------+
-; Register name                        ; Reason for Removal             ; Registers Removed due to This Register                                            ;
-+--------------------------------------+--------------------------------+-----------------------------------------------------------------------------------+
-; MAC:inst5|MAC_Checker:inst1|dout[0]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst|inst1,             ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst|inst1,            ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst|inst1,            ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst|inst1,            ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst|inst1,            ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst|inst1,              ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[0], MAC:inst5|MAC_Checker:inst1|feedback[0]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[1]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst1|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst1|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst1|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst1|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst1|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[1], MAC:inst5|MAC_Checker:inst1|feedback[1]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[2]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst2|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst2|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst2|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst2|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst2|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[2], MAC:inst5|MAC_Checker:inst1|feedback[2]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[3]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst3|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst3|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst3|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst3|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst3|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[3], MAC:inst5|MAC_Checker:inst1|feedback[3]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[4]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst4|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst4|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst4|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst4|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst4|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[4], MAC:inst5|MAC_Checker:inst1|feedback[4]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[5]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst5|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst5|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst5|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst5|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst5|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[5], MAC:inst5|MAC_Checker:inst1|feedback[5]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[6]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst7|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst7|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst7|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst7|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst7|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[6], MAC:inst5|MAC_Checker:inst1|feedback[6]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[7]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst6|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst6|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst6|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst6|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst6|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[7], MAC:inst5|MAC_Checker:inst1|feedback[7]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[8]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst|inst1,            ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst|inst1,           ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst|inst1,             ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[8], MAC:inst5|MAC_Checker:inst1|feedback[8]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[9]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst1|inst1,           ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst1|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst1|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst1|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst1|inst1,            ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[9], MAC:inst5|MAC_Checker:inst1|feedback[9]   ;
-; MAC:inst5|MAC_Checker:inst1|dout[10] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst2|inst1,           ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst2|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst2|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst2|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst2|inst1,            ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[10], MAC:inst5|MAC_Checker:inst1|feedback[10] ;
-; MAC:inst5|MAC_Checker:inst1|dout[11] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst3|inst1,           ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst3|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst3|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst3|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst3|inst1,            ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[11], MAC:inst5|MAC_Checker:inst1|feedback[11] ;
-; MAC:inst5|MAC_Checker:inst1|dout[12] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst4|inst1,           ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst4|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst4|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst4|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst4|inst1,            ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[12], MAC:inst5|MAC_Checker:inst1|feedback[12] ;
-; MAC:inst5|MAC_Checker:inst1|dout[13] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst5|inst1,           ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst5|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst5|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst5|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst5|inst1,            ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[13], MAC:inst5|MAC_Checker:inst1|feedback[13] ;
-; MAC:inst5|MAC_Checker:inst1|dout[14] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7|inst1,           ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst7|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst7|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst7|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst7|inst1,            ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[14], MAC:inst5|MAC_Checker:inst1|feedback[14] ;
-; MAC:inst5|MAC_Checker:inst1|dout[15] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6|inst1,           ;
-;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst6|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst6|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst6|inst1,          ;
-;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst6|inst1,            ;
-;                                      ;                                ; MAC:inst5|dontCareFilter:inst2|dout[15], MAC:inst5|MAC_Checker:inst1|feedback[15] ;
-+--------------------------------------+--------------------------------+-----------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                      ;
++--------------------------------------+--------------------------------+--------------------------------------------------------------------------+
+; Register name                        ; Reason for Removal             ; Registers Removed due to This Register                                   ;
++--------------------------------------+--------------------------------+--------------------------------------------------------------------------+
+; MAC:inst5|MAC_Checker:inst1|dout[0]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst|inst1,    ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst|inst1,   ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst|inst1,   ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst|inst1,   ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst|inst1,   ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst|inst1,     ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[0]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[1]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst1|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst1|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst1|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst1|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst1|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[1]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[2]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst2|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst2|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst2|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst2|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst2|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[2]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[3]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst3|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst3|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst3|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst3|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst3|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[3]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[4]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst4|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst4|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst4|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst4|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst4|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[4]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[5]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst5|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst5|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst5|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst5|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst5|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[5]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[6]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst7|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst7|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst7|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst7|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst7|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[6]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[7]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst6|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst6|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst6|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst6|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst6|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[7]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[8]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst|inst1,   ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst|inst1,  ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst|inst1,    ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[8]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[9]  ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst1|inst1,  ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst1|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst1|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst1|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst1|inst1,   ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[9]                                  ;
+; MAC:inst5|MAC_Checker:inst1|dout[10] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst2|inst1,  ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst2|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst2|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst2|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst2|inst1,   ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[10]                                 ;
+; MAC:inst5|MAC_Checker:inst1|dout[11] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst3|inst1,  ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst3|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst3|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst3|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst3|inst1,   ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[11]                                 ;
+; MAC:inst5|MAC_Checker:inst1|dout[12] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst4|inst1,  ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst4|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst4|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst4|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst4|inst1,   ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[12]                                 ;
+; MAC:inst5|MAC_Checker:inst1|dout[13] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst5|inst1,  ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst5|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst5|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst5|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst5|inst1,   ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[13]                                 ;
+; MAC:inst5|MAC_Checker:inst1|dout[14] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7|inst1,  ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst7|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst7|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst7|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst7|inst1,   ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[14]                                 ;
+; MAC:inst5|MAC_Checker:inst1|dout[15] ; Stuck at GND                   ; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6|inst1,  ;
+;                                      ; due to stuck port clock_enable ; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst6|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst6|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst6|inst1, ;
+;                                      ;                                ; reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst6|inst1,   ;
+;                                      ;                                ; MAC:inst5|MAC_Checker:inst1|feedback[15]                                 ;
++--------------------------------------+--------------------------------+--------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -537,10 +539,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 256   ;
+; Total registers                              ; 242   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 16    ;
+; Number of registers using Asynchronous Clear ; 18    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 208   ;
 ; Number of registers using Preset             ; 0     ;
@@ -585,8 +587,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; S12            ; 1100  ; Unsigned Binary                      ;
 ; S13            ; 01101 ; Unsigned Binary                      ;
 ; S14            ; 01110 ; Unsigned Binary                      ;
-; s15            ; 01111 ; Unsigned Binary                      ;
-; s16            ; 10000 ; Unsigned Binary                      ;
+; S15            ; 01111 ; Unsigned Binary                      ;
+; S16            ; 10000 ; Unsigned Binary                      ;
+; S17            ; 10001 ; Unsigned Binary                      ;
 +----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -850,7 +853,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 03 14:10:33 2016
+    Info: Processing started: Sat Dec 03 15:28:45 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -881,18 +884,20 @@ Info: Found 1 design units, including 1 entities, in source file MACV.v
 Info: Found 1 design units, including 1 entities, in source file dontCareFilter.v
     Info: Found entity 1: dontCareFilter
 Info: Elaborating entity "transmult" for the top level hierarchy
+Warning: Pin "load_in" overlaps another pin, block, or symbol
+Warning: Block or symbol "reg96bitV" of instance "inst18" overlaps another block or symbol
 Warning: Port "CLK" of type SRFF and instance "inst6" is missing source signal
 Warning: Pin "load_input" not connected
 Info: Elaborating entity "controller" for hierarchy "controller:inst2"
-Warning (10036): Verilog HDL or VHDL warning at controller.v(39): object "output_set" assigned a value but never read
-Warning (10235): Verilog HDL Always Construct warning at controller.v(47): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10270): Verilog HDL Case Statement warning at controller.v(45): incomplete case statement has no default case item
-Info (10264): Verilog HDL Case Statement information at controller.v(45): all case item expressions in this case statement are onehot
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "MAC_Reset1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "nstate", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "demuxto12_sel", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "mux_select1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(30): inferring latch(es) for variable "reg96_ld", which holds its previous value in one or more paths through the always construct
+Warning (10036): Verilog HDL or VHDL warning at controller.v(40): object "output_set" assigned a value but never read
+Warning (10235): Verilog HDL Always Construct warning at controller.v(48): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at controller.v(46): incomplete case statement has no default case item
+Info (10264): Verilog HDL Case Statement information at controller.v(46): all case item expressions in this case statement are onehot
+Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "MAC_Reset1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "nstate", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "demuxto12_sel", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "mux_select1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "reg96_ld", which holds its previous value in one or more paths through the always construct
 Warning (10034): Output port "output_set" at controller.v(6) has no driver
 Warning (10034): Output port "reg106_ld" at controller.v(7) has no driver
 Warning (10034): Output port "MAC_Reset2" at controller.v(7) has no driver
@@ -913,32 +918,34 @@ Warning (10034): Output port "final_mux_sel[3]" at controller.v(13) has no drive
 Warning (10034): Output port "final_mux_sel[2]" at controller.v(13) has no driver
 Warning (10034): Output port "final_mux_sel[1]" at controller.v(13) has no driver
 Warning (10034): Output port "final_mux_sel[0]" at controller.v(13) has no driver
-Info (10041): Inferred latch for "reg96_ld" at controller.v(30)
-Info (10041): Inferred latch for "mux_select1[0]" at controller.v(30)
-Info (10041): Inferred latch for "mux_select1[1]" at controller.v(30)
-Info (10041): Inferred latch for "mux_select1[2]" at controller.v(30)
-Info (10041): Inferred latch for "mux_select1[3]" at controller.v(30)
-Info (10041): Inferred latch for "demuxto12_sel[0]" at controller.v(30)
-Info (10041): Inferred latch for "demuxto12_sel[1]" at controller.v(30)
-Info (10041): Inferred latch for "demuxto12_sel[2]" at controller.v(30)
-Info (10041): Inferred latch for "demuxto12_sel[3]" at controller.v(30)
-Info (10041): Inferred latch for "nstate.s15" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S14" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S13" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S12" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S11" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S10" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S9" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S8" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S7" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S6" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S5" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S4" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S3" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S2" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S1" at controller.v(30)
-Info (10041): Inferred latch for "nstate.S0" at controller.v(30)
-Info (10041): Inferred latch for "MAC_Reset1" at controller.v(30)
+Info (10041): Inferred latch for "reg96_ld" at controller.v(31)
+Info (10041): Inferred latch for "mux_select1[0]" at controller.v(31)
+Info (10041): Inferred latch for "mux_select1[1]" at controller.v(31)
+Info (10041): Inferred latch for "mux_select1[2]" at controller.v(31)
+Info (10041): Inferred latch for "mux_select1[3]" at controller.v(31)
+Info (10041): Inferred latch for "demuxto12_sel[0]" at controller.v(31)
+Info (10041): Inferred latch for "demuxto12_sel[1]" at controller.v(31)
+Info (10041): Inferred latch for "demuxto12_sel[2]" at controller.v(31)
+Info (10041): Inferred latch for "demuxto12_sel[3]" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S17" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S16" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S15" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S14" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S13" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S12" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S11" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S10" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S9" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S8" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S7" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S6" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S5" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S4" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S3" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S2" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S1" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S0" at controller.v(31)
+Info (10041): Inferred latch for "MAC_Reset1" at controller.v(31)
 Warning: Using design file lpm_mux1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: lpm_mux1
 Info: Elaborating entity "lpm_mux1" for hierarchy "lpm_mux1:inst13"
@@ -1154,7 +1161,6 @@ Info: Elaborating entity "altshift" for hierarchy "MAC:inst4|lpm_add_sub0:inst6|
 Info: Elaborated megafunction instantiation "MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component"
 Info: Elaborating entity "altshift" for hierarchy "MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|altshift:carry_ext_latency_ffs"
 Info: Elaborated megafunction instantiation "MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component"
-Info: Elaborating entity "dontCareFilter" for hierarchy "MAC:inst4|dontCareFilter:inst2"
 Warning: Using design file lpm_mult0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: lpm_mult0
 Info: Elaborating entity "lpm_mult0" for hierarchy "MAC:inst4|lpm_mult0:inst"
@@ -1300,11 +1306,6 @@ Info: Ignored 110 buffer(s)
     Info: Ignored 110 SOFT buffer(s)
 Info: Ignored 78 buffer(s)
     Info: Ignored 78 SOFT buffer(s)
-Info: Duplicate LATCH primitives merged into single LATCH primitive
-    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[3]" merged with LATCH primitive "controller:inst2|demuxto12_sel[3]"
-    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[2]" merged with LATCH primitive "controller:inst2|demuxto12_sel[2]"
-    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[1]" merged with LATCH primitive "controller:inst2|demuxto12_sel[1]"
-    Info: Duplicate LATCH primitive "controller:inst2|mux_select1[0]" merged with LATCH primitive "controller:inst2|demuxto12_sel[0]"
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "output_rdy" is stuck at GND
     Warning (13410): Pin "dout[15]" is stuck at GND
@@ -1323,23 +1324,7 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "dout[2]" is stuck at GND
     Warning (13410): Pin "dout[1]" is stuck at GND
     Warning (13410): Pin "dout[0]" is stuck at GND
-Info: 37 registers lost all their fanouts during netlist optimizations. The first 37 are displayed below.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[9]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "MAC:inst5|dontCareFilter:inst2|dout[15]" lost all its fanouts during netlist optimizations.
+Info: 21 registers lost all their fanouts during netlist optimizations. The first 21 are displayed below.
     Info: Register "MAC:inst5|MAC_Checker:inst1|feedback[15]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst5|MAC_Checker:inst1|feedback[14]" lost all its fanouts during netlist optimizations.
     Info: Register "MAC:inst5|MAC_Checker:inst1|feedback[13]" lost all its fanouts during netlist optimizations.
@@ -1363,13 +1348,13 @@ Info: 37 registers lost all their fanouts during netlist optimizations. The firs
     Info: Register "controller:inst2|pstate~14" lost all its fanouts during netlist optimizations.
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
-Info: Implemented 545 device resources after synthesis - the final resource count might be different
+Info: Implemented 561 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
     Info: Implemented 66 output pins
-    Info: Implemented 467 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 177 warnings
-    Info: Peak virtual memory: 229 megabytes
-    Info: Processing ended: Sat Dec 03 14:10:36 2016
+    Info: Implemented 483 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 179 warnings
+    Info: Peak virtual memory: 228 megabytes
+    Info: Processing ended: Sat Dec 03 15:28:48 2016
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

@@ -5850,31 +5850,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-MAC:inst4|dontCareFilter:inst2
-MAC:inst5|dontCareFilter:inst2
-}
-# macro_sequence
-
-# end
-# entity
-MAC
-# storage
-db|finalPoject.(11).cnf
-db|finalPoject.(11).cnf
-# case_insensitive
-# source_file
-MAC.bdf
-4c64d8fd845b84d08b7117f56097dbe4
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-MAC:inst4
-MAC:inst5
-}
 # macro_sequence
 
 # end
@@ -5952,26 +5927,6 @@ reg96bitV:inst18
 
 # end
 # entity
-transmult
-# storage
-db|finalPoject.(0).cnf
-db|finalPoject.(0).cnf
-# case_insensitive
-# source_file
-transmult.bdf
-9d3ab9437dd311a3dcfce02272c9ab8b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 demux1to12
 # storage
 db|finalPoject.(28).cnf
@@ -6008,6 +5963,47 @@ demux1to12:inst
 
 # end
 # entity
+MAC
+# storage
+db|finalPoject.(11).cnf
+db|finalPoject.(11).cnf
+# case_insensitive
+# source_file
+MAC.bdf
+a69c98f24139628422518307af042
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MAC:inst4
+MAC:inst5
+}
+# macro_sequence
+
+# end
+# entity
+transmult
+# storage
+db|finalPoject.(0).cnf
+db|finalPoject.(0).cnf
+# case_insensitive
+# source_file
+transmult.bdf
+f878e1d661fe47c8e7d8b4a89cceac94
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 controller
 # storage
 db|finalPoject.(1).cnf
@@ -6019,7 +6015,7 @@ ON
 # case_sensitive
 # source_file
 controller.v
-63e96cf185f764365514aee90cea946
+99c247ddf6189e83841aec4a24587d4d
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6098,12 +6094,16 @@ S14
 01110
 PARAMETER_UNSIGNED_BIN
 DEF
-s15
+S15
 01111
 PARAMETER_UNSIGNED_BIN
 DEF
-s16
+S16
 10000
+PARAMETER_UNSIGNED_BIN
+DEF
+S17
+10001
 PARAMETER_UNSIGNED_BIN
 DEF
 }
