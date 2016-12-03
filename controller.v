@@ -46,8 +46,9 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 				S0:
 					if (cf_load == 1'b1)
 						begin
+							MAC_Reset1 = 1'b0;
 							nstate = S1; //next state
-							//demuxto12_sel=4'b0001;
+							demuxto12_sel=4'b0000;
 							 //input number for demuxer
 							reg96_ld = 1'b1; // registers are open
 							//mux_select1 = 4'b0001; // mux that has reg value is selected
@@ -62,6 +63,7 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					nstate = S2;
 					demuxto12_sel=4'b0001;
 					mux_select1 = 4'b0000;
+					
 					reg96_ld = 1'b1;
 					
 				end	
@@ -79,14 +81,18 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					demuxto12_sel=4'b0011;
 					mux_select1 = 4'b0010;
 					reg96_ld = 1'b1;
+					MAC_Reset1 = 1'b1;
+					
 					
 				end	
 
 				S4:begin
+	
 					nstate = S5;
 					demuxto12_sel=4'b0100;
 					mux_select1 = 4'b0011;
-					reg96_ld = 1'b1;	
+					reg96_ld = 1'b1;
+					MAC_Reset1 = 1'b0;	
 				end	
 
 				S5:begin
@@ -102,8 +108,8 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					demuxto12_sel=4'b0110;
 					mux_select1 = 4'b0101;
 					reg96_ld = 1'b1;
-					
 				end	
+			
 				S7:begin
 					nstate = S8;
 					demuxto12_sel=4'b0111;
@@ -111,13 +117,16 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					reg96_ld = 1'b1;
 					
 				end	
+				
 				S8:begin
 					nstate = S9;
 					demuxto12_sel=4'b1000;
 					mux_select1 = 4'b0111;
 					reg96_ld = 1'b1;
 					
-				end	
+				end
+			
+					
 				S9:begin
 					nstate = S10;
 					demuxto12_sel=4'b1001;
@@ -138,13 +147,18 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					reg96_ld = 1'b1;
 					
 				end	
+/*
 				S12:begin
 					nstate = S0;
-					demuxto12_sel=4'b1100;
-					mux_select1 = 4'b1011;
-					reg96_ld = 1'b1;
+					//demuxto12_sel=4'b1100;
+					//mux_select1 = 4'b1011;
+					reg96_ld = 1'b0;
 					
 				end	
+	*/			
+	
+				//after this start dout
+			
 			endcase
 		end
 endmodule

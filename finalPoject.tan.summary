@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.127 ns
-From           : cf_load
-To             : reg96bitV:inst18|Dout7[0]
+Actual Time    : -1.274 ns
+From           : din[5]
+To             : demux1to12:inst|Data_out2[5]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,29 +15,19 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 21.077 ns
+Actual Time    : 33.627 ns
 From           : controller:inst2|mux_select1[1]
-To             : test0[3]
+To             : MACsqrd[13]
 From Clock     : clk
-To Clock       : --
-Failed Paths   : 0
-
-Type           : Worst-case tpd
-Slack          : N/A
-Required Time  : None
-Actual Time    : 8.995 ns
-From           : cf_load
-To             : load_in
-From Clock     : --
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.581 ns
-From           : din[4]
-To             : demux1to12:inst|Data_out11[4]
+Actual Time    : 10.511 ns
+From           : din[2]
+To             : demux1to12:inst|Data_out10[2]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -45,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 30.92 MHz ( period = 32.344 ns )
-From           : demux1to12:inst|Data_out11[6]
-To             : reg96bitV:inst18|Dout11[6]
+Actual Time    : 34.81 MHz ( period = 28.724 ns )
+From           : demux1to12:inst|Data_out10[4]
+To             : reg96bitV:inst18|Dout10[4]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
@@ -56,11 +46,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : controller:inst2|pstate.S4
-To             : controller:inst2|demuxto12_sel[2]
+From           : controller:inst2|pstate.S6
+To             : controller:inst2|nstate.S7_296
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 33
+Failed Paths   : 14
 
 Type           : Total number of failed paths
 Slack          : 
@@ -70,7 +60,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 33
+Failed Paths   : 14
 
 --------------------------------------------------------------------------------------
 

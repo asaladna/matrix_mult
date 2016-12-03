@@ -1,5 +1,5 @@
 Flow report for finalPoject
-Fri Dec 02 17:33:34 2016
+Sat Dec 03 01:25:23 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -38,18 +38,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Fri Dec 02 17:33:34 2016        ;
+; Flow Status             ; Flow Failed - Sat Dec 03 01:25:23 2016       ;
 ; Quartus II Version      ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name           ; finalPoject                                  ;
 ; Top-level Entity Name   ; transmult                                    ;
 ; Family                  ; MAX II                                       ;
 ; Device                  ; EPM1270F256A5                                ;
 ; Timing Models           ; Final                                        ;
-; Met timing requirements ; No                                           ;
-; Total logic elements    ; 196 / 1,270 ( 15 % )                         ;
-; Total pins              ; 66 / 212 ( 31 % )                            ;
-; Total virtual pins      ; 0                                            ;
-; UFM blocks              ; 0 / 1 ( 0 % )                                ;
+; Met timing requirements ; N/A                                          ;
 +-------------------------+----------------------------------------------+
 
 
@@ -58,7 +54,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2016 17:33:27 ;
+; Start date & time ; 12/03/2016 01:25:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; finalPoject         ;
 +-------------------+---------------------+
@@ -69,7 +65,7 @@ applicable agreement for further details.
 +---------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                       ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +---------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 165023370536.148072160708796 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                 ; 165023370536.148074992310952 ; --            ; --          ; --             ;
 ; FITTER_EFFORT                         ; Standard Fit                 ; Auto Fit      ; --          ; --             ;
 ; IP_TOOL_NAME                          ; LPM_FF                       ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                          ; LPM_MULT                     ; --            ; --          ; --             ;
@@ -111,38 +107,29 @@ applicable agreement for further details.
 +---------------------------------------+------------------------------+---------------+-------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                           ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 229 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:03     ; 1.0                     ; 214 MB              ; 00:00:02                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 168 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:07     ; --                      ; --                  ; 00:00:04                           ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:00     ; 1.0                     ; 208 MB              ; 00:00:00                           ;
+; Total                ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+-------------------------+------------------+---------------+------------+----------------+
-; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
-+-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
-; Fitter                  ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
-; Assembler               ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
-; Classic Timing Analyzer ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
-+-------------------------+------------------+---------------+------------+----------------+
++---------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                       ;
++----------------------+------------------+---------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++----------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis ; AlexSaladna-PC   ; Windows Vista ; 6.1        ; x86_64         ;
++----------------------+------------------+---------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
-quartus_fit --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
-quartus_asm --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
-quartus_tan --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
 
 
 
