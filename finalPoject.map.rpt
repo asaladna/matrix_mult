@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Sat Dec 03 23:22:57 2016
+Sun Dec 04 00:15:33 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -15,23 +15,22 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   7. State Machine - |transmult|controller:inst2|pstate
   8. User-Specified and Inferred Latches
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Source assignments for MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
- 13. Source assignments for MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
- 14. Parameter Settings for User Entity Instance: controller:inst2
- 15. Parameter Settings for User Entity Instance: lpm_mux1:inst13|lpm_mux:lpm_mux_component
- 16. Parameter Settings for User Entity Instance: MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
- 17. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst
- 18. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component
- 19. Parameter Settings for User Entity Instance: lpm_mux0:inst7|lpm_mux:lpm_mux_component
- 20. Parameter Settings for User Entity Instance: MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
- 21. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst
- 22. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component
- 23. Parameter Settings for User Entity Instance: lpm_mux0:inst9|lpm_mux:lpm_mux_component
- 24. Parameter Settings for User Entity Instance: lpm_mux0:inst8|lpm_mux:lpm_mux_component
- 25. lpm_mult Parameter Settings by Entity Instance
- 26. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Source assignments for MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
+ 12. Source assignments for MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
+ 13. Parameter Settings for User Entity Instance: controller:inst2
+ 14. Parameter Settings for User Entity Instance: lpm_mux1:inst13|lpm_mux:lpm_mux_component
+ 15. Parameter Settings for User Entity Instance: MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
+ 16. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst
+ 17. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component
+ 18. Parameter Settings for User Entity Instance: lpm_mux0:inst7|lpm_mux:lpm_mux_component
+ 19. Parameter Settings for User Entity Instance: MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
+ 20. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst
+ 21. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component
+ 22. Parameter Settings for User Entity Instance: lpm_mux0:inst9|lpm_mux:lpm_mux_component
+ 23. Parameter Settings for User Entity Instance: lpm_mux0:inst8|lpm_mux:lpm_mux_component
+ 24. lpm_mult Parameter Settings by Entity Instance
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -57,13 +56,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 03 23:22:57 2016        ;
+; Analysis & Synthesis Status ; Successful - Sun Dec 04 00:15:33 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 854                                          ;
-; Total pins                  ; 106                                          ;
+; Total logic elements        ; 1,136                                        ;
+; Total pins                  ; 94                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
 +-----------------------------+----------------------------------------------+
@@ -145,7 +144,6 @@ applicable agreement for further details.
 ; demux1to12_16bit.v               ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/demux1to12_16bit.v                 ;
 ; reg96bitV.v                      ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/reg96bitV.v                        ;
 ; MAC_Checker.v                    ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/MAC_Checker.v                      ;
-; reg160bitV.v                     ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/reg160bitV.v                       ;
 ; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/altera/90sp2/quartus/finalProject/lpm_mux1.tdf                       ;
 ; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.inc             ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.tdf             ;
@@ -180,33 +178,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 854   ;
-;     -- Combinational with no register       ; 540   ;
-;     -- Register only                        ; 281   ;
+; Total logic elements                        ; 1136  ;
+;     -- Combinational with no register       ; 694   ;
+;     -- Register only                        ; 409   ;
 ;     -- Combinational with a register        ; 33    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 302   ;
-;     -- 3 input functions                    ; 191   ;
-;     -- 2 input functions                    ; 66    ;
+;     -- 4 input functions                    ; 404   ;
+;     -- 3 input functions                    ; 240   ;
+;     -- 2 input functions                    ; 69    ;
 ;     -- 1 input functions                    ; 14    ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 742   ;
+;     -- normal mode                          ; 1024  ;
 ;     -- arithmetic mode                      ; 112   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 26    ;
 ;                                             ;       ;
-; Total registers                             ; 314   ;
+; Total registers                             ; 442   ;
 ; Total logic cells in carry chains           ; 124   ;
-; I/O pins                                    ; 106   ;
+; I/O pins                                    ; 94    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 315   ;
-; Total fan-out                               ; 2897  ;
-; Average fan-out                             ; 3.02  ;
+; Maximum fan-out                             ; 443   ;
+; Total fan-out                               ; 3830  ;
+; Average fan-out                             ; 3.11  ;
 +---------------------------------------------+-------+
 
 
@@ -215,7 +213,7 @@ applicable agreement for further details.
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                             ; Library Name ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |transmult                                   ; 854 (0)     ; 314          ; 0          ; 106  ; 0            ; 540 (0)      ; 281 (0)           ; 33 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
+; |transmult                                   ; 1136 (0)    ; 442          ; 0          ; 94   ; 0            ; 694 (0)      ; 409 (0)           ; 33 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
 ;    |MAC:inst4|                               ; 142 (0)     ; 32           ; 0          ; 0    ; 0            ; 110 (0)      ; 16 (0)            ; 16 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
 ;       |MAC_Checker:inst1|                    ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |transmult|MAC:inst4|MAC_Checker:inst1                                                                          ; work         ;
 ;       |lpm_add_sub0:inst6|                   ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6                                                                         ; work         ;
@@ -234,9 +232,9 @@ applicable agreement for further details.
 ;       |lpm_mult0:inst|                       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst                                                                             ; work         ;
 ;          |lpm_mult:lpm_mult_component|       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
 ;             |mult_0km:auto_generated|        ; 95 (95)     ; 0            ; 0          ; 0    ; 0            ; 95 (95)      ; 0 (0)             ; 0 (0)            ; 46 (46)         ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
-;    |controller:inst2|                        ; 132 (132)   ; 26           ; 0          ; 0    ; 0            ; 106 (106)    ; 25 (25)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
+;    |controller:inst2|                        ; 149 (149)   ; 26           ; 0          ; 0    ; 0            ; 123 (123)    ; 25 (25)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
 ;    |demux1to12:inst|                         ; 108 (108)   ; 96           ; 0          ; 0    ; 0            ; 12 (12)      ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
-;    |demux1to12_16bit:inst11|                 ; 17 (17)     ; 16           ; 0          ; 0    ; 0            ; 1 (1)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12_16bit:inst11                                                                              ; work         ;
+;    |demux1to12_16bit:inst11|                 ; 170 (170)   ; 160          ; 0          ; 0    ; 0            ; 10 (10)      ; 160 (160)         ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12_16bit:inst11                                                                              ; work         ;
 ;    |lpm_mux0:inst7|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                                                       ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component                                                             ; work         ;
 ;          |mux_9bc:auto_generated|            ; 67 (67)     ; 0            ; 0          ; 0    ; 0            ; 67 (67)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component|mux_9bc:auto_generated                                      ; work         ;
@@ -246,7 +244,9 @@ applicable agreement for further details.
 ;    |lpm_mux0:inst9|                          ; 69 (0)      ; 0            ; 0          ; 0    ; 0            ; 69 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9                                                                                       ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 69 (0)      ; 0            ; 0          ; 0    ; 0            ; 69 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9|lpm_mux:lpm_mux_component                                                             ; work         ;
 ;          |mux_9bc:auto_generated|            ; 69 (69)     ; 0            ; 0          ; 0    ; 0            ; 69 (69)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9|lpm_mux:lpm_mux_component|mux_9bc:auto_generated                                      ; work         ;
-;    |reg160bitV:inst1|                        ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|reg160bitV:inst1                                                                                     ; work         ;
+;    |lpm_mux1:inst13|                         ; 128 (0)     ; 0            ; 0          ; 0    ; 0            ; 128 (0)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux1:inst13                                                                                      ; work         ;
+;       |lpm_mux:lpm_mux_component|            ; 128 (0)     ; 0            ; 0          ; 0    ; 0            ; 128 (0)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux1:inst13|lpm_mux:lpm_mux_component                                                            ; work         ;
+;          |mux_mcc:auto_generated|            ; 128 (128)   ; 0            ; 0          ; 0    ; 0            ; 128 (128)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux1:inst13|lpm_mux:lpm_mux_component|mux_mcc:auto_generated                                     ; work         ;
 ;    |reg96bitV:inst18|                        ; 96 (96)     ; 96           ; 0          ; 0    ; 0            ; 0 (0)        ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|reg96bitV:inst18                                                                                     ; work         ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -292,277 +292,79 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal          ; Free of Timing Hazards ;
 +-----------------------------------------------------+------------------------------+------------------------+
-; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector47  ; yes                    ;
-; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector47  ; yes                    ;
-; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector47  ; yes                    ;
-; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector47  ; yes                    ;
-; controller:inst2|mux_select2[3]                     ; controller:inst2|Selector29  ; yes                    ;
-; controller:inst2|mux_select2[0]                     ; controller:inst2|Selector29  ; yes                    ;
-; controller:inst2|mux_select2[1]                     ; controller:inst2|Selector29  ; yes                    ;
-; controller:inst2|mux_select2[2]                     ; controller:inst2|Selector29  ; yes                    ;
-; controller:inst2|reg106_ld                          ; controller:inst2|Selector4   ; yes                    ;
-; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector102 ; yes                    ;
+; controller:inst2|final_mux_sel[3]                   ; controller:inst2|WideOr81    ; yes                    ;
+; controller:inst2|final_mux_sel[2]                   ; controller:inst2|WideOr81    ; yes                    ;
+; controller:inst2|final_mux_sel[0]                   ; controller:inst2|WideOr81    ; yes                    ;
+; controller:inst2|final_mux_sel[1]                   ; controller:inst2|WideOr81    ; yes                    ;
+; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector55  ; yes                    ;
+; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector55  ; yes                    ;
+; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector55  ; yes                    ;
+; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector55  ; yes                    ;
+; controller:inst2|mux_select2[3]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select2[0]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select2[1]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select2[2]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|demux16bit_sel1[0]                 ; controller:inst2|Selector19  ; yes                    ;
+; controller:inst2|demux16bit_sel1[1]                 ; controller:inst2|Selector19  ; yes                    ;
+; controller:inst2|demux16bit_sel1[2]                 ; controller:inst2|Selector19  ; yes                    ;
+; controller:inst2|demux16bit_sel2[0]                 ; controller:inst2|Selector13  ; yes                    ;
+; controller:inst2|demux16bit_sel2[1]                 ; controller:inst2|Selector13  ; yes                    ;
+; controller:inst2|demux16bit_sel2[2]                 ; controller:inst2|Selector13  ; yes                    ;
 ; controller:inst2|reg96_ld                           ; controller:inst2|WideOr79    ; yes                    ;
-; controller:inst2|MAC_Reset2                         ; controller:inst2|Selector100 ; yes                    ;
-; controller:inst2|demux16bit_sel2[0]                 ; controller:inst2|Selector0   ; yes                    ;
-; controller:inst2|demux16bit_sel2[1]                 ; controller:inst2|Selector0   ; yes                    ;
-; controller:inst2|demux16bit_sel2[2]                 ; controller:inst2|Selector0   ; yes                    ;
-; controller:inst2|nstate.S1_804                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S2_796                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S3_788                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S4_780                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S5_772                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S6_764                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S7_756                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S8_748                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S13_708                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S16_684                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S17_676                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S18_668                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S19_660                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S20_652                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S21_644                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S22_636                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S23_628                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S24_620                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S25_612                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S0_812                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S9_740                      ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S10_732                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S11_724                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S12_716                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S14_700                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|nstate.S15_692                     ; controller:inst2|pstate.S25  ; yes                    ;
-; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector37  ; yes                    ;
-; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector37  ; yes                    ;
-; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector37  ; yes                    ;
-; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector37  ; yes                    ;
-; controller:inst2|mux_select3[2]                     ; controller:inst2|Selector29  ; yes                    ;
-; controller:inst2|mux_select3[3]                     ; controller:inst2|Selector29  ; yes                    ;
-; controller:inst2|mux_select3[1]                     ; controller:inst2|Selector29  ; yes                    ;
-; controller:inst2|mux_select3[0]                     ; controller:inst2|Selector29  ; yes                    ;
-; Number of user-specified and inferred latches = 49  ;                              ;                        ;
+; controller:inst2|MAC_Reset2                         ; controller:inst2|Selector108 ; yes                    ;
+; controller:inst2|nstate.S14_748                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S15_740                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S16_732                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S17_724                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S19_708                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S20_700                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S21_692                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S22_684                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S25_660                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S13_756                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S18_716                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector110 ; yes                    ;
+; controller:inst2|nstate.S1_852                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S2_844                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S3_836                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S4_828                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S5_820                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S6_812                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S7_804                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S8_796                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S23_676                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S24_668                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S0_860                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S9_788                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S10_780                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S11_772                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S12_764                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|mux_select3[2]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select3[3]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select3[1]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select3[0]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector45  ; yes                    ;
+; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector45  ; yes                    ;
+; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector45  ; yes                    ;
+; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector45  ; yes                    ;
+; Number of user-specified and inferred latches = 55  ;                              ;                        ;
 +-----------------------------------------------------+------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+-----------------------------------------+--------------------------------------+
-; Register name                           ; Reason for Removal                   ;
-+-----------------------------------------+--------------------------------------+
-; inst6                                   ; Stuck at GND due to stuck port clock ;
-; reg160bitV:inst1|Dout2[0]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[0]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[0]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[0]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[0]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[0]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[0]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[0]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[10]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[10]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[10]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[10]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[10]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[10]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[10]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[10]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[11]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[11]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[11]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[11]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[11]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[11]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[11]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[11]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[12]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[12]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[12]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[12]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[12]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[12]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[12]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[12]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[13]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[13]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[13]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[13]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[13]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[13]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[13]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[13]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[14]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[14]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[14]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[14]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[14]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[14]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[14]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[14]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[15]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[15]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[15]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[15]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[15]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[15]              ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[15]   ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[15]              ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[1]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[1]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[1]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[1]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[1]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[1]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[1]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[1]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[2]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[2]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[2]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[2]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[2]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[2]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[2]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[2]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[3]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[3]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[3]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[3]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[3]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[3]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[3]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[3]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[4]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[4]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[4]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[4]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[4]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[4]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[4]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[4]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[5]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[5]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[5]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout3[5]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout4[5]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout5[5]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out5[5]    ; Lost fanout                          ;
-; reg160bitV:inst1|Dout6[5]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout2[6]               ; Lost fanout                          ;
-; reg160bitV:inst1|Dout1[6]               ; Lost fanout                          ;
-; demux1to12_16bit:inst11|Data_out1[6]    ; Lost fanout                          ;
-; Total Number of Removed Registers = 294 ;                                      ;
-+-----------------------------------------+--------------------------------------+
-* Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
-
-
-+------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                              ;
-+----------------------------+--------------------+----------------------------------------+
-; Register name              ; Reason for Removal ; Registers Removed due to This Register ;
-+----------------------------+--------------------+----------------------------------------+
-; reg160bitV:inst1|Dout2[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[0]   ;
-; reg160bitV:inst1|Dout1[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[0]   ;
-; reg160bitV:inst1|Dout3[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[0]   ;
-; reg160bitV:inst1|Dout4[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[0]   ;
-; reg160bitV:inst1|Dout5[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[0]   ;
-; reg160bitV:inst1|Dout6[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[0]   ;
-; reg160bitV:inst1|Dout2[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[10]  ;
-; reg160bitV:inst1|Dout1[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[10]  ;
-; reg160bitV:inst1|Dout3[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[10]  ;
-; reg160bitV:inst1|Dout4[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[10]  ;
-; reg160bitV:inst1|Dout5[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[10]  ;
-; reg160bitV:inst1|Dout6[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[10]  ;
-; reg160bitV:inst1|Dout2[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[11]  ;
-; reg160bitV:inst1|Dout1[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[11]  ;
-; reg160bitV:inst1|Dout3[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[11]  ;
-; reg160bitV:inst1|Dout4[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[11]  ;
-; reg160bitV:inst1|Dout5[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[11]  ;
-; reg160bitV:inst1|Dout6[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[11]  ;
-; reg160bitV:inst1|Dout2[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[12]  ;
-; reg160bitV:inst1|Dout1[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[12]  ;
-; reg160bitV:inst1|Dout3[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[12]  ;
-; reg160bitV:inst1|Dout4[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[12]  ;
-; reg160bitV:inst1|Dout5[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[12]  ;
-; reg160bitV:inst1|Dout6[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[12]  ;
-; reg160bitV:inst1|Dout2[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[13]  ;
-; reg160bitV:inst1|Dout1[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[13]  ;
-; reg160bitV:inst1|Dout3[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[13]  ;
-; reg160bitV:inst1|Dout4[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[13]  ;
-; reg160bitV:inst1|Dout5[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[13]  ;
-; reg160bitV:inst1|Dout6[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[13]  ;
-; reg160bitV:inst1|Dout2[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[14]  ;
-; reg160bitV:inst1|Dout1[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[14]  ;
-; reg160bitV:inst1|Dout3[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[14]  ;
-; reg160bitV:inst1|Dout4[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[14]  ;
-; reg160bitV:inst1|Dout5[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[14]  ;
-; reg160bitV:inst1|Dout6[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[14]  ;
-; reg160bitV:inst1|Dout2[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[15]  ;
-; reg160bitV:inst1|Dout1[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[15]  ;
-; reg160bitV:inst1|Dout3[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[15]  ;
-; reg160bitV:inst1|Dout4[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[15]  ;
-; reg160bitV:inst1|Dout5[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[15]  ;
-; reg160bitV:inst1|Dout6[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[15]  ;
-; reg160bitV:inst1|Dout2[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[1]   ;
-; reg160bitV:inst1|Dout1[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[1]   ;
-; reg160bitV:inst1|Dout3[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[1]   ;
-; reg160bitV:inst1|Dout4[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[1]   ;
-; reg160bitV:inst1|Dout5[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[1]   ;
-; reg160bitV:inst1|Dout6[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[1]   ;
-; reg160bitV:inst1|Dout2[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[2]   ;
-; reg160bitV:inst1|Dout1[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[2]   ;
-; reg160bitV:inst1|Dout3[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[2]   ;
-; reg160bitV:inst1|Dout4[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[2]   ;
-; reg160bitV:inst1|Dout5[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[2]   ;
-; reg160bitV:inst1|Dout6[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[2]   ;
-; reg160bitV:inst1|Dout2[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[3]   ;
-; reg160bitV:inst1|Dout1[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[3]   ;
-; reg160bitV:inst1|Dout3[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[3]   ;
-; reg160bitV:inst1|Dout4[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[3]   ;
-; reg160bitV:inst1|Dout5[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[3]   ;
-; reg160bitV:inst1|Dout6[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[3]   ;
-; reg160bitV:inst1|Dout2[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[4]   ;
-; reg160bitV:inst1|Dout1[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[4]   ;
-; reg160bitV:inst1|Dout3[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[4]   ;
-; reg160bitV:inst1|Dout4[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[4]   ;
-; reg160bitV:inst1|Dout5[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[4]   ;
-; reg160bitV:inst1|Dout6[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[4]   ;
-; reg160bitV:inst1|Dout2[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[5]   ;
-; reg160bitV:inst1|Dout1[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[5]   ;
-; reg160bitV:inst1|Dout3[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[5]   ;
-; reg160bitV:inst1|Dout4[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[5]   ;
-; reg160bitV:inst1|Dout5[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[5]   ;
-; reg160bitV:inst1|Dout6[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[5]   ;
-; reg160bitV:inst1|Dout2[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[6]   ;
-; reg160bitV:inst1|Dout1[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[6]   ;
-; reg160bitV:inst1|Dout3[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[6]   ;
-; reg160bitV:inst1|Dout4[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[6]   ;
-; reg160bitV:inst1|Dout5[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[6]   ;
-; reg160bitV:inst1|Dout6[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[6]   ;
-; reg160bitV:inst1|Dout2[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[7]   ;
-; reg160bitV:inst1|Dout1[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[7]   ;
-; reg160bitV:inst1|Dout3[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[7]   ;
-; reg160bitV:inst1|Dout4[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[7]   ;
-; reg160bitV:inst1|Dout5[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[7]   ;
-; reg160bitV:inst1|Dout6[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[7]   ;
-; reg160bitV:inst1|Dout2[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[8]   ;
-; reg160bitV:inst1|Dout1[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[8]   ;
-; reg160bitV:inst1|Dout3[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[8]   ;
-; reg160bitV:inst1|Dout4[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[8]   ;
-; reg160bitV:inst1|Dout5[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[8]   ;
-; reg160bitV:inst1|Dout6[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[8]   ;
-; reg160bitV:inst1|Dout2[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[9]   ;
-; reg160bitV:inst1|Dout1[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[9]   ;
-; reg160bitV:inst1|Dout3[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[9]   ;
-; reg160bitV:inst1|Dout4[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[9]   ;
-; reg160bitV:inst1|Dout5[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[9]   ;
-; reg160bitV:inst1|Dout6[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[9]   ;
-; reg160bitV:inst1|Dout7[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out7[10]  ;
-; reg160bitV:inst1|Dout8[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out8[10]  ;
-; reg160bitV:inst1|Dout9[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out9[10]  ;
-; reg160bitV:inst1|Dout7[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out7[11]  ;
-+----------------------------+--------------------+----------------------------------------+
-* Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++---------------------------------------+--------------------------------------+
+; Register name                         ; Reason for Removal                   ;
++---------------------------------------+--------------------------------------+
+; inst6                                 ; Stuck at GND due to stuck port clock ;
+; controller:inst2|pstate~10            ; Lost fanout                          ;
+; controller:inst2|pstate~11            ; Lost fanout                          ;
+; controller:inst2|pstate~12            ; Lost fanout                          ;
+; controller:inst2|pstate~13            ; Lost fanout                          ;
+; controller:inst2|pstate~14            ; Lost fanout                          ;
+; Total Number of Removed Registers = 6 ;                                      ;
++---------------------------------------+--------------------------------------+
 
 
 +------------------------------------------------------+
@@ -570,12 +372,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 314   ;
+; Total registers                              ; 442   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 26    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 256   ;
+; Number of registers using Clock Enable       ; 384   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -892,7 +694,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 03 23:22:53 2016
+    Info: Processing started: Sun Dec 04 00:15:27 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -944,11 +746,12 @@ Warning (10240): Verilog HDL Always Construct warning at controller.v(32): infer
 Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "demux16bit_sel2", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "reg96_ld", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "reg106_ld", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "final_mux_sel", which holds its previous value in one or more paths through the always construct
 Warning (10034): Output port "output_set" at controller.v(6) has no driver
-Warning (10034): Output port "final_mux_sel[3]" at controller.v(13) has no driver
-Warning (10034): Output port "final_mux_sel[2]" at controller.v(13) has no driver
-Warning (10034): Output port "final_mux_sel[1]" at controller.v(13) has no driver
-Warning (10034): Output port "final_mux_sel[0]" at controller.v(13) has no driver
+Info (10041): Inferred latch for "final_mux_sel[0]" at controller.v(32)
+Info (10041): Inferred latch for "final_mux_sel[1]" at controller.v(32)
+Info (10041): Inferred latch for "final_mux_sel[2]" at controller.v(32)
+Info (10041): Inferred latch for "final_mux_sel[3]" at controller.v(32)
 Info (10041): Inferred latch for "reg106_ld" at controller.v(32)
 Info (10041): Inferred latch for "reg96_ld" at controller.v(32)
 Info (10041): Inferred latch for "demux16bit_sel2[0]" at controller.v(32)
@@ -1014,7 +817,6 @@ Info: Instantiated megafunction "lpm_mux1:inst13|lpm_mux:lpm_mux_component" with
 Info: Found 1 design units, including 1 entities, in source file db/mux_mcc.tdf
     Info: Found entity 1: mux_mcc
 Info: Elaborating entity "mux_mcc" for hierarchy "lpm_mux1:inst13|lpm_mux:lpm_mux_component|mux_mcc:auto_generated"
-Info: Elaborating entity "reg160bitV" for hierarchy "reg160bitV:inst1"
 Info: Elaborating entity "demux1to12_16bit" for hierarchy "demux1to12_16bit:inst11"
 Info: Elaborating entity "MAC" for hierarchy "MAC:inst4"
 Info: Elaborating entity "MAC_Checker" for hierarchy "MAC:inst4|MAC_Checker:inst1"
@@ -1073,124 +875,40 @@ Info: Ignored 220 buffer(s)
     Info: Ignored 220 SOFT buffer(s)
 Info: Ignored 182 buffer(s)
     Info: Ignored 182 SOFT buffer(s)
-Warning: Latch controller:inst2|reg106_ld has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S6
+Warning: Latch controller:inst2|final_mux_sel[3] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S14
+Warning: Latch controller:inst2|final_mux_sel[2] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S14
+Warning: Latch controller:inst2|final_mux_sel[0] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S15
+Warning: Latch controller:inst2|final_mux_sel[1] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S16
+Warning: Latch controller:inst2|demux16bit_sel1[0] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S5
+Warning: Latch controller:inst2|demux16bit_sel1[1] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S5
+Warning: Latch controller:inst2|demux16bit_sel1[2] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S14
 Warning: Latch controller:inst2|MAC_Reset1 has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S4
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S16
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "output_rdy" is stuck at GND
-Info: 293 registers lost all their fanouts during netlist optimizations. The first 100 are displayed below.
-    Info: Register "reg160bitV:inst1|Dout2[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout4[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout5[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout6[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout2[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout1[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "reg160bitV:inst1|Dout3[6]" lost all its fanouts during netlist optimizations.
-    Info: List truncated at 100 items
+Info: 5 registers lost all their fanouts during netlist optimizations. The first 5 are displayed below.
+    Info: Register "controller:inst2|pstate~10" lost all its fanouts during netlist optimizations.
+    Info: Register "controller:inst2|pstate~11" lost all its fanouts during netlist optimizations.
+    Info: Register "controller:inst2|pstate~12" lost all its fanouts during netlist optimizations.
+    Info: Register "controller:inst2|pstate~13" lost all its fanouts during netlist optimizations.
+    Info: Register "controller:inst2|pstate~14" lost all its fanouts during netlist optimizations.
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
-Info: Implemented 960 device resources after synthesis - the final resource count might be different
+Info: Implemented 1230 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
-    Info: Implemented 94 output pins
-    Info: Implemented 854 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Implemented 82 output pins
+    Info: Implemented 1136 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 43 warnings
     Info: Peak virtual memory: 228 megabytes
-    Info: Processing ended: Sat Dec 03 23:22:57 2016
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Sun Dec 04 00:15:33 2016
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 
