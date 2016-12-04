@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Sat Dec 03 18:19:55 2016
+Sat Dec 03 21:38:00 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -56,13 +56,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 03 18:19:55 2016        ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 03 21:38:00 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 773                                          ;
-; Total pins                  ; 86                                           ;
+; Total logic elements        ; 806                                          ;
+; Total pins                  ; 90                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
 +-----------------------------+----------------------------------------------+
@@ -183,33 +183,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 773   ;
-;     -- Combinational with no register       ; 499   ;
-;     -- Register only                        ; 241   ;
+; Total logic elements                        ; 806   ;
+;     -- Combinational with no register       ; 525   ;
+;     -- Register only                        ; 248   ;
 ;     -- Combinational with a register        ; 33    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 287   ;
-;     -- 3 input functions                    ; 165   ;
-;     -- 2 input functions                    ; 66    ;
+;     -- 4 input functions                    ; 298   ;
+;     -- 3 input functions                    ; 185   ;
+;     -- 2 input functions                    ; 61    ;
 ;     -- 1 input functions                    ; 14    ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 661   ;
+;     -- normal mode                          ; 694   ;
 ;     -- arithmetic mode                      ; 112   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 18    ;
+;     -- asynchronous clear/load mode         ; 25    ;
 ;                                             ;       ;
-; Total registers                             ; 274   ;
+; Total registers                             ; 281   ;
 ; Total logic cells in carry chains           ; 124   ;
-; I/O pins                                    ; 86    ;
+; I/O pins                                    ; 90    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 274   ;
-; Total fan-out                               ; 2603  ;
-; Average fan-out                             ; 3.03  ;
+; Maximum fan-out                             ; 281   ;
+; Total fan-out                               ; 2722  ;
+; Average fan-out                             ; 3.04  ;
 +---------------------------------------------+-------+
 
 
@@ -218,7 +218,7 @@ applicable agreement for further details.
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                             ; Library Name ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |transmult                                   ; 773 (0)     ; 274          ; 0          ; 86   ; 0            ; 499 (0)      ; 241 (0)           ; 33 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
+; |transmult                                   ; 806 (0)     ; 281          ; 0          ; 90   ; 0            ; 525 (0)      ; 248 (0)           ; 33 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
 ;    |MAC:inst4|                               ; 142 (0)     ; 32           ; 0          ; 0    ; 0            ; 110 (0)      ; 16 (0)            ; 16 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
 ;       |MAC_Checker:inst1|                    ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |transmult|MAC:inst4|MAC_Checker:inst1                                                                          ; work         ;
 ;       |lpm_add_sub0:inst6|                   ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6                                                                         ; work         ;
@@ -237,7 +237,7 @@ applicable agreement for further details.
 ;       |lpm_mult0:inst|                       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst                                                                             ; work         ;
 ;          |lpm_mult:lpm_mult_component|       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
 ;             |mult_0km:auto_generated|        ; 95 (95)     ; 0            ; 0          ; 0    ; 0            ; 95 (95)      ; 0 (0)             ; 0 (0)            ; 46 (46)         ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
-;    |controller:inst2|                        ; 86 (86)     ; 18           ; 0          ; 0    ; 0            ; 68 (68)      ; 17 (17)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
+;    |controller:inst2|                        ; 119 (119)   ; 25           ; 0          ; 0    ; 0            ; 94 (94)      ; 24 (24)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
 ;    |demux1to12:inst|                         ; 108 (108)   ; 96           ; 0          ; 0    ; 0            ; 12 (12)      ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
 ;    |lpm_mux0:inst7|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                                                       ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component                                                             ; work         ;
@@ -254,30 +254,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                                                         ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; Name       ; pstate.S17 ; pstate.S16 ; pstate.S15 ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
-; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
-; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
-; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
-; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S13 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S14 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S15 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S16 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S17 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                                                                                                                                                    ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name       ; pstate.S24 ; pstate.S23 ; pstate.S22 ; pstate.S21 ; pstate.S20 ; pstate.S19 ; pstate.S18 ; pstate.S17 ; pstate.S16 ; pstate.S15 ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S13 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S14 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S15 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S16 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S17 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S18 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S19 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S20 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S21 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S22 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S23 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S24 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -285,44 +292,51 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+-----------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
 +-----------------------------------------------------+-----------------------------+------------------------+
-; controller:inst2|MAC_Reset2                         ; controller:inst2|Selector68 ; yes                    ;
-; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector31 ; yes                    ;
-; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector31 ; yes                    ;
-; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector31 ; yes                    ;
-; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector31 ; yes                    ;
+; controller:inst2|MAC_Reset2                         ; controller:inst2|Selector84 ; yes                    ;
+; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector33 ; yes                    ;
+; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector33 ; yes                    ;
+; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector33 ; yes                    ;
+; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector33 ; yes                    ;
 ; controller:inst2|mux_select2[3]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select2[0]                     ; controller:inst2|Selector13 ; yes                    ;
-; controller:inst2|mux_select2[1]                     ; controller:inst2|Selector13 ; yes                    ;
-; controller:inst2|mux_select2[2]                     ; controller:inst2|Selector13 ; yes                    ;
+; controller:inst2|mux_select2[0]                     ; controller:inst2|Selector15 ; yes                    ;
+; controller:inst2|mux_select2[1]                     ; controller:inst2|Selector15 ; yes                    ;
+; controller:inst2|mux_select2[2]                     ; controller:inst2|Selector15 ; yes                    ;
 ; controller:inst2|mux_select3[3]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select3[0]                     ; controller:inst2|Selector13 ; yes                    ;
-; controller:inst2|mux_select3[1]                     ; controller:inst2|Selector13 ; yes                    ;
-; controller:inst2|mux_select3[2]                     ; controller:inst2|Selector13 ; yes                    ;
-; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector70 ; yes                    ;
-; controller:inst2|reg96_ld                           ; controller:inst2|WideOr48   ; yes                    ;
-; controller:inst2|nstate.S7_517                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S17_437                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S0_573                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S8_509                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S1_565                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S2_557                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S3_549                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S4_541                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S5_533                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S6_525                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S13_469                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S16_445                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S9_501                      ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S10_493                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S11_485                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S12_477                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S15_453                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|nstate.S14_461                     ; controller:inst2|pstate.S17 ; yes                    ;
-; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector21 ; yes                    ;
-; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector21 ; yes                    ;
-; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector21 ; yes                    ;
-; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector21 ; yes                    ;
-; Number of user-specified and inferred latches = 37  ;                             ;                        ;
+; controller:inst2|mux_select3[0]                     ; controller:inst2|Selector15 ; yes                    ;
+; controller:inst2|mux_select3[1]                     ; controller:inst2|Selector15 ; yes                    ;
+; controller:inst2|mux_select3[2]                     ; controller:inst2|Selector15 ; yes                    ;
+; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector86 ; yes                    ;
+; controller:inst2|reg96_ld                           ; controller:inst2|WideOr66   ; yes                    ;
+; controller:inst2|nstate.S7_637                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S10_613                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S13_589                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S16_565                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S19_541                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S22_517                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S1_685                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S2_677                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S3_669                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S4_661                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S5_653                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S6_645                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S9_621                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S12_597                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S15_573                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S18_549                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S21_525                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S24_501                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S0_693                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S8_629                      ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S17_557                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S20_533                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S23_509                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S11_605                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|nstate.S14_581                     ; controller:inst2|pstate.S24 ; yes                    ;
+; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector23 ; yes                    ;
+; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector23 ; yes                    ;
+; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector23 ; yes                    ;
+; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector23 ; yes                    ;
+; Number of user-specified and inferred latches = 44  ;                             ;                        ;
 +-----------------------------------------------------+-----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -442,10 +456,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 274   ;
+; Total registers                              ; 281   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 18    ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 224   ;
 ; Number of registers using Preset             ; 0     ;
@@ -493,6 +507,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; S15            ; 01111 ; Unsigned Binary                      ;
 ; S16            ; 10000 ; Unsigned Binary                      ;
 ; S17            ; 10001 ; Unsigned Binary                      ;
+; S18            ; 10010 ; Unsigned Binary                      ;
+; S19            ; 10011 ; Unsigned Binary                      ;
+; S20            ; 10100 ; Unsigned Binary                      ;
+; S21            ; 10101 ; Unsigned Binary                      ;
+; S22            ; 10110 ; Unsigned Binary                      ;
+; S23            ; 10111 ; Unsigned Binary                      ;
+; S24            ; 11000 ; Unsigned Binary                      ;
 +----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -756,7 +777,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 03 18:19:50 2016
+    Info: Processing started: Sat Dec 03 21:37:56 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -830,6 +851,13 @@ Info (10041): Inferred latch for "demuxto12_sel[0]" at controller.v(31)
 Info (10041): Inferred latch for "demuxto12_sel[1]" at controller.v(31)
 Info (10041): Inferred latch for "demuxto12_sel[2]" at controller.v(31)
 Info (10041): Inferred latch for "demuxto12_sel[3]" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S24" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S23" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S22" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S21" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S20" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S19" at controller.v(31)
+Info (10041): Inferred latch for "nstate.S18" at controller.v(31)
 Info (10041): Inferred latch for "nstate.S17" at controller.v(31)
 Info (10041): Inferred latch for "nstate.S16" at controller.v(31)
 Info (10041): Inferred latch for "nstate.S15" at controller.v(31)
@@ -1221,24 +1249,10 @@ Info: Ignored 220 buffer(s)
     Info: Ignored 220 SOFT buffer(s)
 Info: Ignored 156 buffer(s)
     Info: Ignored 156 SOFT buffer(s)
-Info: Duplicate LATCH primitives merged into single LATCH primitive
-    Info: Duplicate LATCH primitive "controller:inst2|mux_select3[3]" merged with LATCH primitive "controller:inst2|mux_select2[3]"
-Warning: Latch controller:inst2|MAC_Reset2 has unsafe behavior
+Warning: Latch controller:inst2|mux_select3[3] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S0
+Warning: Latch controller:inst2|MAC_Reset1 has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S7
-Warning: Latch controller:inst2|mux_select2[3] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|WideOr40
-Warning: Latch controller:inst2|mux_select2[0] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S7
-Warning: Latch controller:inst2|mux_select2[1] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S8
-Warning: Latch controller:inst2|mux_select2[2] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S7
-Warning: Latch controller:inst2|mux_select3[0] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S8
-Warning: Latch controller:inst2|mux_select3[1] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S7
-Warning: Latch controller:inst2|mux_select3[2] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S5
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "output_rdy" is stuck at GND
     Warning (13410): Pin "dout[15]" is stuck at GND
@@ -1265,14 +1279,14 @@ Info: 5 registers lost all their fanouts during netlist optimizations. The first
     Info: Register "controller:inst2|pstate~14" lost all its fanouts during netlist optimizations.
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
-Info: Implemented 859 device resources after synthesis - the final resource count might be different
+Info: Implemented 896 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
-    Info: Implemented 74 output pins
-    Info: Implemented 773 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 198 warnings
+    Info: Implemented 78 output pins
+    Info: Implemented 806 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 186 warnings
     Info: Peak virtual memory: 229 megabytes
-    Info: Processing ended: Sat Dec 03 18:19:55 2016
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Sat Dec 03 21:38:00 2016
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 
