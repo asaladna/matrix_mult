@@ -20,7 +20,7 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 	reg [4:0] pstate, nstate;
 	parameter S0=5'b00000, S1=5'b00001, S2=5'b00010, S3=5'b00011, S4=5'b00100,S5=5'b00101,S6=5'b00110, S7=5'b00111,S8=5'b01000,
 		S9=5'b01001, S10=5'b01010, S11=5'b01011, S12=5'b01100, S13 = 5'b01101, S14 = 5'b01110, S15 = 5'b01111, S16 = 5'b10000
-			,S16 = 5'b10001;
+			,S17 = 5'b10001;
 		
 	always @ (negedge clk or posedge reset)
 		begin
@@ -48,9 +48,12 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					if (cf_load == 1'b1)
 						begin
 							MAC_Reset1 = 1'b0;
+							MAC_Reset2 = 1'b0;
 							nstate = S1; //next state
 							demuxto12_sel=4'b1111;
 							mux_select1=4'b1111;
+							mux_select2=4'b1111;
+							mux_select3=4'b1111;
 							 //input number for demuxer
 							reg96_ld = 1'b1; // registers are open
 							//mux_select1 = 4'b0001; // mux that has reg value is selected
@@ -100,7 +103,12 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					demuxto12_sel=4'b0100;
 					mux_select1 = 4'b0011;
 					reg96_ld = 1'b1;
-					MAC_Reset1 = 1'b0;	
+					MAC_Reset1 = 1'b0;
+					
+					mux_select2 = 4'b0000;
+					mux_select3 = 4'b0011;
+					
+						
 				end	
 
 				S6:begin
@@ -109,7 +117,11 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					demuxto12_sel=4'b0101;
 					mux_select1 = 4'b0100;
 					reg96_ld = 1'b1;
-					MAC_Reset1 = 1'b0;	
+					MAC_Reset1 = 1'b0;
+						
+					MAC_Reset2 = 1'b1;
+					mux_select2 = 4'b0100;
+					mux_select3 = 4'b0001;
 				end	
 			
 				S7:begin
@@ -118,6 +130,11 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					mux_select1 = 4'b0101;
 					reg96_ld = 1'b1;
 					MAC_Reset1 = 1'b1;	
+					
+					mux_select2 = 4'b0010;
+					mux_select3 = 4'b0101;
+					MAC_Reset2 = 1'b1;
+
 				end	
 				
 				S8:begin
@@ -126,7 +143,10 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					mux_select1 = 4'b0110;
 					reg96_ld = 1'b1;
 					MAC_Reset1 = 1'b0;
-					
+					MAC_Reset2 = 1'b0;			
+
+					mux_select2 = 4'b0000;//1
+					mux_select3 = 4'b0110;//7
 				end
 			
 					
@@ -135,7 +155,9 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					demuxto12_sel=4'b1000;
 					mux_select1 = 4'b0111;
 					reg96_ld = 1'b1;
-
+					
+					mux_select2 = 4'b0001;//2
+					mux_select3 = 4'b0111;//8
 				end	
 				S10:begin
 					nstate = S11;
