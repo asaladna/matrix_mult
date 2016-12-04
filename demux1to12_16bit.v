@@ -32,15 +32,6 @@ module demux1to12_16bit( Data_in1, Data_in2, sel1, sel2, Data_out1, Data_out2, D
 				else if (sel2 == 3'b111) Data_out11 = Data_in2;
 
 
-			/*    
-				3'b000 : Data_out5 = Data_in2;
-				3'b001 : Data_out6 = Data_in2;
-				3'b010 : Data_out7 = Data_in2;
-				
-				3'b011 : Data_out8 = Data_in2;
-				3'b100 : Data_out9 = Data_in2;
-				3'b101 : Data_out10 = Data_in2;
-	 */
 
 		end
     

@@ -15,7 +15,7 @@ module demux1to12_16bit( Data_in1, Data_in2, sel1, sel2, Data_out1, Data_out2, D
     reg [15:0] Data_out1, Data_out2, Data_out3, Data_out4, Data_out5, Data_out6,
 					Data_out7, Data_out8, Data_out9, Data_out10, Data_out11, Data_out12;
 
-    always @(posedge clk)
+    always @(negedge clk)
 		begin
 				if(sel1 == 3'b000) Data_out1 = Data_in1;
 				else if(sel1 == 3'b001) Data_out2 = Data_in1;

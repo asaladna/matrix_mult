@@ -9,7 +9,7 @@ module pos_delay( din, dout, clk);
 
     always @(posedge clk)
 		begin
-			dout = din;
+			dout <= din;
 		end
 		
 endmodule

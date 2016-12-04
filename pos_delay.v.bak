@@ -11,3 +11,5 @@ module pos_delay( din, dout, clk);
 		begin
 			dout = din;
 		end
+		
+endmodule

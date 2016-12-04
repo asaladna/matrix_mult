@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Sun Dec 04 15:25:32 2016
+Analysis & Synthesis Status : Successful - Sun Dec 04 17:11:45 2016
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
 Revision Name : finalPoject
 Top-level Entity Name : transmult
 Family : MAX II
-Total logic elements : 1,028
+Total logic elements : 1,018
 Total pins : 94
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

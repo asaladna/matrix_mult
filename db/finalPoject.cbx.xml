@@ -8,6 +8,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|transmult|MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_0km.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9bc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|transmult|lpm_mux0:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9bc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|transmult|lpm_mux1:inst13|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_eae.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|transmult|lpm_mux1:inst13|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_fae.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
