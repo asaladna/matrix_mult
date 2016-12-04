@@ -57,7 +57,7 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 							mux_select3=4'b1111;
 							demux16bit_sel1 = 3'b111;
 							demux16bit_sel2 = 3'b111;
-							final_mux_sel = 4'b1111;		
+							final_mux_sel = 4'b1011;		
 							 //input number for demuxer
 							reg96_ld = 1'b1; // registers are open
 							reg106_ld = 1'b0;
@@ -210,7 +210,6 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					demuxto12_sel=4'b1011;
 					mux_select1 = 4'b1010;
 
-					//mux_select1 = 4'b1111;
 					reg96_ld = 1'b1;
 					MAC_Reset1 = 1'b0;
 					

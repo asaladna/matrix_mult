@@ -2115,8 +2115,8 @@ VECTOR("C:/altera/90sp2/quartus/finalProject/db/finalPoject.sim.cvwf")
 VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 4798179;
-		ZEND = 8731948;
+		ZBEGIN = 758475;
+		ZEND = 4692244;
 		NUMERATOR = 1162;
 		DENOMINATOR = 3831551;
 		TOP_INDEX = 0;
@@ -2666,144 +2666,8 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test3";
-		INDEX = 67;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[15]";
-		INDEX = 68;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[14]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[13]";
-		INDEX = 70;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[12]";
-		INDEX = 71;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[11]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[10]";
-		INDEX = 73;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[9]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[8]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[7]";
-		INDEX = 76;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[6]";
-		INDEX = 77;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[5]";
-		INDEX = 78;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[4]";
-		INDEX = 79;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[3]";
-		INDEX = 80;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[2]";
-		INDEX = 81;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[1]";
-		INDEX = 82;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "test3[0]";
-		INDEX = 83;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "load_in";
-		INDEX = 84;
+		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2811,7 +2675,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd";
-		INDEX = 85;
+		INDEX = 68;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2819,7 +2683,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[7]";
-		INDEX = 86;
+		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2827,7 +2691,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[6]";
-		INDEX = 87;
+		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2835,7 +2699,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[5]";
-		INDEX = 88;
+		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2843,7 +2707,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[4]";
-		INDEX = 89;
+		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2851,7 +2715,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[3]";
-		INDEX = 90;
+		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2859,7 +2723,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[2]";
-		INDEX = 91;
+		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2867,7 +2731,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[1]";
-		INDEX = 92;
+		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2875,7 +2739,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "MACsqrd[0]";
-		INDEX = 93;
+		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2883,7 +2747,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4";
-		INDEX = 94;
+		INDEX = 77;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2891,7 +2755,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[7]";
-		INDEX = 95;
+		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2899,7 +2763,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[6]";
-		INDEX = 96;
+		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2907,7 +2771,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[5]";
-		INDEX = 97;
+		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2915,7 +2779,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[4]";
-		INDEX = 98;
+		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2923,7 +2787,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[3]";
-		INDEX = 99;
+		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2931,7 +2795,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[2]";
-		INDEX = 100;
+		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2939,7 +2803,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[1]";
-		INDEX = 101;
+		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2947,7 +2811,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/db/finalPoject.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "test4[0]";
-		INDEX = 102;
+		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

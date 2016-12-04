@@ -18,6 +18,7 @@ FUNCTION lpm_mux1
 	clock,
 	data0x[15..0],
 	data10x[15..0],
+	data11x[15..0],
 	data1x[15..0],
 	data2x[15..0],
 	data3x[15..0],
