@@ -221,6 +221,7 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 				end	
 				S13:begin
 					nstate = S14;
+					demuxto12_sel=4'b1111;
 					mux_select1 = 4'b1011;
 					MAC_Reset1 = 1'b1;
 					reg96_ld = 1'b0;

@@ -30,8 +30,13 @@ module demux1to12(Data_in,sel, Data_out1, Data_out2, Data_out3, Data_out4, Data_
         else if(sel == 4'b1000) Data_out9 = Data_in;
         else if(sel == 4'b1001) Data_out10 = Data_in;
         else if(sel == 4'b1010) Data_out11 = Data_in;
-        else if(sel == 4'b1011) Data_out12 = Data_in;        
+               
  
+    end
+    
+    always @ (negedge clk)
+    begin
+		if(sel == 4'b1011) Data_out12 = Data_in; 
     end
 
 endmodule
