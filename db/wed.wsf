@@ -1280,8 +1280,8 @@ VECTOR("C:/altera/90sp2/quartus/finalProject/transmult_gold.vwf")
 VECTOR("C:/altera/90sp2/quartus/finalProject/db/finalPoject.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 2822473;
-		ZEND = 5459274;
+		ZBEGIN = 912828;
+		ZEND = 3549629;
 		NUMERATOR = 1193;
 		DENOMINATOR = 2636801;
 		TOP_INDEX = 9;

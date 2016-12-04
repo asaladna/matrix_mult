@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Sat Dec 03 21:38:00 2016
+Sat Dec 03 22:05:21 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -15,22 +15,23 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   7. State Machine - |transmult|controller:inst2|pstate
   8. User-Specified and Inferred Latches
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Source assignments for MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
- 12. Source assignments for MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
- 13. Parameter Settings for User Entity Instance: controller:inst2
- 14. Parameter Settings for User Entity Instance: lpm_mux1:inst13|lpm_mux:lpm_mux_component
- 15. Parameter Settings for User Entity Instance: MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
- 16. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst
- 17. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component
- 18. Parameter Settings for User Entity Instance: lpm_mux0:inst7|lpm_mux:lpm_mux_component
- 19. Parameter Settings for User Entity Instance: MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
- 20. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst
- 21. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component
- 22. Parameter Settings for User Entity Instance: lpm_mux0:inst9|lpm_mux:lpm_mux_component
- 23. Parameter Settings for User Entity Instance: lpm_mux0:inst8|lpm_mux:lpm_mux_component
- 24. lpm_mult Parameter Settings by Entity Instance
- 25. Analysis & Synthesis Messages
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Source assignments for MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
+ 13. Source assignments for MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component|addcore:adder
+ 14. Parameter Settings for User Entity Instance: controller:inst2
+ 15. Parameter Settings for User Entity Instance: lpm_mux1:inst13|lpm_mux:lpm_mux_component
+ 16. Parameter Settings for User Entity Instance: MAC:inst4|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
+ 17. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst
+ 18. Parameter Settings for User Entity Instance: MAC:inst4|lpm_mult0:inst|lpm_mult:lpm_mult_component
+ 19. Parameter Settings for User Entity Instance: lpm_mux0:inst7|lpm_mux:lpm_mux_component
+ 20. Parameter Settings for User Entity Instance: MAC:inst5|lpm_add_sub0:inst6|lpm_add_sub:lpm_add_sub_component
+ 21. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst
+ 22. Parameter Settings for User Entity Instance: MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component
+ 23. Parameter Settings for User Entity Instance: lpm_mux0:inst9|lpm_mux:lpm_mux_component
+ 24. Parameter Settings for User Entity Instance: lpm_mux0:inst8|lpm_mux:lpm_mux_component
+ 25. lpm_mult Parameter Settings by Entity Instance
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -56,7 +57,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 03 21:38:00 2016        ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 03 22:05:21 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
@@ -137,17 +138,14 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
-; reg1bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg1bit.bdf                        ;
 ; transmult.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/transmult.bdf                      ;
 ; MAC.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/MAC.bdf                            ;
 ; controller.v                     ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/controller.v                       ;
-; reg8bit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg8bit.bdf                        ;
 ; demux1to12.v                     ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/demux1to12.v                       ;
 ; demux1to12_16bit.v               ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/demux1to12_16bit.v                 ;
-; reg16bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg16bit.bdf                       ;
-; reg160bitFinal.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/altera/90sp2/quartus/finalProject/reg160bitFinal.bdf                 ;
 ; reg96bitV.v                      ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/reg96bitV.v                        ;
 ; MAC_Checker.v                    ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/MAC_Checker.v                      ;
+; reg160bitV.v                     ; yes             ; User Verilog HDL File              ; C:/altera/90sp2/quartus/finalProject/reg160bitV.v                       ;
 ; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/altera/90sp2/quartus/finalProject/lpm_mux1.tdf                       ;
 ; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.inc             ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.tdf             ;
@@ -156,7 +154,6 @@ applicable agreement for further details.
 ; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/bypassff.inc            ;
 ; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/altshift.inc            ;
 ; db/mux_mcc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/altera/90sp2/quartus/finalProject/db/mux_mcc.tdf                     ;
-; 21mux.bdf                        ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/others/maxplus2/21mux.bdf             ;
 ; lpm_add_sub0.tdf                 ; yes             ; Auto-Found Wizard-Generated File   ; C:/altera/90sp2/quartus/finalProject/lpm_add_sub0.tdf                   ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_add_sub.inc         ;
 ; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;
@@ -341,113 +338,307 @@ Encoding Type:  One-Hot
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                             ;
-+-------------------------------------------------------------------------+--------------------------------------+
-; Register name                                                           ; Reason for Removal                   ;
-+-------------------------------------------------------------------------+--------------------------------------+
-; inst6                                                                   ; Stuck at GND due to stuck port clock ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst6|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst7|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst5|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst4|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst3|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst2|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst|inst1    ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst1|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst4|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst3|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst2|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst1|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst6|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst7|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst5|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst4|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst3|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst2|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst|inst1   ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst1|inst1  ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst6|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst7|inst1 ; Stuck at GND due to stuck port clear ;
-; reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst5|inst1 ; Stuck at GND due to stuck port clear ;
-; Total Number of Removed Registers = 166                                 ;                                      ;
-+-------------------------------------------------------------------------+--------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++-------------------------------------------+---------------------------------------------+
+; Register name                             ; Reason for Removal                          ;
++-------------------------------------------+---------------------------------------------+
+; inst6                                     ; Stuck at GND due to stuck port clock        ;
+; reg160bitV:inst1|Dout10[0..15]            ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout9[0..15]             ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout8[0..15]             ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout7[0..15]             ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout6[0..15]             ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout5[0]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[0]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[1]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[1]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[2]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[2]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[3]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[3]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[4]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[4]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[5]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[5]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[6]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[6]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[7]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[7]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[8]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[8]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[9]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[9]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[10]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[10]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[11]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[11]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[12]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[12]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[13]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[13]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[14]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[14]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout5[15]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out5[15]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout4[0..15]             ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout3[0..15]             ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout2[0..15]             ; Stuck at GND due to stuck port clock_enable ;
+; reg160bitV:inst1|Dout1[0]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[0]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[1]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[1]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[2]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[2]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[3]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[3]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[4]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[4]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[5]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[5]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[6]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[6]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[7]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[7]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[8]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[8]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[9]                 ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[9]      ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[10]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[10]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[11]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[11]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[12]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[12]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[13]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[13]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[14]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[14]     ; Lost fanout                                 ;
+; reg160bitV:inst1|Dout1[15]                ; Stuck at GND due to stuck port clock_enable ;
+; demux1to12_16bit:inst11|Data_out1[15]     ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out10[0..15] ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out9[0..15]  ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out8[0..15]  ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out7[0..15]  ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out6[0..15]  ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out4[0..15]  ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out3[0..15]  ; Lost fanout                                 ;
+; demux1to12_16bit:inst11|Data_out2[0..15]  ; Lost fanout                                 ;
+; controller:inst2|pstate~10                ; Lost fanout                                 ;
+; controller:inst2|pstate~11                ; Lost fanout                                 ;
+; controller:inst2|pstate~12                ; Lost fanout                                 ;
+; controller:inst2|pstate~13                ; Lost fanout                                 ;
+; controller:inst2|pstate~14                ; Lost fanout                                 ;
+; Total Number of Removed Registers = 326   ;                                             ;
++-------------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                           ;
++-----------------------------+--------------------------------+----------------------------------------+
+; Register name               ; Reason for Removal             ; Registers Removed due to This Register ;
++-----------------------------+--------------------------------+----------------------------------------+
+; reg160bitV:inst1|Dout10[0]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[0]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[1]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[1]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[2]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[2]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[3]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[3]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[4]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[4]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[5]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[5]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[6]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[6]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[7]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[7]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[8]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[8]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[9]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[9]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[10] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[10] ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[11] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[11] ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[12] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[12] ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[13] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[13] ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[14] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[14] ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout10[15] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[15] ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[0]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[1]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[2]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[3]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[4]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[5]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[6]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[7]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[8]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[9]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[10]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[11]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[12]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[13]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[14]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout9[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[15]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[0]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[1]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[2]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[3]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[4]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[5]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[6]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[7]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[8]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[9]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[10]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[11]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[12]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[13]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[14]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout8[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[15]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[0]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[1]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[2]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[3]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[4]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[5]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[6]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[7]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[8]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[9]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[10]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[11]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[12]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[13]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[14]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout7[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[15]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[0]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[1]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[2]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[3]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[4]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[5]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[6]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[7]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[8]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[9]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[10]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[11]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[12]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[13]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[14]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout6[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[15]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[0]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[1]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[2]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[3]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[4]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[5]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[6]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[7]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[8]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[9]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[10]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[11]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[12]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[13]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[14]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout5[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[15]  ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout4[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[0]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout4[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[1]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout4[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[2]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
+; reg160bitV:inst1|Dout4[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[3]   ;
+;                             ; due to stuck port clock_enable ;                                        ;
++-----------------------------+--------------------------------+----------------------------------------+
 * Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
@@ -777,7 +968,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 03 21:37:56 2016
+    Info: Processing started: Sat Dec 03 22:05:18 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -807,6 +998,8 @@ Info: Found 1 design units, including 1 entities, in source file MACV.v
     Info: Found entity 1: MACV
 Info: Found 1 design units, including 1 entities, in source file dontCareFilter.v
     Info: Found entity 1: dontCareFilter
+Info: Found 1 design units, including 1 entities, in source file reg160bitV.v
+    Info: Found entity 1: reg160bitV
 Info: Elaborating entity "transmult" for the top level hierarchy
 Warning: Port "CLK" of type SRFF and instance "inst6" is missing source signal
 Warning: Pin "load_input" not connected
@@ -891,185 +1084,8 @@ Info: Instantiated megafunction "lpm_mux1:inst13|lpm_mux:lpm_mux_component" with
 Info: Found 1 design units, including 1 entities, in source file db/mux_mcc.tdf
     Info: Found entity 1: mux_mcc
 Info: Elaborating entity "mux_mcc" for hierarchy "lpm_mux1:inst13|lpm_mux:lpm_mux_component|mux_mcc:auto_generated"
-Info: Elaborating entity "reg160bitFinal" for hierarchy "reg160bitFinal:inst12"
-Warning: Block or symbol "reg16bit" of instance "inst14" overlaps another block or symbol
-Info: Elaborating entity "reg16bit" for hierarchy "reg160bitFinal:inst12|reg16bit:inst17"
-Info: Elaborating entity "reg8bit" for hierarchy "reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst"
-Info: Elaborating entity "reg1bit" for hierarchy "reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst1"
-Info: Elaborating entity "21mux" for hierarchy "reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst1|21mux:inst6"
-Info: Elaborated megafunction instantiation "reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst1|21mux:inst6"
+Info: Elaborating entity "reg160bitV" for hierarchy "reg160bitV:inst1"
 Info: Elaborating entity "demux1to12_16bit" for hierarchy "demux1to12_16bit:inst11"
-Warning (10270): Verilog HDL Case Statement warning at demux1to12_16bit.v(28): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out4", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out3", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out2", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out10", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out9", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out8", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out7", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out6", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at demux1to12_16bit.v(18): inferring latch(es) for variable "Data_out5", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "Data_out5[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out5[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out6[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out7[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out8[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out9[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out10[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out1[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out2[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out3[15]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[0]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[1]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[2]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[3]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[4]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[5]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[6]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[7]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[8]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[9]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[10]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[11]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[12]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[13]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[14]" at demux1to12_16bit.v(18)
-Info (10041): Inferred latch for "Data_out4[15]" at demux1to12_16bit.v(18)
 Info: Elaborating entity "MAC" for hierarchy "MAC:inst4"
 Info: Elaborating entity "MAC_Checker" for hierarchy "MAC:inst4|MAC_Checker:inst1"
 Warning: Using design file lpm_add_sub0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -1123,128 +1139,6 @@ Info: Found 1 design units, including 1 entities, in source file db/mux_9bc.tdf
 Info: Elaborating entity "mux_9bc" for hierarchy "lpm_mux0:inst7|lpm_mux:lpm_mux_component|mux_9bc:auto_generated"
 Info: Elaborating entity "reg96bitV" for hierarchy "reg96bitV:inst18"
 Info: Elaborating entity "demux1to12" for hierarchy "demux1to12:inst"
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out5[1]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out5[0]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[9]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[10]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[11]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[12]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[13]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[14]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[15]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[8]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[9]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[10]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[11]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[12]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[13]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[14]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out8[15]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[8]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[9]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[10]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[11]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[12]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[13]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[14]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out9[15]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[8]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[9]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[10]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[11]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[12]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[13]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[14]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out10[15]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[0]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[1]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[2]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[3]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[4]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[5]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[6]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[7]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[8]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[9]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[10]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[11]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[12]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[13]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[14]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out1[15]" is permanently enabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[8]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[9]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[10]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[11]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[12]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[13]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[14]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out2[15]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[8]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[9]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[10]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[11]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[12]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[13]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[14]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out3[15]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[0]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[1]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[2]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[3]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[4]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[5]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[6]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[7]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[8]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[9]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[10]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[11]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[12]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[13]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[14]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out4[15]" is permanently disabled
-Warning: LATCH primitive "demux1to12_16bit:inst11|Data_out7[8]" is permanently disabled
 Info: Ignored 220 buffer(s)
     Info: Ignored 220 SOFT buffer(s)
 Info: Ignored 156 buffer(s)
@@ -1271,22 +1165,118 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "dout[2]" is stuck at GND
     Warning (13410): Pin "dout[1]" is stuck at GND
     Warning (13410): Pin "dout[0]" is stuck at GND
-Info: 5 registers lost all their fanouts during netlist optimizations. The first 5 are displayed below.
-    Info: Register "controller:inst2|pstate~10" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate~11" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate~12" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate~13" lost all its fanouts during netlist optimizations.
-    Info: Register "controller:inst2|pstate~14" lost all its fanouts during netlist optimizations.
+Info: 165 registers lost all their fanouts during netlist optimizations. The first 100 are displayed below.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out10[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out9[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out8[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out7[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out6[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out6[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out6[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out6[3]" lost all its fanouts during netlist optimizations.
+    Info: List truncated at 100 items
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
 Info: Implemented 896 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
     Info: Implemented 78 output pins
     Info: Implemented 806 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 186 warnings
-    Info: Peak virtual memory: 229 megabytes
-    Info: Processing ended: Sat Dec 03 21:38:00 2016
-    Info: Elapsed time: 00:00:04
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 227 megabytes
+    Info: Processing ended: Sat Dec 03 22:05:21 2016
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:04
 
 

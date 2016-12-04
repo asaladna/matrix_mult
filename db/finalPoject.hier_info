@@ -1,7 +1,8 @@
 |transmult
 output_rdy <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 clk => controller:inst2.clk
-clk => reg160bitFinal:inst12.clk
+clk => reg160bitV:inst1.CLK
+clk => demux1to12_16bit:inst11.clk
 clk => MAC:inst4.clk
 clk => reg96bitV:inst18.CLK
 clk => demux1to12:inst.clk
@@ -540,4865 +541,1157 @@ result[14] <= muxlut_result14w.DB_MAX_OUTPUT_PORT_TYPE
 result[15] <= muxlut_result15w.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|transmult|reg160bitFinal:inst12
-reg_out1[0] <= reg16bit:inst17.dout[0]
-reg_out1[1] <= reg16bit:inst17.dout[1]
-reg_out1[2] <= reg16bit:inst17.dout[2]
-reg_out1[3] <= reg16bit:inst17.dout[3]
-reg_out1[4] <= reg16bit:inst17.dout[4]
-reg_out1[5] <= reg16bit:inst17.dout[5]
-reg_out1[6] <= reg16bit:inst17.dout[6]
-reg_out1[7] <= reg16bit:inst17.dout[7]
-reg_out1[8] <= reg16bit:inst17.dout[8]
-reg_out1[9] <= reg16bit:inst17.dout[9]
-reg_out1[10] <= reg16bit:inst17.dout[10]
-reg_out1[11] <= reg16bit:inst17.dout[11]
-reg_out1[12] <= reg16bit:inst17.dout[12]
-reg_out1[13] <= reg16bit:inst17.dout[13]
-reg_out1[14] <= reg16bit:inst17.dout[14]
-reg_out1[15] <= reg16bit:inst17.dout[15]
-clear_b => reg16bit:inst17.clear_b
-clear_b => reg16bit:inst.clear_b
-clear_b => reg16bit:inst16.clear_b
-clear_b => reg16bit:inst15.clear_b
-clear_b => reg16bit:inst14.clear_b
-clear_b => reg16bit:inst10.clear_b
-clear_b => reg16bit:inst11.clear_b
-clear_b => reg16bit:inst12.clear_b
-clear_b => reg16bit:inst13.clear_b
-clear_b => reg16bit:inst9.clear_b
-load => reg16bit:inst17.load
-load => reg16bit:inst.load
-load => reg16bit:inst16.load
-load => reg16bit:inst15.load
-load => reg16bit:inst14.load
-load => reg16bit:inst10.load
-load => reg16bit:inst11.load
-load => reg16bit:inst12.load
-load => reg16bit:inst13.load
-load => reg16bit:inst9.load
-clk => reg16bit:inst17.clk
-clk => reg16bit:inst.clk
-clk => reg16bit:inst16.clk
-clk => reg16bit:inst15.clk
-clk => reg16bit:inst14.clk
-clk => reg16bit:inst10.clk
-clk => reg16bit:inst11.clk
-clk => reg16bit:inst12.clk
-clk => reg16bit:inst13.clk
-clk => reg16bit:inst9.clk
-reset_b => reg16bit:inst17.reset_b
-reset_b => reg16bit:inst.reset_b
-reset_b => reg16bit:inst16.reset_b
-reset_b => reg16bit:inst15.reset_b
-reset_b => reg16bit:inst14.reset_b
-reset_b => reg16bit:inst10.reset_b
-reset_b => reg16bit:inst11.reset_b
-reset_b => reg16bit:inst12.reset_b
-reset_b => reg16bit:inst13.reset_b
-reset_b => reg16bit:inst9.reset_b
-reg_in1[0] => reg16bit:inst17.din[0]
-reg_in1[1] => reg16bit:inst17.din[1]
-reg_in1[2] => reg16bit:inst17.din[2]
-reg_in1[3] => reg16bit:inst17.din[3]
-reg_in1[4] => reg16bit:inst17.din[4]
-reg_in1[5] => reg16bit:inst17.din[5]
-reg_in1[6] => reg16bit:inst17.din[6]
-reg_in1[7] => reg16bit:inst17.din[7]
-reg_in1[8] => reg16bit:inst17.din[8]
-reg_in1[9] => reg16bit:inst17.din[9]
-reg_in1[10] => reg16bit:inst17.din[10]
-reg_in1[11] => reg16bit:inst17.din[11]
-reg_in1[12] => reg16bit:inst17.din[12]
-reg_in1[13] => reg16bit:inst17.din[13]
-reg_in1[14] => reg16bit:inst17.din[14]
-reg_in1[15] => reg16bit:inst17.din[15]
-reg_out10[0] <= reg16bit:inst.dout[0]
-reg_out10[1] <= reg16bit:inst.dout[1]
-reg_out10[2] <= reg16bit:inst.dout[2]
-reg_out10[3] <= reg16bit:inst.dout[3]
-reg_out10[4] <= reg16bit:inst.dout[4]
-reg_out10[5] <= reg16bit:inst.dout[5]
-reg_out10[6] <= reg16bit:inst.dout[6]
-reg_out10[7] <= reg16bit:inst.dout[7]
-reg_out10[8] <= reg16bit:inst.dout[8]
-reg_out10[9] <= reg16bit:inst.dout[9]
-reg_out10[10] <= reg16bit:inst.dout[10]
-reg_out10[11] <= reg16bit:inst.dout[11]
-reg_out10[12] <= reg16bit:inst.dout[12]
-reg_out10[13] <= reg16bit:inst.dout[13]
-reg_out10[14] <= reg16bit:inst.dout[14]
-reg_out10[15] <= reg16bit:inst.dout[15]
-reg_in10[0] => reg16bit:inst.din[0]
-reg_in10[1] => reg16bit:inst.din[1]
-reg_in10[2] => reg16bit:inst.din[2]
-reg_in10[3] => reg16bit:inst.din[3]
-reg_in10[4] => reg16bit:inst.din[4]
-reg_in10[5] => reg16bit:inst.din[5]
-reg_in10[6] => reg16bit:inst.din[6]
-reg_in10[7] => reg16bit:inst.din[7]
-reg_in10[8] => reg16bit:inst.din[8]
-reg_in10[9] => reg16bit:inst.din[9]
-reg_in10[10] => reg16bit:inst.din[10]
-reg_in10[11] => reg16bit:inst.din[11]
-reg_in10[12] => reg16bit:inst.din[12]
-reg_in10[13] => reg16bit:inst.din[13]
-reg_in10[14] => reg16bit:inst.din[14]
-reg_in10[15] => reg16bit:inst.din[15]
-reg_out2[0] <= reg16bit:inst16.dout[0]
-reg_out2[1] <= reg16bit:inst16.dout[1]
-reg_out2[2] <= reg16bit:inst16.dout[2]
-reg_out2[3] <= reg16bit:inst16.dout[3]
-reg_out2[4] <= reg16bit:inst16.dout[4]
-reg_out2[5] <= reg16bit:inst16.dout[5]
-reg_out2[6] <= reg16bit:inst16.dout[6]
-reg_out2[7] <= reg16bit:inst16.dout[7]
-reg_out2[8] <= reg16bit:inst16.dout[8]
-reg_out2[9] <= reg16bit:inst16.dout[9]
-reg_out2[10] <= reg16bit:inst16.dout[10]
-reg_out2[11] <= reg16bit:inst16.dout[11]
-reg_out2[12] <= reg16bit:inst16.dout[12]
-reg_out2[13] <= reg16bit:inst16.dout[13]
-reg_out2[14] <= reg16bit:inst16.dout[14]
-reg_out2[15] <= reg16bit:inst16.dout[15]
-reg_in2[0] => reg16bit:inst16.din[0]
-reg_in2[1] => reg16bit:inst16.din[1]
-reg_in2[2] => reg16bit:inst16.din[2]
-reg_in2[3] => reg16bit:inst16.din[3]
-reg_in2[4] => reg16bit:inst16.din[4]
-reg_in2[5] => reg16bit:inst16.din[5]
-reg_in2[6] => reg16bit:inst16.din[6]
-reg_in2[7] => reg16bit:inst16.din[7]
-reg_in2[8] => reg16bit:inst16.din[8]
-reg_in2[9] => reg16bit:inst16.din[9]
-reg_in2[10] => reg16bit:inst16.din[10]
-reg_in2[11] => reg16bit:inst16.din[11]
-reg_in2[12] => reg16bit:inst16.din[12]
-reg_in2[13] => reg16bit:inst16.din[13]
-reg_in2[14] => reg16bit:inst16.din[14]
-reg_in2[15] => reg16bit:inst16.din[15]
-reg_out3[0] <= reg16bit:inst15.dout[0]
-reg_out3[1] <= reg16bit:inst15.dout[1]
-reg_out3[2] <= reg16bit:inst15.dout[2]
-reg_out3[3] <= reg16bit:inst15.dout[3]
-reg_out3[4] <= reg16bit:inst15.dout[4]
-reg_out3[5] <= reg16bit:inst15.dout[5]
-reg_out3[6] <= reg16bit:inst15.dout[6]
-reg_out3[7] <= reg16bit:inst15.dout[7]
-reg_out3[8] <= reg16bit:inst15.dout[8]
-reg_out3[9] <= reg16bit:inst15.dout[9]
-reg_out3[10] <= reg16bit:inst15.dout[10]
-reg_out3[11] <= reg16bit:inst15.dout[11]
-reg_out3[12] <= reg16bit:inst15.dout[12]
-reg_out3[13] <= reg16bit:inst15.dout[13]
-reg_out3[14] <= reg16bit:inst15.dout[14]
-reg_out3[15] <= reg16bit:inst15.dout[15]
-reg_in3[0] => reg16bit:inst15.din[0]
-reg_in3[1] => reg16bit:inst15.din[1]
-reg_in3[2] => reg16bit:inst15.din[2]
-reg_in3[3] => reg16bit:inst15.din[3]
-reg_in3[4] => reg16bit:inst15.din[4]
-reg_in3[5] => reg16bit:inst15.din[5]
-reg_in3[6] => reg16bit:inst15.din[6]
-reg_in3[7] => reg16bit:inst15.din[7]
-reg_in3[8] => reg16bit:inst15.din[8]
-reg_in3[9] => reg16bit:inst15.din[9]
-reg_in3[10] => reg16bit:inst15.din[10]
-reg_in3[11] => reg16bit:inst15.din[11]
-reg_in3[12] => reg16bit:inst15.din[12]
-reg_in3[13] => reg16bit:inst15.din[13]
-reg_in3[14] => reg16bit:inst15.din[14]
-reg_in3[15] => reg16bit:inst15.din[15]
-reg_out4[0] <= reg16bit:inst14.dout[0]
-reg_out4[1] <= reg16bit:inst14.dout[1]
-reg_out4[2] <= reg16bit:inst14.dout[2]
-reg_out4[3] <= reg16bit:inst14.dout[3]
-reg_out4[4] <= reg16bit:inst14.dout[4]
-reg_out4[5] <= reg16bit:inst14.dout[5]
-reg_out4[6] <= reg16bit:inst14.dout[6]
-reg_out4[7] <= reg16bit:inst14.dout[7]
-reg_out4[8] <= reg16bit:inst14.dout[8]
-reg_out4[9] <= reg16bit:inst14.dout[9]
-reg_out4[10] <= reg16bit:inst14.dout[10]
-reg_out4[11] <= reg16bit:inst14.dout[11]
-reg_out4[12] <= reg16bit:inst14.dout[12]
-reg_out4[13] <= reg16bit:inst14.dout[13]
-reg_out4[14] <= reg16bit:inst14.dout[14]
-reg_out4[15] <= reg16bit:inst14.dout[15]
-reg_in4[0] => reg16bit:inst14.din[0]
-reg_in4[1] => reg16bit:inst14.din[1]
-reg_in4[2] => reg16bit:inst14.din[2]
-reg_in4[3] => reg16bit:inst14.din[3]
-reg_in4[4] => reg16bit:inst14.din[4]
-reg_in4[5] => reg16bit:inst14.din[5]
-reg_in4[6] => reg16bit:inst14.din[6]
-reg_in4[7] => reg16bit:inst14.din[7]
-reg_in4[8] => reg16bit:inst14.din[8]
-reg_in4[9] => reg16bit:inst14.din[9]
-reg_in4[10] => reg16bit:inst14.din[10]
-reg_in4[11] => reg16bit:inst14.din[11]
-reg_in4[12] => reg16bit:inst14.din[12]
-reg_in4[13] => reg16bit:inst14.din[13]
-reg_in4[14] => reg16bit:inst14.din[14]
-reg_in4[15] => reg16bit:inst14.din[15]
-reg_out5[0] <= reg16bit:inst10.dout[0]
-reg_out5[1] <= reg16bit:inst10.dout[1]
-reg_out5[2] <= reg16bit:inst10.dout[2]
-reg_out5[3] <= reg16bit:inst10.dout[3]
-reg_out5[4] <= reg16bit:inst10.dout[4]
-reg_out5[5] <= reg16bit:inst10.dout[5]
-reg_out5[6] <= reg16bit:inst10.dout[6]
-reg_out5[7] <= reg16bit:inst10.dout[7]
-reg_out5[8] <= reg16bit:inst10.dout[8]
-reg_out5[9] <= reg16bit:inst10.dout[9]
-reg_out5[10] <= reg16bit:inst10.dout[10]
-reg_out5[11] <= reg16bit:inst10.dout[11]
-reg_out5[12] <= reg16bit:inst10.dout[12]
-reg_out5[13] <= reg16bit:inst10.dout[13]
-reg_out5[14] <= reg16bit:inst10.dout[14]
-reg_out5[15] <= reg16bit:inst10.dout[15]
-reg_in5[0] => reg16bit:inst10.din[0]
-reg_in5[1] => reg16bit:inst10.din[1]
-reg_in5[2] => reg16bit:inst10.din[2]
-reg_in5[3] => reg16bit:inst10.din[3]
-reg_in5[4] => reg16bit:inst10.din[4]
-reg_in5[5] => reg16bit:inst10.din[5]
-reg_in5[6] => reg16bit:inst10.din[6]
-reg_in5[7] => reg16bit:inst10.din[7]
-reg_in5[8] => reg16bit:inst10.din[8]
-reg_in5[9] => reg16bit:inst10.din[9]
-reg_in5[10] => reg16bit:inst10.din[10]
-reg_in5[11] => reg16bit:inst10.din[11]
-reg_in5[12] => reg16bit:inst10.din[12]
-reg_in5[13] => reg16bit:inst10.din[13]
-reg_in5[14] => reg16bit:inst10.din[14]
-reg_in5[15] => reg16bit:inst10.din[15]
-reg_out6[0] <= reg16bit:inst11.dout[0]
-reg_out6[1] <= reg16bit:inst11.dout[1]
-reg_out6[2] <= reg16bit:inst11.dout[2]
-reg_out6[3] <= reg16bit:inst11.dout[3]
-reg_out6[4] <= reg16bit:inst11.dout[4]
-reg_out6[5] <= reg16bit:inst11.dout[5]
-reg_out6[6] <= reg16bit:inst11.dout[6]
-reg_out6[7] <= reg16bit:inst11.dout[7]
-reg_out6[8] <= reg16bit:inst11.dout[8]
-reg_out6[9] <= reg16bit:inst11.dout[9]
-reg_out6[10] <= reg16bit:inst11.dout[10]
-reg_out6[11] <= reg16bit:inst11.dout[11]
-reg_out6[12] <= reg16bit:inst11.dout[12]
-reg_out6[13] <= reg16bit:inst11.dout[13]
-reg_out6[14] <= reg16bit:inst11.dout[14]
-reg_out6[15] <= reg16bit:inst11.dout[15]
-reg_in6[0] => reg16bit:inst11.din[0]
-reg_in6[1] => reg16bit:inst11.din[1]
-reg_in6[2] => reg16bit:inst11.din[2]
-reg_in6[3] => reg16bit:inst11.din[3]
-reg_in6[4] => reg16bit:inst11.din[4]
-reg_in6[5] => reg16bit:inst11.din[5]
-reg_in6[6] => reg16bit:inst11.din[6]
-reg_in6[7] => reg16bit:inst11.din[7]
-reg_in6[8] => reg16bit:inst11.din[8]
-reg_in6[9] => reg16bit:inst11.din[9]
-reg_in6[10] => reg16bit:inst11.din[10]
-reg_in6[11] => reg16bit:inst11.din[11]
-reg_in6[12] => reg16bit:inst11.din[12]
-reg_in6[13] => reg16bit:inst11.din[13]
-reg_in6[14] => reg16bit:inst11.din[14]
-reg_in6[15] => reg16bit:inst11.din[15]
-reg_out7[0] <= reg16bit:inst12.dout[0]
-reg_out7[1] <= reg16bit:inst12.dout[1]
-reg_out7[2] <= reg16bit:inst12.dout[2]
-reg_out7[3] <= reg16bit:inst12.dout[3]
-reg_out7[4] <= reg16bit:inst12.dout[4]
-reg_out7[5] <= reg16bit:inst12.dout[5]
-reg_out7[6] <= reg16bit:inst12.dout[6]
-reg_out7[7] <= reg16bit:inst12.dout[7]
-reg_out7[8] <= reg16bit:inst12.dout[8]
-reg_out7[9] <= reg16bit:inst12.dout[9]
-reg_out7[10] <= reg16bit:inst12.dout[10]
-reg_out7[11] <= reg16bit:inst12.dout[11]
-reg_out7[12] <= reg16bit:inst12.dout[12]
-reg_out7[13] <= reg16bit:inst12.dout[13]
-reg_out7[14] <= reg16bit:inst12.dout[14]
-reg_out7[15] <= reg16bit:inst12.dout[15]
-reg_in7[0] => reg16bit:inst12.din[0]
-reg_in7[1] => reg16bit:inst12.din[1]
-reg_in7[2] => reg16bit:inst12.din[2]
-reg_in7[3] => reg16bit:inst12.din[3]
-reg_in7[4] => reg16bit:inst12.din[4]
-reg_in7[5] => reg16bit:inst12.din[5]
-reg_in7[6] => reg16bit:inst12.din[6]
-reg_in7[7] => reg16bit:inst12.din[7]
-reg_in7[8] => reg16bit:inst12.din[8]
-reg_in7[9] => reg16bit:inst12.din[9]
-reg_in7[10] => reg16bit:inst12.din[10]
-reg_in7[11] => reg16bit:inst12.din[11]
-reg_in7[12] => reg16bit:inst12.din[12]
-reg_in7[13] => reg16bit:inst12.din[13]
-reg_in7[14] => reg16bit:inst12.din[14]
-reg_in7[15] => reg16bit:inst12.din[15]
-reg_out8[0] <= reg16bit:inst13.dout[0]
-reg_out8[1] <= reg16bit:inst13.dout[1]
-reg_out8[2] <= reg16bit:inst13.dout[2]
-reg_out8[3] <= reg16bit:inst13.dout[3]
-reg_out8[4] <= reg16bit:inst13.dout[4]
-reg_out8[5] <= reg16bit:inst13.dout[5]
-reg_out8[6] <= reg16bit:inst13.dout[6]
-reg_out8[7] <= reg16bit:inst13.dout[7]
-reg_out8[8] <= reg16bit:inst13.dout[8]
-reg_out8[9] <= reg16bit:inst13.dout[9]
-reg_out8[10] <= reg16bit:inst13.dout[10]
-reg_out8[11] <= reg16bit:inst13.dout[11]
-reg_out8[12] <= reg16bit:inst13.dout[12]
-reg_out8[13] <= reg16bit:inst13.dout[13]
-reg_out8[14] <= reg16bit:inst13.dout[14]
-reg_out8[15] <= reg16bit:inst13.dout[15]
-reg_in8[0] => reg16bit:inst13.din[0]
-reg_in8[1] => reg16bit:inst13.din[1]
-reg_in8[2] => reg16bit:inst13.din[2]
-reg_in8[3] => reg16bit:inst13.din[3]
-reg_in8[4] => reg16bit:inst13.din[4]
-reg_in8[5] => reg16bit:inst13.din[5]
-reg_in8[6] => reg16bit:inst13.din[6]
-reg_in8[7] => reg16bit:inst13.din[7]
-reg_in8[8] => reg16bit:inst13.din[8]
-reg_in8[9] => reg16bit:inst13.din[9]
-reg_in8[10] => reg16bit:inst13.din[10]
-reg_in8[11] => reg16bit:inst13.din[11]
-reg_in8[12] => reg16bit:inst13.din[12]
-reg_in8[13] => reg16bit:inst13.din[13]
-reg_in8[14] => reg16bit:inst13.din[14]
-reg_in8[15] => reg16bit:inst13.din[15]
-reg_out9[0] <= reg16bit:inst9.dout[0]
-reg_out9[1] <= reg16bit:inst9.dout[1]
-reg_out9[2] <= reg16bit:inst9.dout[2]
-reg_out9[3] <= reg16bit:inst9.dout[3]
-reg_out9[4] <= reg16bit:inst9.dout[4]
-reg_out9[5] <= reg16bit:inst9.dout[5]
-reg_out9[6] <= reg16bit:inst9.dout[6]
-reg_out9[7] <= reg16bit:inst9.dout[7]
-reg_out9[8] <= reg16bit:inst9.dout[8]
-reg_out9[9] <= reg16bit:inst9.dout[9]
-reg_out9[10] <= reg16bit:inst9.dout[10]
-reg_out9[11] <= reg16bit:inst9.dout[11]
-reg_out9[12] <= reg16bit:inst9.dout[12]
-reg_out9[13] <= reg16bit:inst9.dout[13]
-reg_out9[14] <= reg16bit:inst9.dout[14]
-reg_out9[15] <= reg16bit:inst9.dout[15]
-reg_in9[0] => reg16bit:inst9.din[0]
-reg_in9[1] => reg16bit:inst9.din[1]
-reg_in9[2] => reg16bit:inst9.din[2]
-reg_in9[3] => reg16bit:inst9.din[3]
-reg_in9[4] => reg16bit:inst9.din[4]
-reg_in9[5] => reg16bit:inst9.din[5]
-reg_in9[6] => reg16bit:inst9.din[6]
-reg_in9[7] => reg16bit:inst9.din[7]
-reg_in9[8] => reg16bit:inst9.din[8]
-reg_in9[9] => reg16bit:inst9.din[9]
-reg_in9[10] => reg16bit:inst9.din[10]
-reg_in9[11] => reg16bit:inst9.din[11]
-reg_in9[12] => reg16bit:inst9.din[12]
-reg_in9[13] => reg16bit:inst9.din[13]
-reg_in9[14] => reg16bit:inst9.din[14]
-reg_in9[15] => reg16bit:inst9.din[15]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst17|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst16|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst15|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst14|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst10|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst11|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst12|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst13|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9
-dout[0] <= reg8bit:inst.dout[0]
-dout[1] <= reg8bit:inst.dout[1]
-dout[2] <= reg8bit:inst.dout[2]
-dout[3] <= reg8bit:inst.dout[3]
-dout[4] <= reg8bit:inst.dout[4]
-dout[5] <= reg8bit:inst.dout[5]
-dout[6] <= reg8bit:inst.dout[6]
-dout[7] <= reg8bit:inst.dout[7]
-dout[8] <= reg8bit:inst1.dout[0]
-dout[9] <= reg8bit:inst1.dout[1]
-dout[10] <= reg8bit:inst1.dout[2]
-dout[11] <= reg8bit:inst1.dout[3]
-dout[12] <= reg8bit:inst1.dout[4]
-dout[13] <= reg8bit:inst1.dout[5]
-dout[14] <= reg8bit:inst1.dout[6]
-dout[15] <= reg8bit:inst1.dout[7]
-clear_b => reg8bit:inst.clear_b
-clear_b => reg8bit:inst1.clear_b
-load => reg8bit:inst.load
-load => reg8bit:inst1.load
-clk => reg8bit:inst.clk
-clk => reg8bit:inst1.clk
-reset_b => reg8bit:inst.reset_b
-reset_b => reg8bit:inst1.reset_b
-din[0] => reg8bit:inst.din[0]
-din[1] => reg8bit:inst.din[1]
-din[2] => reg8bit:inst.din[2]
-din[3] => reg8bit:inst.din[3]
-din[4] => reg8bit:inst.din[4]
-din[5] => reg8bit:inst.din[5]
-din[6] => reg8bit:inst.din[6]
-din[7] => reg8bit:inst.din[7]
-din[8] => reg8bit:inst1.din[0]
-din[9] => reg8bit:inst1.din[1]
-din[10] => reg8bit:inst1.din[2]
-din[11] => reg8bit:inst1.din[3]
-din[12] => reg8bit:inst1.din[4]
-din[13] => reg8bit:inst1.din[5]
-din[14] => reg8bit:inst1.din[6]
-din[15] => reg8bit:inst1.din[7]
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1
-dout[0] <= reg1bit:inst.dout
-dout[1] <= reg1bit:inst1.dout
-dout[2] <= reg1bit:inst2.dout
-dout[3] <= reg1bit:inst3.dout
-dout[4] <= reg1bit:inst4.dout
-dout[5] <= reg1bit:inst5.dout
-dout[6] <= reg1bit:inst7.dout
-dout[7] <= reg1bit:inst6.dout
-din[0] => reg1bit:inst.din
-din[1] => reg1bit:inst1.din
-din[2] => reg1bit:inst2.din
-din[3] => reg1bit:inst3.din
-din[4] => reg1bit:inst4.din
-din[5] => reg1bit:inst5.din
-din[6] => reg1bit:inst7.din
-din[7] => reg1bit:inst6.din
-clear_b => reg1bit:inst1.clear_b
-clear_b => reg1bit:inst.clear_b
-clear_b => reg1bit:inst2.clear_b
-clear_b => reg1bit:inst3.clear_b
-clear_b => reg1bit:inst4.clear_b
-clear_b => reg1bit:inst5.clear_b
-clear_b => reg1bit:inst7.clear_b
-clear_b => reg1bit:inst6.clear_b
-load => reg1bit:inst1.load
-load => reg1bit:inst.load
-load => reg1bit:inst2.load
-load => reg1bit:inst3.load
-load => reg1bit:inst4.load
-load => reg1bit:inst5.load
-load => reg1bit:inst7.load
-load => reg1bit:inst6.load
-clk => reg1bit:inst1.clk
-clk => reg1bit:inst.clk
-clk => reg1bit:inst2.clk
-clk => reg1bit:inst3.clk
-clk => reg1bit:inst4.clk
-clk => reg1bit:inst5.clk
-clk => reg1bit:inst7.clk
-clk => reg1bit:inst6.clk
-reset_b => reg1bit:inst1.reset_b
-reset_b => reg1bit:inst.reset_b
-reset_b => reg1bit:inst2.reset_b
-reset_b => reg1bit:inst3.reset_b
-reset_b => reg1bit:inst4.reset_b
-reset_b => reg1bit:inst5.reset_b
-reset_b => reg1bit:inst7.reset_b
-reset_b => reg1bit:inst6.reset_b
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst1
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst1|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst2
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst2|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst3
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst3|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst4
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst4|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst5
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst5|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst7|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6
-dout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-reset_b => inst1.ACLR
-clk => inst1.CLK
-load => 21mux:inst6.S
-clear_b => inst.IN1
-din => 21mux:inst6.A
-
-
-|transmult|reg160bitFinal:inst12|reg16bit:inst9|reg8bit:inst1|reg1bit:inst6|21mux:inst6
-Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
-A => 6.IN0
-S => 6.IN1
-S => 7.IN1
-B => 8.IN0
+|transmult|reg160bitV:inst1
+Dout1[0] <= Dout1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[1] <= Dout1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[2] <= Dout1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[3] <= Dout1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[4] <= Dout1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[5] <= Dout1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[6] <= Dout1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[7] <= Dout1[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[8] <= Dout1[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[9] <= Dout1[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[10] <= Dout1[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[11] <= Dout1[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[12] <= Dout1[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[13] <= Dout1[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[14] <= Dout1[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout1[15] <= Dout1[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[0] <= Dout2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[1] <= Dout2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[2] <= Dout2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[3] <= Dout2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[4] <= Dout2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[5] <= Dout2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[6] <= Dout2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[7] <= Dout2[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[8] <= Dout2[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[9] <= Dout2[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[10] <= Dout2[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[11] <= Dout2[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[12] <= Dout2[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[13] <= Dout2[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[14] <= Dout2[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout2[15] <= Dout2[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[0] <= Dout3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[1] <= Dout3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[2] <= Dout3[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[3] <= Dout3[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[4] <= Dout3[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[5] <= Dout3[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[6] <= Dout3[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[7] <= Dout3[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[8] <= Dout3[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[9] <= Dout3[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[10] <= Dout3[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[11] <= Dout3[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[12] <= Dout3[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[13] <= Dout3[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[14] <= Dout3[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout3[15] <= Dout3[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[0] <= Dout4[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[1] <= Dout4[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[2] <= Dout4[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[3] <= Dout4[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[4] <= Dout4[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[5] <= Dout4[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[6] <= Dout4[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[7] <= Dout4[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[8] <= Dout4[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[9] <= Dout4[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[10] <= Dout4[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[11] <= Dout4[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[12] <= Dout4[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[13] <= Dout4[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[14] <= Dout4[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout4[15] <= Dout4[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[0] <= Dout5[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[1] <= Dout5[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[2] <= Dout5[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[3] <= Dout5[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[4] <= Dout5[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[5] <= Dout5[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[6] <= Dout5[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[7] <= Dout5[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[8] <= Dout5[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[9] <= Dout5[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[10] <= Dout5[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[11] <= Dout5[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[12] <= Dout5[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[13] <= Dout5[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[14] <= Dout5[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout5[15] <= Dout5[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[0] <= Dout6[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[1] <= Dout6[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[2] <= Dout6[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[3] <= Dout6[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[4] <= Dout6[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[5] <= Dout6[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[6] <= Dout6[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[7] <= Dout6[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[8] <= Dout6[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[9] <= Dout6[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[10] <= Dout6[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[11] <= Dout6[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[12] <= Dout6[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[13] <= Dout6[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[14] <= Dout6[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout6[15] <= Dout6[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[0] <= Dout7[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[1] <= Dout7[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[2] <= Dout7[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[3] <= Dout7[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[4] <= Dout7[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[5] <= Dout7[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[6] <= Dout7[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[7] <= Dout7[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[8] <= Dout7[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[9] <= Dout7[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[10] <= Dout7[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[11] <= Dout7[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[12] <= Dout7[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[13] <= Dout7[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[14] <= Dout7[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout7[15] <= Dout7[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[0] <= Dout8[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[1] <= Dout8[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[2] <= Dout8[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[3] <= Dout8[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[4] <= Dout8[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[5] <= Dout8[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[6] <= Dout8[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[7] <= Dout8[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[8] <= Dout8[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[9] <= Dout8[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[10] <= Dout8[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[11] <= Dout8[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[12] <= Dout8[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[13] <= Dout8[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[14] <= Dout8[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout8[15] <= Dout8[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[0] <= Dout9[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[1] <= Dout9[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[2] <= Dout9[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[3] <= Dout9[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[4] <= Dout9[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[5] <= Dout9[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[6] <= Dout9[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[7] <= Dout9[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[8] <= Dout9[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[9] <= Dout9[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[10] <= Dout9[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[11] <= Dout9[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[12] <= Dout9[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[13] <= Dout9[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[14] <= Dout9[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout9[15] <= Dout9[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[0] <= Dout10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[1] <= Dout10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[2] <= Dout10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[3] <= Dout10[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[4] <= Dout10[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[5] <= Dout10[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[6] <= Dout10[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[7] <= Dout10[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[8] <= Dout10[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[9] <= Dout10[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[10] <= Dout10[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[11] <= Dout10[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[12] <= Dout10[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[13] <= Dout10[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[14] <= Dout10[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout10[15] <= Dout10[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Din1[0] => Dout1[0]~reg0.DATAIN
+Din1[1] => Dout1[1]~reg0.DATAIN
+Din1[2] => Dout1[2]~reg0.DATAIN
+Din1[3] => Dout1[3]~reg0.DATAIN
+Din1[4] => Dout1[4]~reg0.DATAIN
+Din1[5] => Dout1[5]~reg0.DATAIN
+Din1[6] => Dout1[6]~reg0.DATAIN
+Din1[7] => Dout1[7]~reg0.DATAIN
+Din1[8] => Dout1[8]~reg0.DATAIN
+Din1[9] => Dout1[9]~reg0.DATAIN
+Din1[10] => Dout1[10]~reg0.DATAIN
+Din1[11] => Dout1[11]~reg0.DATAIN
+Din1[12] => Dout1[12]~reg0.DATAIN
+Din1[13] => Dout1[13]~reg0.DATAIN
+Din1[14] => Dout1[14]~reg0.DATAIN
+Din1[15] => Dout1[15]~reg0.DATAIN
+Din2[0] => Dout2[0]~reg0.DATAIN
+Din2[1] => Dout2[1]~reg0.DATAIN
+Din2[2] => Dout2[2]~reg0.DATAIN
+Din2[3] => Dout2[3]~reg0.DATAIN
+Din2[4] => Dout2[4]~reg0.DATAIN
+Din2[5] => Dout2[5]~reg0.DATAIN
+Din2[6] => Dout2[6]~reg0.DATAIN
+Din2[7] => Dout2[7]~reg0.DATAIN
+Din2[8] => Dout2[8]~reg0.DATAIN
+Din2[9] => Dout2[9]~reg0.DATAIN
+Din2[10] => Dout2[10]~reg0.DATAIN
+Din2[11] => Dout2[11]~reg0.DATAIN
+Din2[12] => Dout2[12]~reg0.DATAIN
+Din2[13] => Dout2[13]~reg0.DATAIN
+Din2[14] => Dout2[14]~reg0.DATAIN
+Din2[15] => Dout2[15]~reg0.DATAIN
+Din3[0] => Dout3[0]~reg0.DATAIN
+Din3[1] => Dout3[1]~reg0.DATAIN
+Din3[2] => Dout3[2]~reg0.DATAIN
+Din3[3] => Dout3[3]~reg0.DATAIN
+Din3[4] => Dout3[4]~reg0.DATAIN
+Din3[5] => Dout3[5]~reg0.DATAIN
+Din3[6] => Dout3[6]~reg0.DATAIN
+Din3[7] => Dout3[7]~reg0.DATAIN
+Din3[8] => Dout3[8]~reg0.DATAIN
+Din3[9] => Dout3[9]~reg0.DATAIN
+Din3[10] => Dout3[10]~reg0.DATAIN
+Din3[11] => Dout3[11]~reg0.DATAIN
+Din3[12] => Dout3[12]~reg0.DATAIN
+Din3[13] => Dout3[13]~reg0.DATAIN
+Din3[14] => Dout3[14]~reg0.DATAIN
+Din3[15] => Dout3[15]~reg0.DATAIN
+Din4[0] => Dout4[0]~reg0.DATAIN
+Din4[1] => Dout4[1]~reg0.DATAIN
+Din4[2] => Dout4[2]~reg0.DATAIN
+Din4[3] => Dout4[3]~reg0.DATAIN
+Din4[4] => Dout4[4]~reg0.DATAIN
+Din4[5] => Dout4[5]~reg0.DATAIN
+Din4[6] => Dout4[6]~reg0.DATAIN
+Din4[7] => Dout4[7]~reg0.DATAIN
+Din4[8] => Dout4[8]~reg0.DATAIN
+Din4[9] => Dout4[9]~reg0.DATAIN
+Din4[10] => Dout4[10]~reg0.DATAIN
+Din4[11] => Dout4[11]~reg0.DATAIN
+Din4[12] => Dout4[12]~reg0.DATAIN
+Din4[13] => Dout4[13]~reg0.DATAIN
+Din4[14] => Dout4[14]~reg0.DATAIN
+Din4[15] => Dout4[15]~reg0.DATAIN
+Din5[0] => Dout5[0]~reg0.DATAIN
+Din5[1] => Dout5[1]~reg0.DATAIN
+Din5[2] => Dout5[2]~reg0.DATAIN
+Din5[3] => Dout5[3]~reg0.DATAIN
+Din5[4] => Dout5[4]~reg0.DATAIN
+Din5[5] => Dout5[5]~reg0.DATAIN
+Din5[6] => Dout5[6]~reg0.DATAIN
+Din5[7] => Dout5[7]~reg0.DATAIN
+Din5[8] => Dout5[8]~reg0.DATAIN
+Din5[9] => Dout5[9]~reg0.DATAIN
+Din5[10] => Dout5[10]~reg0.DATAIN
+Din5[11] => Dout5[11]~reg0.DATAIN
+Din5[12] => Dout5[12]~reg0.DATAIN
+Din5[13] => Dout5[13]~reg0.DATAIN
+Din5[14] => Dout5[14]~reg0.DATAIN
+Din5[15] => Dout5[15]~reg0.DATAIN
+Din6[0] => Dout6[0]~reg0.DATAIN
+Din6[1] => Dout6[1]~reg0.DATAIN
+Din6[2] => Dout6[2]~reg0.DATAIN
+Din6[3] => Dout6[3]~reg0.DATAIN
+Din6[4] => Dout6[4]~reg0.DATAIN
+Din6[5] => Dout6[5]~reg0.DATAIN
+Din6[6] => Dout6[6]~reg0.DATAIN
+Din6[7] => Dout6[7]~reg0.DATAIN
+Din6[8] => Dout6[8]~reg0.DATAIN
+Din6[9] => Dout6[9]~reg0.DATAIN
+Din6[10] => Dout6[10]~reg0.DATAIN
+Din6[11] => Dout6[11]~reg0.DATAIN
+Din6[12] => Dout6[12]~reg0.DATAIN
+Din6[13] => Dout6[13]~reg0.DATAIN
+Din6[14] => Dout6[14]~reg0.DATAIN
+Din6[15] => Dout6[15]~reg0.DATAIN
+Din7[0] => Dout7[0]~reg0.DATAIN
+Din7[1] => Dout7[1]~reg0.DATAIN
+Din7[2] => Dout7[2]~reg0.DATAIN
+Din7[3] => Dout7[3]~reg0.DATAIN
+Din7[4] => Dout7[4]~reg0.DATAIN
+Din7[5] => Dout7[5]~reg0.DATAIN
+Din7[6] => Dout7[6]~reg0.DATAIN
+Din7[7] => Dout7[7]~reg0.DATAIN
+Din7[8] => Dout7[8]~reg0.DATAIN
+Din7[9] => Dout7[9]~reg0.DATAIN
+Din7[10] => Dout7[10]~reg0.DATAIN
+Din7[11] => Dout7[11]~reg0.DATAIN
+Din7[12] => Dout7[12]~reg0.DATAIN
+Din7[13] => Dout7[13]~reg0.DATAIN
+Din7[14] => Dout7[14]~reg0.DATAIN
+Din7[15] => Dout7[15]~reg0.DATAIN
+Din8[0] => Dout8[0]~reg0.DATAIN
+Din8[1] => Dout8[1]~reg0.DATAIN
+Din8[2] => Dout8[2]~reg0.DATAIN
+Din8[3] => Dout8[3]~reg0.DATAIN
+Din8[4] => Dout8[4]~reg0.DATAIN
+Din8[5] => Dout8[5]~reg0.DATAIN
+Din8[6] => Dout8[6]~reg0.DATAIN
+Din8[7] => Dout8[7]~reg0.DATAIN
+Din8[8] => Dout8[8]~reg0.DATAIN
+Din8[9] => Dout8[9]~reg0.DATAIN
+Din8[10] => Dout8[10]~reg0.DATAIN
+Din8[11] => Dout8[11]~reg0.DATAIN
+Din8[12] => Dout8[12]~reg0.DATAIN
+Din8[13] => Dout8[13]~reg0.DATAIN
+Din8[14] => Dout8[14]~reg0.DATAIN
+Din8[15] => Dout8[15]~reg0.DATAIN
+Din9[0] => Dout9[0]~reg0.DATAIN
+Din9[1] => Dout9[1]~reg0.DATAIN
+Din9[2] => Dout9[2]~reg0.DATAIN
+Din9[3] => Dout9[3]~reg0.DATAIN
+Din9[4] => Dout9[4]~reg0.DATAIN
+Din9[5] => Dout9[5]~reg0.DATAIN
+Din9[6] => Dout9[6]~reg0.DATAIN
+Din9[7] => Dout9[7]~reg0.DATAIN
+Din9[8] => Dout9[8]~reg0.DATAIN
+Din9[9] => Dout9[9]~reg0.DATAIN
+Din9[10] => Dout9[10]~reg0.DATAIN
+Din9[11] => Dout9[11]~reg0.DATAIN
+Din9[12] => Dout9[12]~reg0.DATAIN
+Din9[13] => Dout9[13]~reg0.DATAIN
+Din9[14] => Dout9[14]~reg0.DATAIN
+Din9[15] => Dout9[15]~reg0.DATAIN
+Din10[0] => Dout10[0]~reg0.DATAIN
+Din10[1] => Dout10[1]~reg0.DATAIN
+Din10[2] => Dout10[2]~reg0.DATAIN
+Din10[3] => Dout10[3]~reg0.DATAIN
+Din10[4] => Dout10[4]~reg0.DATAIN
+Din10[5] => Dout10[5]~reg0.DATAIN
+Din10[6] => Dout10[6]~reg0.DATAIN
+Din10[7] => Dout10[7]~reg0.DATAIN
+Din10[8] => Dout10[8]~reg0.DATAIN
+Din10[9] => Dout10[9]~reg0.DATAIN
+Din10[10] => Dout10[10]~reg0.DATAIN
+Din10[11] => Dout10[11]~reg0.DATAIN
+Din10[12] => Dout10[12]~reg0.DATAIN
+Din10[13] => Dout10[13]~reg0.DATAIN
+Din10[14] => Dout10[14]~reg0.DATAIN
+Din10[15] => Dout10[15]~reg0.DATAIN
+ld => Dout10[0]~reg0.ENA
+ld => Dout10[1]~reg0.ENA
+ld => Dout10[2]~reg0.ENA
+ld => Dout10[3]~reg0.ENA
+ld => Dout10[4]~reg0.ENA
+ld => Dout10[5]~reg0.ENA
+ld => Dout10[6]~reg0.ENA
+ld => Dout10[7]~reg0.ENA
+ld => Dout10[8]~reg0.ENA
+ld => Dout10[9]~reg0.ENA
+ld => Dout10[10]~reg0.ENA
+ld => Dout10[11]~reg0.ENA
+ld => Dout10[12]~reg0.ENA
+ld => Dout10[13]~reg0.ENA
+ld => Dout10[14]~reg0.ENA
+ld => Dout10[15]~reg0.ENA
+ld => Dout9[0]~reg0.ENA
+ld => Dout9[1]~reg0.ENA
+ld => Dout9[2]~reg0.ENA
+ld => Dout9[3]~reg0.ENA
+ld => Dout9[4]~reg0.ENA
+ld => Dout9[5]~reg0.ENA
+ld => Dout9[6]~reg0.ENA
+ld => Dout9[7]~reg0.ENA
+ld => Dout9[8]~reg0.ENA
+ld => Dout9[9]~reg0.ENA
+ld => Dout9[10]~reg0.ENA
+ld => Dout9[11]~reg0.ENA
+ld => Dout9[12]~reg0.ENA
+ld => Dout9[13]~reg0.ENA
+ld => Dout9[14]~reg0.ENA
+ld => Dout9[15]~reg0.ENA
+ld => Dout8[0]~reg0.ENA
+ld => Dout8[1]~reg0.ENA
+ld => Dout8[2]~reg0.ENA
+ld => Dout8[3]~reg0.ENA
+ld => Dout8[4]~reg0.ENA
+ld => Dout8[5]~reg0.ENA
+ld => Dout8[6]~reg0.ENA
+ld => Dout8[7]~reg0.ENA
+ld => Dout8[8]~reg0.ENA
+ld => Dout8[9]~reg0.ENA
+ld => Dout8[10]~reg0.ENA
+ld => Dout8[11]~reg0.ENA
+ld => Dout8[12]~reg0.ENA
+ld => Dout8[13]~reg0.ENA
+ld => Dout8[14]~reg0.ENA
+ld => Dout8[15]~reg0.ENA
+ld => Dout7[0]~reg0.ENA
+ld => Dout7[1]~reg0.ENA
+ld => Dout7[2]~reg0.ENA
+ld => Dout7[3]~reg0.ENA
+ld => Dout7[4]~reg0.ENA
+ld => Dout7[5]~reg0.ENA
+ld => Dout7[6]~reg0.ENA
+ld => Dout7[7]~reg0.ENA
+ld => Dout7[8]~reg0.ENA
+ld => Dout7[9]~reg0.ENA
+ld => Dout7[10]~reg0.ENA
+ld => Dout7[11]~reg0.ENA
+ld => Dout7[12]~reg0.ENA
+ld => Dout7[13]~reg0.ENA
+ld => Dout7[14]~reg0.ENA
+ld => Dout7[15]~reg0.ENA
+ld => Dout6[0]~reg0.ENA
+ld => Dout6[1]~reg0.ENA
+ld => Dout6[2]~reg0.ENA
+ld => Dout6[3]~reg0.ENA
+ld => Dout6[4]~reg0.ENA
+ld => Dout6[5]~reg0.ENA
+ld => Dout6[6]~reg0.ENA
+ld => Dout6[7]~reg0.ENA
+ld => Dout6[8]~reg0.ENA
+ld => Dout6[9]~reg0.ENA
+ld => Dout6[10]~reg0.ENA
+ld => Dout6[11]~reg0.ENA
+ld => Dout6[12]~reg0.ENA
+ld => Dout6[13]~reg0.ENA
+ld => Dout6[14]~reg0.ENA
+ld => Dout6[15]~reg0.ENA
+ld => Dout5[0]~reg0.ENA
+ld => Dout5[1]~reg0.ENA
+ld => Dout5[2]~reg0.ENA
+ld => Dout5[3]~reg0.ENA
+ld => Dout5[4]~reg0.ENA
+ld => Dout5[5]~reg0.ENA
+ld => Dout5[6]~reg0.ENA
+ld => Dout5[7]~reg0.ENA
+ld => Dout5[8]~reg0.ENA
+ld => Dout5[9]~reg0.ENA
+ld => Dout5[10]~reg0.ENA
+ld => Dout5[11]~reg0.ENA
+ld => Dout5[12]~reg0.ENA
+ld => Dout5[13]~reg0.ENA
+ld => Dout5[14]~reg0.ENA
+ld => Dout5[15]~reg0.ENA
+ld => Dout4[0]~reg0.ENA
+ld => Dout4[1]~reg0.ENA
+ld => Dout4[2]~reg0.ENA
+ld => Dout4[3]~reg0.ENA
+ld => Dout4[4]~reg0.ENA
+ld => Dout4[5]~reg0.ENA
+ld => Dout4[6]~reg0.ENA
+ld => Dout4[7]~reg0.ENA
+ld => Dout4[8]~reg0.ENA
+ld => Dout4[9]~reg0.ENA
+ld => Dout4[10]~reg0.ENA
+ld => Dout4[11]~reg0.ENA
+ld => Dout4[12]~reg0.ENA
+ld => Dout4[13]~reg0.ENA
+ld => Dout4[14]~reg0.ENA
+ld => Dout4[15]~reg0.ENA
+ld => Dout3[0]~reg0.ENA
+ld => Dout3[1]~reg0.ENA
+ld => Dout3[2]~reg0.ENA
+ld => Dout3[3]~reg0.ENA
+ld => Dout3[4]~reg0.ENA
+ld => Dout3[5]~reg0.ENA
+ld => Dout3[6]~reg0.ENA
+ld => Dout3[7]~reg0.ENA
+ld => Dout3[8]~reg0.ENA
+ld => Dout3[9]~reg0.ENA
+ld => Dout3[10]~reg0.ENA
+ld => Dout3[11]~reg0.ENA
+ld => Dout3[12]~reg0.ENA
+ld => Dout3[13]~reg0.ENA
+ld => Dout3[14]~reg0.ENA
+ld => Dout3[15]~reg0.ENA
+ld => Dout2[0]~reg0.ENA
+ld => Dout2[1]~reg0.ENA
+ld => Dout2[2]~reg0.ENA
+ld => Dout2[3]~reg0.ENA
+ld => Dout2[4]~reg0.ENA
+ld => Dout2[5]~reg0.ENA
+ld => Dout2[6]~reg0.ENA
+ld => Dout2[7]~reg0.ENA
+ld => Dout2[8]~reg0.ENA
+ld => Dout2[9]~reg0.ENA
+ld => Dout2[10]~reg0.ENA
+ld => Dout2[11]~reg0.ENA
+ld => Dout2[12]~reg0.ENA
+ld => Dout2[13]~reg0.ENA
+ld => Dout2[14]~reg0.ENA
+ld => Dout2[15]~reg0.ENA
+ld => Dout1[0]~reg0.ENA
+ld => Dout1[1]~reg0.ENA
+ld => Dout1[2]~reg0.ENA
+ld => Dout1[3]~reg0.ENA
+ld => Dout1[4]~reg0.ENA
+ld => Dout1[5]~reg0.ENA
+ld => Dout1[6]~reg0.ENA
+ld => Dout1[7]~reg0.ENA
+ld => Dout1[8]~reg0.ENA
+ld => Dout1[9]~reg0.ENA
+ld => Dout1[10]~reg0.ENA
+ld => Dout1[11]~reg0.ENA
+ld => Dout1[12]~reg0.ENA
+ld => Dout1[13]~reg0.ENA
+ld => Dout1[14]~reg0.ENA
+ld => Dout1[15]~reg0.ENA
+reset => ~NO_FANOUT~
+CLK => Dout1[15]~reg0.CLK
+CLK => Dout1[14]~reg0.CLK
+CLK => Dout1[13]~reg0.CLK
+CLK => Dout1[12]~reg0.CLK
+CLK => Dout1[11]~reg0.CLK
+CLK => Dout1[10]~reg0.CLK
+CLK => Dout1[9]~reg0.CLK
+CLK => Dout1[8]~reg0.CLK
+CLK => Dout1[7]~reg0.CLK
+CLK => Dout1[6]~reg0.CLK
+CLK => Dout1[5]~reg0.CLK
+CLK => Dout1[4]~reg0.CLK
+CLK => Dout1[3]~reg0.CLK
+CLK => Dout1[2]~reg0.CLK
+CLK => Dout1[1]~reg0.CLK
+CLK => Dout1[0]~reg0.CLK
+CLK => Dout2[15]~reg0.CLK
+CLK => Dout2[14]~reg0.CLK
+CLK => Dout2[13]~reg0.CLK
+CLK => Dout2[12]~reg0.CLK
+CLK => Dout2[11]~reg0.CLK
+CLK => Dout2[10]~reg0.CLK
+CLK => Dout2[9]~reg0.CLK
+CLK => Dout2[8]~reg0.CLK
+CLK => Dout2[7]~reg0.CLK
+CLK => Dout2[6]~reg0.CLK
+CLK => Dout2[5]~reg0.CLK
+CLK => Dout2[4]~reg0.CLK
+CLK => Dout2[3]~reg0.CLK
+CLK => Dout2[2]~reg0.CLK
+CLK => Dout2[1]~reg0.CLK
+CLK => Dout2[0]~reg0.CLK
+CLK => Dout3[15]~reg0.CLK
+CLK => Dout3[14]~reg0.CLK
+CLK => Dout3[13]~reg0.CLK
+CLK => Dout3[12]~reg0.CLK
+CLK => Dout3[11]~reg0.CLK
+CLK => Dout3[10]~reg0.CLK
+CLK => Dout3[9]~reg0.CLK
+CLK => Dout3[8]~reg0.CLK
+CLK => Dout3[7]~reg0.CLK
+CLK => Dout3[6]~reg0.CLK
+CLK => Dout3[5]~reg0.CLK
+CLK => Dout3[4]~reg0.CLK
+CLK => Dout3[3]~reg0.CLK
+CLK => Dout3[2]~reg0.CLK
+CLK => Dout3[1]~reg0.CLK
+CLK => Dout3[0]~reg0.CLK
+CLK => Dout4[15]~reg0.CLK
+CLK => Dout4[14]~reg0.CLK
+CLK => Dout4[13]~reg0.CLK
+CLK => Dout4[12]~reg0.CLK
+CLK => Dout4[11]~reg0.CLK
+CLK => Dout4[10]~reg0.CLK
+CLK => Dout4[9]~reg0.CLK
+CLK => Dout4[8]~reg0.CLK
+CLK => Dout4[7]~reg0.CLK
+CLK => Dout4[6]~reg0.CLK
+CLK => Dout4[5]~reg0.CLK
+CLK => Dout4[4]~reg0.CLK
+CLK => Dout4[3]~reg0.CLK
+CLK => Dout4[2]~reg0.CLK
+CLK => Dout4[1]~reg0.CLK
+CLK => Dout4[0]~reg0.CLK
+CLK => Dout5[15]~reg0.CLK
+CLK => Dout5[14]~reg0.CLK
+CLK => Dout5[13]~reg0.CLK
+CLK => Dout5[12]~reg0.CLK
+CLK => Dout5[11]~reg0.CLK
+CLK => Dout5[10]~reg0.CLK
+CLK => Dout5[9]~reg0.CLK
+CLK => Dout5[8]~reg0.CLK
+CLK => Dout5[7]~reg0.CLK
+CLK => Dout5[6]~reg0.CLK
+CLK => Dout5[5]~reg0.CLK
+CLK => Dout5[4]~reg0.CLK
+CLK => Dout5[3]~reg0.CLK
+CLK => Dout5[2]~reg0.CLK
+CLK => Dout5[1]~reg0.CLK
+CLK => Dout5[0]~reg0.CLK
+CLK => Dout6[15]~reg0.CLK
+CLK => Dout6[14]~reg0.CLK
+CLK => Dout6[13]~reg0.CLK
+CLK => Dout6[12]~reg0.CLK
+CLK => Dout6[11]~reg0.CLK
+CLK => Dout6[10]~reg0.CLK
+CLK => Dout6[9]~reg0.CLK
+CLK => Dout6[8]~reg0.CLK
+CLK => Dout6[7]~reg0.CLK
+CLK => Dout6[6]~reg0.CLK
+CLK => Dout6[5]~reg0.CLK
+CLK => Dout6[4]~reg0.CLK
+CLK => Dout6[3]~reg0.CLK
+CLK => Dout6[2]~reg0.CLK
+CLK => Dout6[1]~reg0.CLK
+CLK => Dout6[0]~reg0.CLK
+CLK => Dout7[15]~reg0.CLK
+CLK => Dout7[14]~reg0.CLK
+CLK => Dout7[13]~reg0.CLK
+CLK => Dout7[12]~reg0.CLK
+CLK => Dout7[11]~reg0.CLK
+CLK => Dout7[10]~reg0.CLK
+CLK => Dout7[9]~reg0.CLK
+CLK => Dout7[8]~reg0.CLK
+CLK => Dout7[7]~reg0.CLK
+CLK => Dout7[6]~reg0.CLK
+CLK => Dout7[5]~reg0.CLK
+CLK => Dout7[4]~reg0.CLK
+CLK => Dout7[3]~reg0.CLK
+CLK => Dout7[2]~reg0.CLK
+CLK => Dout7[1]~reg0.CLK
+CLK => Dout7[0]~reg0.CLK
+CLK => Dout8[15]~reg0.CLK
+CLK => Dout8[14]~reg0.CLK
+CLK => Dout8[13]~reg0.CLK
+CLK => Dout8[12]~reg0.CLK
+CLK => Dout8[11]~reg0.CLK
+CLK => Dout8[10]~reg0.CLK
+CLK => Dout8[9]~reg0.CLK
+CLK => Dout8[8]~reg0.CLK
+CLK => Dout8[7]~reg0.CLK
+CLK => Dout8[6]~reg0.CLK
+CLK => Dout8[5]~reg0.CLK
+CLK => Dout8[4]~reg0.CLK
+CLK => Dout8[3]~reg0.CLK
+CLK => Dout8[2]~reg0.CLK
+CLK => Dout8[1]~reg0.CLK
+CLK => Dout8[0]~reg0.CLK
+CLK => Dout9[15]~reg0.CLK
+CLK => Dout9[14]~reg0.CLK
+CLK => Dout9[13]~reg0.CLK
+CLK => Dout9[12]~reg0.CLK
+CLK => Dout9[11]~reg0.CLK
+CLK => Dout9[10]~reg0.CLK
+CLK => Dout9[9]~reg0.CLK
+CLK => Dout9[8]~reg0.CLK
+CLK => Dout9[7]~reg0.CLK
+CLK => Dout9[6]~reg0.CLK
+CLK => Dout9[5]~reg0.CLK
+CLK => Dout9[4]~reg0.CLK
+CLK => Dout9[3]~reg0.CLK
+CLK => Dout9[2]~reg0.CLK
+CLK => Dout9[1]~reg0.CLK
+CLK => Dout9[0]~reg0.CLK
+CLK => Dout10[15]~reg0.CLK
+CLK => Dout10[14]~reg0.CLK
+CLK => Dout10[13]~reg0.CLK
+CLK => Dout10[12]~reg0.CLK
+CLK => Dout10[11]~reg0.CLK
+CLK => Dout10[10]~reg0.CLK
+CLK => Dout10[9]~reg0.CLK
+CLK => Dout10[8]~reg0.CLK
+CLK => Dout10[7]~reg0.CLK
+CLK => Dout10[6]~reg0.CLK
+CLK => Dout10[5]~reg0.CLK
+CLK => Dout10[4]~reg0.CLK
+CLK => Dout10[3]~reg0.CLK
+CLK => Dout10[2]~reg0.CLK
+CLK => Dout10[1]~reg0.CLK
+CLK => Dout10[0]~reg0.CLK
 
 
 |transmult|demux1to12_16bit:inst11
-Data_in1[0] => Data_out4[0]$latch.DATAIN
-Data_in1[0] => Data_out3[0]$latch.DATAIN
-Data_in1[0] => Data_out2[0]$latch.DATAIN
-Data_in1[0] => Data_out1[0]$latch.DATAIN
-Data_in1[1] => Data_out4[1]$latch.DATAIN
-Data_in1[1] => Data_out3[1]$latch.DATAIN
-Data_in1[1] => Data_out2[1]$latch.DATAIN
-Data_in1[1] => Data_out1[1]$latch.DATAIN
-Data_in1[2] => Data_out4[2]$latch.DATAIN
-Data_in1[2] => Data_out3[2]$latch.DATAIN
-Data_in1[2] => Data_out2[2]$latch.DATAIN
-Data_in1[2] => Data_out1[2]$latch.DATAIN
-Data_in1[3] => Data_out4[3]$latch.DATAIN
-Data_in1[3] => Data_out3[3]$latch.DATAIN
-Data_in1[3] => Data_out2[3]$latch.DATAIN
-Data_in1[3] => Data_out1[3]$latch.DATAIN
-Data_in1[4] => Data_out4[4]$latch.DATAIN
-Data_in1[4] => Data_out3[4]$latch.DATAIN
-Data_in1[4] => Data_out2[4]$latch.DATAIN
-Data_in1[4] => Data_out1[4]$latch.DATAIN
-Data_in1[5] => Data_out4[5]$latch.DATAIN
-Data_in1[5] => Data_out3[5]$latch.DATAIN
-Data_in1[5] => Data_out2[5]$latch.DATAIN
-Data_in1[5] => Data_out1[5]$latch.DATAIN
-Data_in1[6] => Data_out4[6]$latch.DATAIN
-Data_in1[6] => Data_out3[6]$latch.DATAIN
-Data_in1[6] => Data_out2[6]$latch.DATAIN
-Data_in1[6] => Data_out1[6]$latch.DATAIN
-Data_in1[7] => Data_out4[7]$latch.DATAIN
-Data_in1[7] => Data_out3[7]$latch.DATAIN
-Data_in1[7] => Data_out2[7]$latch.DATAIN
-Data_in1[7] => Data_out1[7]$latch.DATAIN
-Data_in1[8] => Data_out4[8]$latch.DATAIN
-Data_in1[8] => Data_out3[8]$latch.DATAIN
-Data_in1[8] => Data_out2[8]$latch.DATAIN
-Data_in1[8] => Data_out1[8]$latch.DATAIN
-Data_in1[9] => Data_out4[9]$latch.DATAIN
-Data_in1[9] => Data_out3[9]$latch.DATAIN
-Data_in1[9] => Data_out2[9]$latch.DATAIN
-Data_in1[9] => Data_out1[9]$latch.DATAIN
-Data_in1[10] => Data_out4[10]$latch.DATAIN
-Data_in1[10] => Data_out3[10]$latch.DATAIN
-Data_in1[10] => Data_out2[10]$latch.DATAIN
-Data_in1[10] => Data_out1[10]$latch.DATAIN
-Data_in1[11] => Data_out4[11]$latch.DATAIN
-Data_in1[11] => Data_out3[11]$latch.DATAIN
-Data_in1[11] => Data_out2[11]$latch.DATAIN
-Data_in1[11] => Data_out1[11]$latch.DATAIN
-Data_in1[12] => Data_out4[12]$latch.DATAIN
-Data_in1[12] => Data_out3[12]$latch.DATAIN
-Data_in1[12] => Data_out2[12]$latch.DATAIN
-Data_in1[12] => Data_out1[12]$latch.DATAIN
-Data_in1[13] => Data_out4[13]$latch.DATAIN
-Data_in1[13] => Data_out3[13]$latch.DATAIN
-Data_in1[13] => Data_out2[13]$latch.DATAIN
-Data_in1[13] => Data_out1[13]$latch.DATAIN
-Data_in1[14] => Data_out4[14]$latch.DATAIN
-Data_in1[14] => Data_out3[14]$latch.DATAIN
-Data_in1[14] => Data_out2[14]$latch.DATAIN
-Data_in1[14] => Data_out1[14]$latch.DATAIN
-Data_in1[15] => Data_out4[15]$latch.DATAIN
-Data_in1[15] => Data_out3[15]$latch.DATAIN
-Data_in1[15] => Data_out2[15]$latch.DATAIN
-Data_in1[15] => Data_out1[15]$latch.DATAIN
-Data_in2[0] => Data_out10[0]$latch.DATAIN
-Data_in2[0] => Data_out9[0]$latch.DATAIN
-Data_in2[0] => Data_out8[0]$latch.DATAIN
-Data_in2[0] => Data_out5[0]$latch.DATAIN
-Data_in2[0] => Data_out6[0]$latch.DATAIN
-Data_in2[0] => Data_out7[0]$latch.DATAIN
-Data_in2[1] => Data_out10[1]$latch.DATAIN
-Data_in2[1] => Data_out9[1]$latch.DATAIN
-Data_in2[1] => Data_out8[1]$latch.DATAIN
-Data_in2[1] => Data_out5[1]$latch.DATAIN
-Data_in2[1] => Data_out6[1]$latch.DATAIN
-Data_in2[1] => Data_out7[1]$latch.DATAIN
-Data_in2[2] => Data_out10[2]$latch.DATAIN
-Data_in2[2] => Data_out9[2]$latch.DATAIN
-Data_in2[2] => Data_out8[2]$latch.DATAIN
-Data_in2[2] => Data_out5[2]$latch.DATAIN
-Data_in2[2] => Data_out6[2]$latch.DATAIN
-Data_in2[2] => Data_out7[2]$latch.DATAIN
-Data_in2[3] => Data_out10[3]$latch.DATAIN
-Data_in2[3] => Data_out9[3]$latch.DATAIN
-Data_in2[3] => Data_out8[3]$latch.DATAIN
-Data_in2[3] => Data_out5[3]$latch.DATAIN
-Data_in2[3] => Data_out6[3]$latch.DATAIN
-Data_in2[3] => Data_out7[3]$latch.DATAIN
-Data_in2[4] => Data_out10[4]$latch.DATAIN
-Data_in2[4] => Data_out9[4]$latch.DATAIN
-Data_in2[4] => Data_out8[4]$latch.DATAIN
-Data_in2[4] => Data_out5[4]$latch.DATAIN
-Data_in2[4] => Data_out6[4]$latch.DATAIN
-Data_in2[4] => Data_out7[4]$latch.DATAIN
-Data_in2[5] => Data_out10[5]$latch.DATAIN
-Data_in2[5] => Data_out9[5]$latch.DATAIN
-Data_in2[5] => Data_out8[5]$latch.DATAIN
-Data_in2[5] => Data_out5[5]$latch.DATAIN
-Data_in2[5] => Data_out6[5]$latch.DATAIN
-Data_in2[5] => Data_out7[5]$latch.DATAIN
-Data_in2[6] => Data_out10[6]$latch.DATAIN
-Data_in2[6] => Data_out9[6]$latch.DATAIN
-Data_in2[6] => Data_out8[6]$latch.DATAIN
-Data_in2[6] => Data_out5[6]$latch.DATAIN
-Data_in2[6] => Data_out6[6]$latch.DATAIN
-Data_in2[6] => Data_out7[6]$latch.DATAIN
-Data_in2[7] => Data_out10[7]$latch.DATAIN
-Data_in2[7] => Data_out9[7]$latch.DATAIN
-Data_in2[7] => Data_out8[7]$latch.DATAIN
-Data_in2[7] => Data_out5[7]$latch.DATAIN
-Data_in2[7] => Data_out6[7]$latch.DATAIN
-Data_in2[7] => Data_out7[7]$latch.DATAIN
-Data_in2[8] => Data_out10[8]$latch.DATAIN
-Data_in2[8] => Data_out9[8]$latch.DATAIN
-Data_in2[8] => Data_out8[8]$latch.DATAIN
-Data_in2[8] => Data_out5[8]$latch.DATAIN
-Data_in2[8] => Data_out6[8]$latch.DATAIN
-Data_in2[8] => Data_out7[8]$latch.DATAIN
-Data_in2[9] => Data_out10[9]$latch.DATAIN
-Data_in2[9] => Data_out9[9]$latch.DATAIN
-Data_in2[9] => Data_out8[9]$latch.DATAIN
-Data_in2[9] => Data_out7[9]$latch.DATAIN
-Data_in2[9] => Data_out5[9]$latch.DATAIN
-Data_in2[9] => Data_out6[9]$latch.DATAIN
-Data_in2[10] => Data_out10[10]$latch.DATAIN
-Data_in2[10] => Data_out9[10]$latch.DATAIN
-Data_in2[10] => Data_out8[10]$latch.DATAIN
-Data_in2[10] => Data_out7[10]$latch.DATAIN
-Data_in2[10] => Data_out5[10]$latch.DATAIN
-Data_in2[10] => Data_out6[10]$latch.DATAIN
-Data_in2[11] => Data_out10[11]$latch.DATAIN
-Data_in2[11] => Data_out9[11]$latch.DATAIN
-Data_in2[11] => Data_out8[11]$latch.DATAIN
-Data_in2[11] => Data_out7[11]$latch.DATAIN
-Data_in2[11] => Data_out5[11]$latch.DATAIN
-Data_in2[11] => Data_out6[11]$latch.DATAIN
-Data_in2[12] => Data_out10[12]$latch.DATAIN
-Data_in2[12] => Data_out9[12]$latch.DATAIN
-Data_in2[12] => Data_out8[12]$latch.DATAIN
-Data_in2[12] => Data_out7[12]$latch.DATAIN
-Data_in2[12] => Data_out5[12]$latch.DATAIN
-Data_in2[12] => Data_out6[12]$latch.DATAIN
-Data_in2[13] => Data_out10[13]$latch.DATAIN
-Data_in2[13] => Data_out9[13]$latch.DATAIN
-Data_in2[13] => Data_out8[13]$latch.DATAIN
-Data_in2[13] => Data_out7[13]$latch.DATAIN
-Data_in2[13] => Data_out5[13]$latch.DATAIN
-Data_in2[13] => Data_out6[13]$latch.DATAIN
-Data_in2[14] => Data_out10[14]$latch.DATAIN
-Data_in2[14] => Data_out9[14]$latch.DATAIN
-Data_in2[14] => Data_out8[14]$latch.DATAIN
-Data_in2[14] => Data_out7[14]$latch.DATAIN
-Data_in2[14] => Data_out5[14]$latch.DATAIN
-Data_in2[14] => Data_out6[14]$latch.DATAIN
-Data_in2[15] => Data_out10[15]$latch.DATAIN
-Data_in2[15] => Data_out9[15]$latch.DATAIN
-Data_in2[15] => Data_out8[15]$latch.DATAIN
-Data_in2[15] => Data_out7[15]$latch.DATAIN
-Data_in2[15] => Data_out5[15]$latch.DATAIN
-Data_in2[15] => Data_out6[15]$latch.DATAIN
-sel1[0] => Decoder0.IN1
-sel1[1] => Decoder0.IN0
-sel2[0] => Decoder1.IN2
-sel2[1] => Decoder1.IN1
-sel2[2] => Decoder1.IN0
-Data_out1[0] <= Data_out1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[1] <= Data_out1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[2] <= Data_out1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[3] <= Data_out1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[4] <= Data_out1[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[5] <= Data_out1[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[6] <= Data_out1[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[7] <= Data_out1[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[8] <= Data_out1[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[9] <= Data_out1[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[10] <= Data_out1[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[11] <= Data_out1[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[12] <= Data_out1[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[13] <= Data_out1[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[14] <= Data_out1[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out1[15] <= Data_out1[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[0] <= Data_out2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[1] <= Data_out2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[2] <= Data_out2[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[3] <= Data_out2[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[4] <= Data_out2[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[5] <= Data_out2[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[6] <= Data_out2[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[7] <= Data_out2[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[8] <= Data_out2[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[9] <= Data_out2[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[10] <= Data_out2[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[11] <= Data_out2[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[12] <= Data_out2[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[13] <= Data_out2[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[14] <= Data_out2[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out2[15] <= Data_out2[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[0] <= Data_out3[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[1] <= Data_out3[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[2] <= Data_out3[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[3] <= Data_out3[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[4] <= Data_out3[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[5] <= Data_out3[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[6] <= Data_out3[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[7] <= Data_out3[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[8] <= Data_out3[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[9] <= Data_out3[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[10] <= Data_out3[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[11] <= Data_out3[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[12] <= Data_out3[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[13] <= Data_out3[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[14] <= Data_out3[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out3[15] <= Data_out3[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[0] <= Data_out4[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[1] <= Data_out4[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[2] <= Data_out4[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[3] <= Data_out4[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[4] <= Data_out4[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[5] <= Data_out4[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[6] <= Data_out4[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[7] <= Data_out4[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[8] <= Data_out4[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[9] <= Data_out4[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[10] <= Data_out4[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[11] <= Data_out4[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[12] <= Data_out4[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[13] <= Data_out4[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[14] <= Data_out4[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out4[15] <= Data_out4[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[0] <= Data_out5[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[1] <= Data_out5[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[2] <= Data_out5[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[3] <= Data_out5[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[4] <= Data_out5[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[5] <= Data_out5[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[6] <= Data_out5[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[7] <= Data_out5[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[8] <= Data_out5[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[9] <= Data_out5[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[10] <= Data_out5[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[11] <= Data_out5[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[12] <= Data_out5[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[13] <= Data_out5[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[14] <= Data_out5[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out5[15] <= Data_out5[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[0] <= Data_out6[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[1] <= Data_out6[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[2] <= Data_out6[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[3] <= Data_out6[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[4] <= Data_out6[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[5] <= Data_out6[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[6] <= Data_out6[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[7] <= Data_out6[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[8] <= Data_out6[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[9] <= Data_out6[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[10] <= Data_out6[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[11] <= Data_out6[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[12] <= Data_out6[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[13] <= Data_out6[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[14] <= Data_out6[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out6[15] <= Data_out6[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[0] <= Data_out7[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[1] <= Data_out7[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[2] <= Data_out7[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[3] <= Data_out7[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[4] <= Data_out7[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[5] <= Data_out7[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[6] <= Data_out7[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[7] <= Data_out7[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[8] <= Data_out7[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[9] <= Data_out7[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[10] <= Data_out7[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[11] <= Data_out7[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[12] <= Data_out7[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[13] <= Data_out7[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[14] <= Data_out7[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out7[15] <= Data_out7[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[0] <= Data_out8[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[1] <= Data_out8[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[2] <= Data_out8[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[3] <= Data_out8[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[4] <= Data_out8[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[5] <= Data_out8[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[6] <= Data_out8[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[7] <= Data_out8[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[8] <= Data_out8[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[9] <= Data_out8[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[10] <= Data_out8[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[11] <= Data_out8[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[12] <= Data_out8[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[13] <= Data_out8[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[14] <= Data_out8[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out8[15] <= Data_out8[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[0] <= Data_out9[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[1] <= Data_out9[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[2] <= Data_out9[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[3] <= Data_out9[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[4] <= Data_out9[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[5] <= Data_out9[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[6] <= Data_out9[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[7] <= Data_out9[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[8] <= Data_out9[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[9] <= Data_out9[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[10] <= Data_out9[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[11] <= Data_out9[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[12] <= Data_out9[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[13] <= Data_out9[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[14] <= Data_out9[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out9[15] <= Data_out9[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[0] <= Data_out10[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[1] <= Data_out10[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[2] <= Data_out10[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[3] <= Data_out10[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[4] <= Data_out10[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[5] <= Data_out10[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[6] <= Data_out10[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[7] <= Data_out10[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[8] <= Data_out10[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[9] <= Data_out10[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[10] <= Data_out10[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[11] <= Data_out10[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[12] <= Data_out10[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[13] <= Data_out10[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[14] <= Data_out10[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Data_out10[15] <= Data_out10[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Data_in1[0] => Data_out2~15.DATAB
+Data_in1[0] => Data_out3~15.DATAB
+Data_in1[0] => Data_out4~15.DATAB
+Data_in1[0] => Data_out1[0]~reg0.DATAIN
+Data_in1[1] => Data_out2~14.DATAB
+Data_in1[1] => Data_out3~14.DATAB
+Data_in1[1] => Data_out4~14.DATAB
+Data_in1[1] => Data_out1[1]~reg0.DATAIN
+Data_in1[2] => Data_out2~13.DATAB
+Data_in1[2] => Data_out3~13.DATAB
+Data_in1[2] => Data_out4~13.DATAB
+Data_in1[2] => Data_out1[2]~reg0.DATAIN
+Data_in1[3] => Data_out2~12.DATAB
+Data_in1[3] => Data_out3~12.DATAB
+Data_in1[3] => Data_out4~12.DATAB
+Data_in1[3] => Data_out1[3]~reg0.DATAIN
+Data_in1[4] => Data_out2~11.DATAB
+Data_in1[4] => Data_out3~11.DATAB
+Data_in1[4] => Data_out4~11.DATAB
+Data_in1[4] => Data_out1[4]~reg0.DATAIN
+Data_in1[5] => Data_out2~10.DATAB
+Data_in1[5] => Data_out3~10.DATAB
+Data_in1[5] => Data_out4~10.DATAB
+Data_in1[5] => Data_out1[5]~reg0.DATAIN
+Data_in1[6] => Data_out2~9.DATAB
+Data_in1[6] => Data_out3~9.DATAB
+Data_in1[6] => Data_out4~9.DATAB
+Data_in1[6] => Data_out1[6]~reg0.DATAIN
+Data_in1[7] => Data_out2~8.DATAB
+Data_in1[7] => Data_out3~8.DATAB
+Data_in1[7] => Data_out4~8.DATAB
+Data_in1[7] => Data_out1[7]~reg0.DATAIN
+Data_in1[8] => Data_out2~7.DATAB
+Data_in1[8] => Data_out3~7.DATAB
+Data_in1[8] => Data_out4~7.DATAB
+Data_in1[8] => Data_out1[8]~reg0.DATAIN
+Data_in1[9] => Data_out2~6.DATAB
+Data_in1[9] => Data_out3~6.DATAB
+Data_in1[9] => Data_out4~6.DATAB
+Data_in1[9] => Data_out1[9]~reg0.DATAIN
+Data_in1[10] => Data_out2~5.DATAB
+Data_in1[10] => Data_out3~5.DATAB
+Data_in1[10] => Data_out4~5.DATAB
+Data_in1[10] => Data_out1[10]~reg0.DATAIN
+Data_in1[11] => Data_out2~4.DATAB
+Data_in1[11] => Data_out3~4.DATAB
+Data_in1[11] => Data_out4~4.DATAB
+Data_in1[11] => Data_out1[11]~reg0.DATAIN
+Data_in1[12] => Data_out2~3.DATAB
+Data_in1[12] => Data_out3~3.DATAB
+Data_in1[12] => Data_out4~3.DATAB
+Data_in1[12] => Data_out1[12]~reg0.DATAIN
+Data_in1[13] => Data_out2~2.DATAB
+Data_in1[13] => Data_out3~2.DATAB
+Data_in1[13] => Data_out4~2.DATAB
+Data_in1[13] => Data_out1[13]~reg0.DATAIN
+Data_in1[14] => Data_out2~1.DATAB
+Data_in1[14] => Data_out3~1.DATAB
+Data_in1[14] => Data_out4~1.DATAB
+Data_in1[14] => Data_out1[14]~reg0.DATAIN
+Data_in1[15] => Data_out2~0.DATAB
+Data_in1[15] => Data_out3~0.DATAB
+Data_in1[15] => Data_out4~0.DATAB
+Data_in1[15] => Data_out1[15]~reg0.DATAIN
+Data_in2[0] => Data_out6~15.DATAB
+Data_in2[0] => Data_out7~15.DATAB
+Data_in2[0] => Data_out8~15.DATAB
+Data_in2[0] => Data_out9~15.DATAB
+Data_in2[0] => Data_out10~15.DATAB
+Data_in2[0] => Data_out5[0]~reg0.DATAIN
+Data_in2[1] => Data_out6~14.DATAB
+Data_in2[1] => Data_out7~14.DATAB
+Data_in2[1] => Data_out8~14.DATAB
+Data_in2[1] => Data_out9~14.DATAB
+Data_in2[1] => Data_out10~14.DATAB
+Data_in2[1] => Data_out5[1]~reg0.DATAIN
+Data_in2[2] => Data_out6~13.DATAB
+Data_in2[2] => Data_out7~13.DATAB
+Data_in2[2] => Data_out8~13.DATAB
+Data_in2[2] => Data_out9~13.DATAB
+Data_in2[2] => Data_out10~13.DATAB
+Data_in2[2] => Data_out5[2]~reg0.DATAIN
+Data_in2[3] => Data_out6~12.DATAB
+Data_in2[3] => Data_out7~12.DATAB
+Data_in2[3] => Data_out8~12.DATAB
+Data_in2[3] => Data_out9~12.DATAB
+Data_in2[3] => Data_out10~12.DATAB
+Data_in2[3] => Data_out5[3]~reg0.DATAIN
+Data_in2[4] => Data_out6~11.DATAB
+Data_in2[4] => Data_out7~11.DATAB
+Data_in2[4] => Data_out8~11.DATAB
+Data_in2[4] => Data_out9~11.DATAB
+Data_in2[4] => Data_out10~11.DATAB
+Data_in2[4] => Data_out5[4]~reg0.DATAIN
+Data_in2[5] => Data_out6~10.DATAB
+Data_in2[5] => Data_out7~10.DATAB
+Data_in2[5] => Data_out8~10.DATAB
+Data_in2[5] => Data_out9~10.DATAB
+Data_in2[5] => Data_out10~10.DATAB
+Data_in2[5] => Data_out5[5]~reg0.DATAIN
+Data_in2[6] => Data_out6~9.DATAB
+Data_in2[6] => Data_out7~9.DATAB
+Data_in2[6] => Data_out8~9.DATAB
+Data_in2[6] => Data_out9~9.DATAB
+Data_in2[6] => Data_out10~9.DATAB
+Data_in2[6] => Data_out5[6]~reg0.DATAIN
+Data_in2[7] => Data_out6~8.DATAB
+Data_in2[7] => Data_out7~8.DATAB
+Data_in2[7] => Data_out8~8.DATAB
+Data_in2[7] => Data_out9~8.DATAB
+Data_in2[7] => Data_out10~8.DATAB
+Data_in2[7] => Data_out5[7]~reg0.DATAIN
+Data_in2[8] => Data_out6~7.DATAB
+Data_in2[8] => Data_out7~7.DATAB
+Data_in2[8] => Data_out8~7.DATAB
+Data_in2[8] => Data_out9~7.DATAB
+Data_in2[8] => Data_out10~7.DATAB
+Data_in2[8] => Data_out5[8]~reg0.DATAIN
+Data_in2[9] => Data_out6~6.DATAB
+Data_in2[9] => Data_out7~6.DATAB
+Data_in2[9] => Data_out8~6.DATAB
+Data_in2[9] => Data_out9~6.DATAB
+Data_in2[9] => Data_out10~6.DATAB
+Data_in2[9] => Data_out5[9]~reg0.DATAIN
+Data_in2[10] => Data_out6~5.DATAB
+Data_in2[10] => Data_out7~5.DATAB
+Data_in2[10] => Data_out8~5.DATAB
+Data_in2[10] => Data_out9~5.DATAB
+Data_in2[10] => Data_out10~5.DATAB
+Data_in2[10] => Data_out5[10]~reg0.DATAIN
+Data_in2[11] => Data_out6~4.DATAB
+Data_in2[11] => Data_out7~4.DATAB
+Data_in2[11] => Data_out8~4.DATAB
+Data_in2[11] => Data_out9~4.DATAB
+Data_in2[11] => Data_out10~4.DATAB
+Data_in2[11] => Data_out5[11]~reg0.DATAIN
+Data_in2[12] => Data_out6~3.DATAB
+Data_in2[12] => Data_out7~3.DATAB
+Data_in2[12] => Data_out8~3.DATAB
+Data_in2[12] => Data_out9~3.DATAB
+Data_in2[12] => Data_out10~3.DATAB
+Data_in2[12] => Data_out5[12]~reg0.DATAIN
+Data_in2[13] => Data_out6~2.DATAB
+Data_in2[13] => Data_out7~2.DATAB
+Data_in2[13] => Data_out8~2.DATAB
+Data_in2[13] => Data_out9~2.DATAB
+Data_in2[13] => Data_out10~2.DATAB
+Data_in2[13] => Data_out5[13]~reg0.DATAIN
+Data_in2[14] => Data_out6~1.DATAB
+Data_in2[14] => Data_out7~1.DATAB
+Data_in2[14] => Data_out8~1.DATAB
+Data_in2[14] => Data_out9~1.DATAB
+Data_in2[14] => Data_out10~1.DATAB
+Data_in2[14] => Data_out5[14]~reg0.DATAIN
+Data_in2[15] => Data_out6~0.DATAB
+Data_in2[15] => Data_out7~0.DATAB
+Data_in2[15] => Data_out8~0.DATAB
+Data_in2[15] => Data_out9~0.DATAB
+Data_in2[15] => Data_out10~0.DATAB
+Data_in2[15] => Data_out5[15]~reg0.DATAIN
+sel1[0] => Equal0.IN0
+sel1[0] => Equal1.IN0
+sel1[0] => Equal2.IN1
+sel1[0] => Equal3.IN0
+sel1[1] => Equal0.IN1
+sel1[1] => Equal1.IN1
+sel1[1] => Equal2.IN0
+sel1[1] => Equal3.IN1
+sel2[0] => Equal4.IN0
+sel2[0] => Equal5.IN0
+sel2[0] => Equal6.IN1
+sel2[0] => Equal7.IN0
+sel2[0] => Equal8.IN1
+sel2[0] => Equal9.IN0
+sel2[1] => Equal4.IN1
+sel2[1] => Equal5.IN1
+sel2[1] => Equal6.IN0
+sel2[1] => Equal7.IN1
+sel2[1] => Equal8.IN2
+sel2[1] => Equal9.IN2
+sel2[2] => Equal4.IN2
+sel2[2] => Equal5.IN2
+sel2[2] => Equal6.IN2
+sel2[2] => Equal7.IN2
+sel2[2] => Equal8.IN0
+sel2[2] => Equal9.IN1
+Data_out1[0] <= Data_out1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[1] <= Data_out1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[2] <= Data_out1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[3] <= Data_out1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[4] <= Data_out1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[5] <= Data_out1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[6] <= Data_out1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[7] <= Data_out1[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[8] <= Data_out1[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[9] <= Data_out1[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[10] <= Data_out1[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[11] <= Data_out1[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[12] <= Data_out1[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[13] <= Data_out1[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[14] <= Data_out1[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out1[15] <= Data_out1[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[0] <= Data_out2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[1] <= Data_out2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[2] <= Data_out2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[3] <= Data_out2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[4] <= Data_out2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[5] <= Data_out2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[6] <= Data_out2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[7] <= Data_out2[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[8] <= Data_out2[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[9] <= Data_out2[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[10] <= Data_out2[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[11] <= Data_out2[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[12] <= Data_out2[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[13] <= Data_out2[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[14] <= Data_out2[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out2[15] <= Data_out2[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[0] <= Data_out3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[1] <= Data_out3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[2] <= Data_out3[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[3] <= Data_out3[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[4] <= Data_out3[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[5] <= Data_out3[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[6] <= Data_out3[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[7] <= Data_out3[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[8] <= Data_out3[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[9] <= Data_out3[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[10] <= Data_out3[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[11] <= Data_out3[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[12] <= Data_out3[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[13] <= Data_out3[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[14] <= Data_out3[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out3[15] <= Data_out3[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[0] <= Data_out4[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[1] <= Data_out4[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[2] <= Data_out4[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[3] <= Data_out4[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[4] <= Data_out4[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[5] <= Data_out4[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[6] <= Data_out4[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[7] <= Data_out4[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[8] <= Data_out4[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[9] <= Data_out4[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[10] <= Data_out4[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[11] <= Data_out4[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[12] <= Data_out4[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[13] <= Data_out4[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[14] <= Data_out4[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out4[15] <= Data_out4[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[0] <= Data_out5[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[1] <= Data_out5[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[2] <= Data_out5[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[3] <= Data_out5[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[4] <= Data_out5[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[5] <= Data_out5[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[6] <= Data_out5[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[7] <= Data_out5[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[8] <= Data_out5[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[9] <= Data_out5[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[10] <= Data_out5[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[11] <= Data_out5[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[12] <= Data_out5[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[13] <= Data_out5[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[14] <= Data_out5[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out5[15] <= Data_out5[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[0] <= Data_out6[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[1] <= Data_out6[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[2] <= Data_out6[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[3] <= Data_out6[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[4] <= Data_out6[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[5] <= Data_out6[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[6] <= Data_out6[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[7] <= Data_out6[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[8] <= Data_out6[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[9] <= Data_out6[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[10] <= Data_out6[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[11] <= Data_out6[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[12] <= Data_out6[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[13] <= Data_out6[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[14] <= Data_out6[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out6[15] <= Data_out6[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[0] <= Data_out7[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[1] <= Data_out7[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[2] <= Data_out7[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[3] <= Data_out7[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[4] <= Data_out7[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[5] <= Data_out7[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[6] <= Data_out7[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[7] <= Data_out7[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[8] <= Data_out7[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[9] <= Data_out7[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[10] <= Data_out7[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[11] <= Data_out7[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[12] <= Data_out7[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[13] <= Data_out7[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[14] <= Data_out7[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out7[15] <= Data_out7[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[0] <= Data_out8[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[1] <= Data_out8[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[2] <= Data_out8[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[3] <= Data_out8[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[4] <= Data_out8[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[5] <= Data_out8[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[6] <= Data_out8[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[7] <= Data_out8[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[8] <= Data_out8[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[9] <= Data_out8[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[10] <= Data_out8[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[11] <= Data_out8[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[12] <= Data_out8[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[13] <= Data_out8[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[14] <= Data_out8[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out8[15] <= Data_out8[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[0] <= Data_out9[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[1] <= Data_out9[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[2] <= Data_out9[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[3] <= Data_out9[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[4] <= Data_out9[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[5] <= Data_out9[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[6] <= Data_out9[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[7] <= Data_out9[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[8] <= Data_out9[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[9] <= Data_out9[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[10] <= Data_out9[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[11] <= Data_out9[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[12] <= Data_out9[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[13] <= Data_out9[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[14] <= Data_out9[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out9[15] <= Data_out9[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[0] <= Data_out10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[1] <= Data_out10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[2] <= Data_out10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[3] <= Data_out10[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[4] <= Data_out10[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[5] <= Data_out10[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[6] <= Data_out10[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[7] <= Data_out10[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[8] <= Data_out10[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[9] <= Data_out10[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[10] <= Data_out10[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[11] <= Data_out10[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[12] <= Data_out10[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[13] <= Data_out10[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[14] <= Data_out10[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Data_out10[15] <= Data_out10[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => Data_out1[15]~reg0.CLK
+clk => Data_out1[14]~reg0.CLK
+clk => Data_out1[13]~reg0.CLK
+clk => Data_out1[12]~reg0.CLK
+clk => Data_out1[11]~reg0.CLK
+clk => Data_out1[10]~reg0.CLK
+clk => Data_out1[9]~reg0.CLK
+clk => Data_out1[8]~reg0.CLK
+clk => Data_out1[7]~reg0.CLK
+clk => Data_out1[6]~reg0.CLK
+clk => Data_out1[5]~reg0.CLK
+clk => Data_out1[4]~reg0.CLK
+clk => Data_out1[3]~reg0.CLK
+clk => Data_out1[2]~reg0.CLK
+clk => Data_out1[1]~reg0.CLK
+clk => Data_out1[0]~reg0.CLK
+clk => Data_out2[15]~reg0.CLK
+clk => Data_out2[14]~reg0.CLK
+clk => Data_out2[13]~reg0.CLK
+clk => Data_out2[12]~reg0.CLK
+clk => Data_out2[11]~reg0.CLK
+clk => Data_out2[10]~reg0.CLK
+clk => Data_out2[9]~reg0.CLK
+clk => Data_out2[8]~reg0.CLK
+clk => Data_out2[7]~reg0.CLK
+clk => Data_out2[6]~reg0.CLK
+clk => Data_out2[5]~reg0.CLK
+clk => Data_out2[4]~reg0.CLK
+clk => Data_out2[3]~reg0.CLK
+clk => Data_out2[2]~reg0.CLK
+clk => Data_out2[1]~reg0.CLK
+clk => Data_out2[0]~reg0.CLK
+clk => Data_out3[15]~reg0.CLK
+clk => Data_out3[14]~reg0.CLK
+clk => Data_out3[13]~reg0.CLK
+clk => Data_out3[12]~reg0.CLK
+clk => Data_out3[11]~reg0.CLK
+clk => Data_out3[10]~reg0.CLK
+clk => Data_out3[9]~reg0.CLK
+clk => Data_out3[8]~reg0.CLK
+clk => Data_out3[7]~reg0.CLK
+clk => Data_out3[6]~reg0.CLK
+clk => Data_out3[5]~reg0.CLK
+clk => Data_out3[4]~reg0.CLK
+clk => Data_out3[3]~reg0.CLK
+clk => Data_out3[2]~reg0.CLK
+clk => Data_out3[1]~reg0.CLK
+clk => Data_out3[0]~reg0.CLK
+clk => Data_out4[15]~reg0.CLK
+clk => Data_out4[14]~reg0.CLK
+clk => Data_out4[13]~reg0.CLK
+clk => Data_out4[12]~reg0.CLK
+clk => Data_out4[11]~reg0.CLK
+clk => Data_out4[10]~reg0.CLK
+clk => Data_out4[9]~reg0.CLK
+clk => Data_out4[8]~reg0.CLK
+clk => Data_out4[7]~reg0.CLK
+clk => Data_out4[6]~reg0.CLK
+clk => Data_out4[5]~reg0.CLK
+clk => Data_out4[4]~reg0.CLK
+clk => Data_out4[3]~reg0.CLK
+clk => Data_out4[2]~reg0.CLK
+clk => Data_out4[1]~reg0.CLK
+clk => Data_out4[0]~reg0.CLK
+clk => Data_out5[15]~reg0.CLK
+clk => Data_out5[14]~reg0.CLK
+clk => Data_out5[13]~reg0.CLK
+clk => Data_out5[12]~reg0.CLK
+clk => Data_out5[11]~reg0.CLK
+clk => Data_out5[10]~reg0.CLK
+clk => Data_out5[9]~reg0.CLK
+clk => Data_out5[8]~reg0.CLK
+clk => Data_out5[7]~reg0.CLK
+clk => Data_out5[6]~reg0.CLK
+clk => Data_out5[5]~reg0.CLK
+clk => Data_out5[4]~reg0.CLK
+clk => Data_out5[3]~reg0.CLK
+clk => Data_out5[2]~reg0.CLK
+clk => Data_out5[1]~reg0.CLK
+clk => Data_out5[0]~reg0.CLK
+clk => Data_out6[15]~reg0.CLK
+clk => Data_out6[14]~reg0.CLK
+clk => Data_out6[13]~reg0.CLK
+clk => Data_out6[12]~reg0.CLK
+clk => Data_out6[11]~reg0.CLK
+clk => Data_out6[10]~reg0.CLK
+clk => Data_out6[9]~reg0.CLK
+clk => Data_out6[8]~reg0.CLK
+clk => Data_out6[7]~reg0.CLK
+clk => Data_out6[6]~reg0.CLK
+clk => Data_out6[5]~reg0.CLK
+clk => Data_out6[4]~reg0.CLK
+clk => Data_out6[3]~reg0.CLK
+clk => Data_out6[2]~reg0.CLK
+clk => Data_out6[1]~reg0.CLK
+clk => Data_out6[0]~reg0.CLK
+clk => Data_out7[15]~reg0.CLK
+clk => Data_out7[14]~reg0.CLK
+clk => Data_out7[13]~reg0.CLK
+clk => Data_out7[12]~reg0.CLK
+clk => Data_out7[11]~reg0.CLK
+clk => Data_out7[10]~reg0.CLK
+clk => Data_out7[9]~reg0.CLK
+clk => Data_out7[8]~reg0.CLK
+clk => Data_out7[7]~reg0.CLK
+clk => Data_out7[6]~reg0.CLK
+clk => Data_out7[5]~reg0.CLK
+clk => Data_out7[4]~reg0.CLK
+clk => Data_out7[3]~reg0.CLK
+clk => Data_out7[2]~reg0.CLK
+clk => Data_out7[1]~reg0.CLK
+clk => Data_out7[0]~reg0.CLK
+clk => Data_out8[15]~reg0.CLK
+clk => Data_out8[14]~reg0.CLK
+clk => Data_out8[13]~reg0.CLK
+clk => Data_out8[12]~reg0.CLK
+clk => Data_out8[11]~reg0.CLK
+clk => Data_out8[10]~reg0.CLK
+clk => Data_out8[9]~reg0.CLK
+clk => Data_out8[8]~reg0.CLK
+clk => Data_out8[7]~reg0.CLK
+clk => Data_out8[6]~reg0.CLK
+clk => Data_out8[5]~reg0.CLK
+clk => Data_out8[4]~reg0.CLK
+clk => Data_out8[3]~reg0.CLK
+clk => Data_out8[2]~reg0.CLK
+clk => Data_out8[1]~reg0.CLK
+clk => Data_out8[0]~reg0.CLK
+clk => Data_out9[15]~reg0.CLK
+clk => Data_out9[14]~reg0.CLK
+clk => Data_out9[13]~reg0.CLK
+clk => Data_out9[12]~reg0.CLK
+clk => Data_out9[11]~reg0.CLK
+clk => Data_out9[10]~reg0.CLK
+clk => Data_out9[9]~reg0.CLK
+clk => Data_out9[8]~reg0.CLK
+clk => Data_out9[7]~reg0.CLK
+clk => Data_out9[6]~reg0.CLK
+clk => Data_out9[5]~reg0.CLK
+clk => Data_out9[4]~reg0.CLK
+clk => Data_out9[3]~reg0.CLK
+clk => Data_out9[2]~reg0.CLK
+clk => Data_out9[1]~reg0.CLK
+clk => Data_out9[0]~reg0.CLK
+clk => Data_out10[15]~reg0.CLK
+clk => Data_out10[14]~reg0.CLK
+clk => Data_out10[13]~reg0.CLK
+clk => Data_out10[12]~reg0.CLK
+clk => Data_out10[11]~reg0.CLK
+clk => Data_out10[10]~reg0.CLK
+clk => Data_out10[9]~reg0.CLK
+clk => Data_out10[8]~reg0.CLK
+clk => Data_out10[7]~reg0.CLK
+clk => Data_out10[6]~reg0.CLK
+clk => Data_out10[5]~reg0.CLK
+clk => Data_out10[4]~reg0.CLK
+clk => Data_out10[3]~reg0.CLK
+clk => Data_out10[2]~reg0.CLK
+clk => Data_out10[1]~reg0.CLK
+clk => Data_out10[0]~reg0.CLK
 
 
 |transmult|MAC:inst4

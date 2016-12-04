@@ -76,3 +76,4 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name VERILOG_FILE MAC_Checker.v
 set_global_assignment -name VERILOG_FILE MACV.v
 set_global_assignment -name VERILOG_FILE dontCareFilter.v
+set_global_assignment -name VERILOG_FILE reg160bitV.v

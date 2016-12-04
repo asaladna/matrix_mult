@@ -1,5 +1,5 @@
 Fitter report for finalPoject
-Sat Dec 03 21:38:06 2016
+Sat Dec 03 22:05:27 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------+
 ; Fitter Summary                                                       ;
 +-----------------------+----------------------------------------------+
-; Fitter Status         ; Successful - Sat Dec 03 21:38:06 2016        ;
+; Fitter Status         ; Successful - Sat Dec 03 22:05:27 2016        ;
 ; Quartus II Version    ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name         ; finalPoject                                  ;
 ; Top-level Entity Name ; transmult                                    ;
@@ -1016,7 +1016,7 @@ This will disable optimization of problematic paths and expose them for further 
 ; LABs with Chains - Fit Attempt 1                                               ; 18                 ;
 ; LABs with Multiple Chains - Fit Attempt 1                                      ; 0                  ;
 ; Time - Fit Attempt 1                                                           ; 1                  ;
-; Time in tsm_tan.dll - Fit Attempt 1                                            ; 0.031              ;
+; Time in tsm_tan.dll - Fit Attempt 1                                            ; 0.016              ;
 +--------------------------------------------------------------------------------+--------------------+
 
 
@@ -1035,7 +1035,7 @@ This will disable optimization of problematic paths and expose them for further 
 ; Late Slack - Fit Attempt 1          ; -39590 ;
 ; Peak Regional Wire - Fit Attempt 1  ; 0.000  ;
 ; Time - Fit Attempt 1                ; 2      ;
-; Time in tsm_tan.dll - Fit Attempt 1 ; 0.328  ;
+; Time in tsm_tan.dll - Fit Attempt 1 ; 0.172  ;
 +-------------------------------------+--------+
 
 
@@ -1052,7 +1052,7 @@ This will disable optimization of problematic paths and expose them for further 
 ; Late Slack - Fit Attempt 1          ; -39226      ;
 ; Late Wire Use - Fit Attempt 1       ; 34          ;
 ; Time - Fit Attempt 1                ; 2           ;
-; Time in tsm_tan.dll - Fit Attempt 1 ; 0.234       ;
+; Time in tsm_tan.dll - Fit Attempt 1 ; 0.218       ;
 +-------------------------------------+-------------+
 
 
@@ -1062,7 +1062,7 @@ This will disable optimization of problematic paths and expose them for further 
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 03 21:38:00 2016
+    Info: Processing started: Sat Dec 03 22:05:22 2016
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
 Info: Selected device EPM1270F256A5 for design "finalPoject"
 Info: Low junction temperature is -40 degrees C
@@ -1201,7 +1201,7 @@ Info: I/O bank details before I/O pin placement
         Info: I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  53 pins available
         Info: I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  55 pins available
         Info: I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  53 pins available
-Info: Fitter preparation operations ending: elapsed time is 00:00:00
+Info: Fitter preparation operations ending: elapsed time is 00:00:01
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info: Fitter placement operations beginning
@@ -1256,8 +1256,8 @@ Warning: Following 17 pins have nothing, GND, or VCC driving datain port -- chan
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 236 megabytes
-    Info: Processing ended: Sat Dec 03 21:38:06 2016
-    Info: Elapsed time: 00:00:06
+    Info: Processing ended: Sat Dec 03 22:05:27 2016
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 
