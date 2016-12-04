@@ -200,7 +200,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1480 328 1656 344)
+	(rect 1392 88 1568 104)
 	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
 	(text "load_in" (rect 90 0 138 15)(font "Arial" ))
 	(pt 0 8)
@@ -216,7 +216,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1320 -432 1336 -256)
+	(rect 1272 -432 1288 -256)
 	(text "OUTPUT" (rect 3 1 16 51)(font "Arial" (font_size 6))(vertical))
 	(text "test2[15..0]" (rect 1 90 16 160)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -233,7 +233,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1832 -440 1848 -264)
+	(rect 1936 -432 1952 -256)
 	(text "OUTPUT" (rect 3 1 16 51)(font "Arial" (font_size 6))(vertical))
 	(text "test3[15..0]" (rect 2 89 17 159)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -859,199 +859,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 96 392 336 680)
-	(text "controller" (rect 5 0 65 15)(font "Arial" ))
-	(text "inst2" (rect 8 269 39 284)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 17 15)(font "Arial" ))
-		(text "clk" (rect 21 27 38 42)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "reset" (rect 0 0 33 15)(font "Arial" ))
-		(text "reset" (rect 21 43 54 58)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "cf_load" (rect 0 0 47 15)(font "Arial" ))
-		(text "cf_load" (rect 21 59 68 74)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
-		(pt 240 32)
-		(output)
-		(text "mux_select1[3..0]" (rect 0 0 113 15)(font "Arial" ))
-		(text "mux_select1[3..0]" (rect 106 27 219 42)(font "Arial" ))
-		(line (pt 240 32)(pt 224 32)(line_width 3))
-	)
-	(port
-		(pt 240 48)
-		(output)
-		(text "mux_select2[3..0]" (rect 0 0 113 15)(font "Arial" ))
-		(text "mux_select2[3..0]" (rect 106 43 219 58)(font "Arial" ))
-		(line (pt 240 48)(pt 224 48)(line_width 3))
-	)
-	(port
-		(pt 240 64)
-		(output)
-		(text "mux_select3[3..0]" (rect 0 0 113 15)(font "Arial" ))
-		(text "mux_select3[3..0]" (rect 106 59 219 74)(font "Arial" ))
-		(line (pt 240 64)(pt 224 64)(line_width 3))
-	)
-	(port
-		(pt 240 80)
-		(output)
-		(text "output_set" (rect 0 0 68 15)(font "Arial" ))
-		(text "output_set" (rect 151 75 219 90)(font "Arial" ))
-		(line (pt 240 80)(pt 224 80)(line_width 1))
-	)
-	(port
-		(pt 240 96)
-		(output)
-		(text "output_clr" (rect 0 0 63 15)(font "Arial" ))
-		(text "output_clr" (rect 156 91 219 106)(font "Arial" ))
-		(line (pt 240 96)(pt 224 96)(line_width 1))
-	)
-	(port
-		(pt 240 112)
-		(output)
-		(text "mem_clr" (rect 0 0 57 15)(font "Arial" ))
-		(text "mem_clr" (rect 162 107 219 122)(font "Arial" ))
-		(line (pt 240 112)(pt 224 112)(line_width 1))
-	)
-	(port
-		(pt 240 128)
-		(output)
-		(text "demuxto12_sel[3..0]" (rect 0 0 130 15)(font "Arial" ))
-		(text "demuxto12_sel[3..0]" (rect 89 123 219 138)(font "Arial" ))
-		(line (pt 240 128)(pt 224 128)(line_width 3))
-	)
-	(port
-		(pt 240 144)
-		(output)
-		(text "reg96_ld" (rect 0 0 57 15)(font "Arial" ))
-		(text "reg96_ld" (rect 162 139 219 154)(font "Arial" ))
-		(line (pt 240 144)(pt 224 144)(line_width 1))
-	)
-	(port
-		(pt 240 160)
-		(output)
-		(text "reg106_ld" (rect 0 0 66 15)(font "Arial" ))
-		(text "reg106_ld" (rect 153 155 219 170)(font "Arial" ))
-		(line (pt 240 160)(pt 224 160)(line_width 1))
-	)
-	(port
-		(pt 240 176)
-		(output)
-		(text "demux16bit_sel1[1..0]" (rect 0 0 142 15)(font "Arial" ))
-		(text "demux16bit_sel1[1..0]" (rect 77 171 219 186)(font "Arial" ))
-		(line (pt 240 176)(pt 224 176)(line_width 3))
-	)
-	(port
-		(pt 240 192)
-		(output)
-		(text "demux16bit_sel2[2..0]" (rect 0 0 142 15)(font "Arial" ))
-		(text "demux16bit_sel2[2..0]" (rect 77 187 219 202)(font "Arial" ))
-		(line (pt 240 192)(pt 224 192)(line_width 3))
-	)
-	(port
-		(pt 240 208)
-		(output)
-		(text "final_mux_sel[3..0]" (rect 0 0 121 15)(font "Arial" ))
-		(text "final_mux_sel[3..0]" (rect 98 203 219 218)(font "Arial" ))
-		(line (pt 240 208)(pt 224 208)(line_width 3))
-	)
-	(port
-		(pt 240 224)
-		(output)
-		(text "MAC_Reset1" (rect 0 0 84 15)(font "Arial" ))
-		(text "MAC_Reset1" (rect 135 219 219 234)(font "Arial" ))
-		(line (pt 240 224)(pt 224 224)(line_width 1))
-	)
-	(port
-		(pt 240 240)
-		(output)
-		(text "MAC_Reset2" (rect 0 0 84 15)(font "Arial" ))
-		(text "MAC_Reset2" (rect 135 235 219 250)(font "Arial" ))
-		(line (pt 240 240)(pt 224 240)(line_width 1))
-	)
-	(parameter
-		"S0"
-		"0000"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S1"
-		"0001"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S2"
-		"0010"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S3"
-		"0011"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S4"
-		"0100"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S5"
-		"0101"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S6"
-		"0110"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S7"
-		"0111"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S8"
-		"1000"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S9"
-		"1001"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S10"
-		"1010"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S11"
-		"1011"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S12"
-		"1100"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(drawing
-		(rectangle (rect 16 16 224 272)(line_width 1))
-	)
-	(annotation_block (parameter)(rect -280 528 -72 752))
-)
-(symbol
 	(rect 496 -360 664 -120)
 	(text "lpm_mux0" (rect 52 3 136 22)(font "Arial" (font_size 10)))
 	(text "inst7" (rect 8 221 39 236)(font "Arial" ))
@@ -1486,9 +1293,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1104 -240 1368 -16)
+	(rect 1104 -240 1368 16)
 	(text "demux1to12_16bit" (rect 5 0 125 15)(font "Arial" ))
-	(text "inst11" (rect 8 205 48 220)(font "Arial" ))
+	(text "inst11" (rect 8 237 48 252)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1506,8 +1313,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "sel1[1..0]" (rect 0 0 59 15)(font "Arial" ))
-		(text "sel1[1..0]" (rect 21 59 80 74)(font "Arial" ))
+		(text "sel1[2..0]" (rect 0 0 59 15)(font "Arial" ))
+		(text "sel1[2..0]" (rect 21 59 80 74)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
@@ -1594,9 +1401,276 @@ applicable agreement for further details.
 		(text "Data_out10[15..0]" (rect 129 171 243 186)(font "Arial" ))
 		(line (pt 264 176)(pt 248 176)(line_width 3))
 	)
-	(drawing
-		(rectangle (rect 16 16 248 208)(line_width 1))
+	(port
+		(pt 264 192)
+		(output)
+		(text "Data_out11[15..0]" (rect 0 0 114 15)(font "Arial" ))
+		(text "Data_out11[15..0]" (rect 129 187 243 202)(font "Arial" ))
+		(line (pt 264 192)(pt 248 192)(line_width 3))
 	)
+	(port
+		(pt 264 208)
+		(output)
+		(text "Data_out12[15..0]" (rect 0 0 114 15)(font "Arial" ))
+		(text "Data_out12[15..0]" (rect 129 203 243 218)(font "Arial" ))
+		(line (pt 264 208)(pt 248 208)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 240)(line_width 1))
+	)
+)
+(symbol
+	(rect 96 392 336 680)
+	(text "controller" (rect 5 0 65 15)(font "Arial" ))
+	(text "inst2" (rect 8 269 39 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 17 15)(font "Arial" ))
+		(text "clk" (rect 21 27 38 42)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 33 15)(font "Arial" ))
+		(text "reset" (rect 21 43 54 58)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "cf_load" (rect 0 0 47 15)(font "Arial" ))
+		(text "cf_load" (rect 21 59 68 74)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "mux_select1[3..0]" (rect 0 0 113 15)(font "Arial" ))
+		(text "mux_select1[3..0]" (rect 106 27 219 42)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "mux_select2[3..0]" (rect 0 0 113 15)(font "Arial" ))
+		(text "mux_select2[3..0]" (rect 106 43 219 58)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "mux_select3[3..0]" (rect 0 0 113 15)(font "Arial" ))
+		(text "mux_select3[3..0]" (rect 106 59 219 74)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64)(line_width 3))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "output_set" (rect 0 0 68 15)(font "Arial" ))
+		(text "output_set" (rect 151 75 219 90)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80)(line_width 1))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "output_clr" (rect 0 0 63 15)(font "Arial" ))
+		(text "output_clr" (rect 156 91 219 106)(font "Arial" ))
+		(line (pt 240 96)(pt 224 96)(line_width 1))
+	)
+	(port
+		(pt 240 112)
+		(output)
+		(text "mem_clr" (rect 0 0 57 15)(font "Arial" ))
+		(text "mem_clr" (rect 162 107 219 122)(font "Arial" ))
+		(line (pt 240 112)(pt 224 112)(line_width 1))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "demuxto12_sel[3..0]" (rect 0 0 130 15)(font "Arial" ))
+		(text "demuxto12_sel[3..0]" (rect 89 123 219 138)(font "Arial" ))
+		(line (pt 240 128)(pt 224 128)(line_width 3))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "reg96_ld" (rect 0 0 57 15)(font "Arial" ))
+		(text "reg96_ld" (rect 162 139 219 154)(font "Arial" ))
+		(line (pt 240 144)(pt 224 144)(line_width 1))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "reg106_ld" (rect 0 0 66 15)(font "Arial" ))
+		(text "reg106_ld" (rect 153 155 219 170)(font "Arial" ))
+		(line (pt 240 160)(pt 224 160)(line_width 1))
+	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "demux16bit_sel1[2..0]" (rect 0 0 142 15)(font "Arial" ))
+		(text "demux16bit_sel1[2..0]" (rect 77 171 219 186)(font "Arial" ))
+		(line (pt 240 176)(pt 224 176)(line_width 3))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "demux16bit_sel2[2..0]" (rect 0 0 142 15)(font "Arial" ))
+		(text "demux16bit_sel2[2..0]" (rect 77 187 219 202)(font "Arial" ))
+		(line (pt 240 192)(pt 224 192)(line_width 3))
+	)
+	(port
+		(pt 240 208)
+		(output)
+		(text "final_mux_sel[3..0]" (rect 0 0 121 15)(font "Arial" ))
+		(text "final_mux_sel[3..0]" (rect 98 203 219 218)(font "Arial" ))
+		(line (pt 240 208)(pt 224 208)(line_width 3))
+	)
+	(port
+		(pt 240 224)
+		(output)
+		(text "MAC_Reset1" (rect 0 0 84 15)(font "Arial" ))
+		(text "MAC_Reset1" (rect 135 219 219 234)(font "Arial" ))
+		(line (pt 240 224)(pt 224 224)(line_width 1))
+	)
+	(port
+		(pt 240 240)
+		(output)
+		(text "MAC_Reset2" (rect 0 0 84 15)(font "Arial" ))
+		(text "MAC_Reset2" (rect 135 235 219 250)(font "Arial" ))
+		(line (pt 240 240)(pt 224 240)(line_width 1))
+	)
+	(parameter
+		"S0"
+		"0000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S1"
+		"0001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S2"
+		"0010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S3"
+		"0011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S4"
+		"0100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S5"
+		"0101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S6"
+		"0110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S7"
+		"0111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S8"
+		"1000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S9"
+		"1001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S10"
+		"1010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S11"
+		"1011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S12"
+		"1100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S13"
+		"01101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S14"
+		"01110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S15"
+		"01111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S16"
+		"10000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S17"
+		"10001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S18"
+		"10010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S19"
+		"10011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S20"
+		"10100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S21"
+		"10101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S22"
+		"10110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S23"
+		"10111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S24"
+		"11000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 224 272)(line_width 1))
+	)
+	(annotation_block (parameter)(rect -280 528 -72 752))
 )
 (connector
 	(pt 760 -208)
@@ -1872,51 +1946,6 @@ applicable agreement for further details.
 (connector
 	(pt 1104 -160)
 	(pt 1072 -160)
-	(bus)
-)
-(connector
-	(pt 1408 -192)
-	(pt 1368 -192)
-	(bus)
-)
-(connector
-	(pt 1408 -176)
-	(pt 1368 -176)
-	(bus)
-)
-(connector
-	(pt 1408 -160)
-	(pt 1368 -160)
-	(bus)
-)
-(connector
-	(pt 1408 -144)
-	(pt 1368 -144)
-	(bus)
-)
-(connector
-	(pt 1408 -128)
-	(pt 1368 -128)
-	(bus)
-)
-(connector
-	(pt 1368 -112)
-	(pt 1408 -112)
-	(bus)
-)
-(connector
-	(pt 1408 -96)
-	(pt 1368 -96)
-	(bus)
-)
-(connector
-	(pt 1408 -80)
-	(pt 1368 -80)
-	(bus)
-)
-(connector
-	(pt 1408 -64)
-	(pt 1368 -64)
 	(bus)
 )
 (connector
@@ -2473,51 +2502,6 @@ applicable agreement for further details.
 	(pt 1408 -16)
 )
 (connector
-	(pt 1624 -192)
-	(pt 1664 -192)
-	(bus)
-)
-(connector
-	(pt 1624 -176)
-	(pt 1664 -176)
-	(bus)
-)
-(connector
-	(pt 1624 -160)
-	(pt 1664 -160)
-	(bus)
-)
-(connector
-	(pt 1624 -144)
-	(pt 1664 -144)
-	(bus)
-)
-(connector
-	(pt 1624 -128)
-	(pt 1664 -128)
-	(bus)
-)
-(connector
-	(pt 1624 -112)
-	(pt 1664 -112)
-	(bus)
-)
-(connector
-	(pt 1624 -96)
-	(pt 1664 -96)
-	(bus)
-)
-(connector
-	(pt 1624 -80)
-	(pt 1664 -80)
-	(bus)
-)
-(connector
-	(pt 1624 -64)
-	(pt 1664 -64)
-	(bus)
-)
-(connector
 	(pt 1752 600)
 	(pt 1752 -40)
 	(bus)
@@ -2545,14 +2529,6 @@ applicable agreement for further details.
 	(pt 1392 64)
 )
 (connector
-	(pt 1392 -16)
-	(pt 1392 64)
-)
-(connector
-	(pt 1392 64)
-	(pt 1392 704)
-)
-(connector
 	(pt 768 -8)
 	(pt 768 248)
 	(bus)
@@ -2568,48 +2544,170 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1328 -448)
-	(pt 1328 -432)
+	(pt 1392 -16)
+	(pt 1392 64)
+)
+(connector
+	(pt 1392 64)
+	(pt 1392 96)
+)
+(connector
+	(pt 1392 96)
+	(pt 1392 704)
+)
+(connector
+	(pt 1368 -32)
+	(pt 1352 -32)
 	(bus)
 )
 (connector
-	(pt 1328 -448)
-	(pt 1384 -448)
+	(pt 1368 -48)
+	(pt 1368 -56)
 	(bus)
 )
 (connector
-	(pt 1384 -448)
-	(pt 1384 -208)
+	(pt 1352 -24)
+	(pt 1352 -32)
 	(bus)
 )
 (connector
-	(pt 1408 -208)
-	(pt 1384 -208)
+	(pt 1352 -24)
+	(pt 1360 -24)
 	(bus)
 )
 (connector
-	(pt 1384 -208)
-	(pt 1368 -208)
+	(pt 1368 -176)
+	(pt 1408 -176)
 	(bus)
 )
 (connector
-	(pt 1648 -440)
-	(pt 1648 -208)
+	(pt 1368 -160)
+	(pt 1408 -160)
+	(bus)
+)
+(connector
+	(pt 1368 -144)
+	(pt 1408 -144)
+	(bus)
+)
+(connector
+	(pt 1368 -128)
+	(pt 1408 -128)
+	(bus)
+)
+(connector
+	(pt 1368 -112)
+	(pt 1408 -112)
+	(bus)
+)
+(connector
+	(pt 1624 -176)
+	(pt 1664 -176)
+	(bus)
+)
+(connector
+	(pt 1624 -160)
+	(pt 1664 -160)
+	(bus)
+)
+(connector
+	(pt 1624 -128)
+	(pt 1664 -128)
+	(bus)
+)
+(connector
+	(pt 1624 -144)
+	(pt 1664 -144)
+	(bus)
+)
+(connector
+	(pt 1624 -112)
+	(pt 1664 -112)
+	(bus)
+)
+(connector
+	(pt 1280 -448)
+	(pt 1280 -432)
+	(bus)
+)
+(connector
+	(pt 1624 -80)
+	(pt 1664 -80)
+	(bus)
+)
+(connector
+	(pt 1368 -80)
+	(pt 1408 -80)
+	(bus)
+)
+(connector
+	(pt 1624 -96)
+	(pt 1664 -96)
+	(bus)
+)
+(connector
+	(pt 1368 -96)
+	(pt 1408 -96)
 	(bus)
 )
 (connector
 	(pt 1624 -208)
-	(pt 1648 -208)
-	(bus)
-)
-(connector
-	(pt 1648 -208)
 	(pt 1664 -208)
 	(bus)
 )
 (connector
-	(pt 1648 -440)
-	(pt 1840 -440)
+	(pt 1368 -208)
+	(pt 1408 -208)
+	(bus)
+)
+(connector
+	(pt 1368 -192)
+	(pt 1408 -192)
+	(bus)
+)
+(connector
+	(pt 1624 -192)
+	(pt 1664 -192)
+	(bus)
+)
+(connector
+	(pt 1648 -432)
+	(pt 1944 -432)
+	(bus)
+)
+(connector
+	(pt 1648 -432)
+	(pt 1648 -64)
+	(bus)
+)
+(connector
+	(pt 1624 -64)
+	(pt 1648 -64)
+	(bus)
+)
+(connector
+	(pt 1648 -64)
+	(pt 1664 -64)
+	(bus)
+)
+(connector
+	(pt 1392 -448)
+	(pt 1280 -448)
+	(bus)
+)
+(connector
+	(pt 1392 -448)
+	(pt 1392 -64)
+	(bus)
+)
+(connector
+	(pt 1368 -64)
+	(pt 1392 -64)
+	(bus)
+)
+(connector
+	(pt 1392 -64)
+	(pt 1408 -64)
 	(bus)
 )
 (junction (pt 760 -208))
@@ -2623,5 +2721,6 @@ applicable agreement for further details.
 (junction (pt 768 -24))
 (junction (pt 1032 -24))
 (junction (pt 1392 64))
-(junction (pt 1384 -208))
-(junction (pt 1648 -208))
+(junction (pt 1392 96))
+(junction (pt 1648 -64))
+(junction (pt 1392 -64))

@@ -7,7 +7,7 @@ module reg160bitV (Dout1, Dout2, Dout3, Dout4, Dout5, Dout6, Dout7, Dout8, Dout9
 	output [15:0] Dout1, Dout2, Dout3, Dout4, Dout5, Dout6, Dout7, Dout8, Dout9, Dout10;
 	reg [15:0] Dout1, Dout2, Dout3, Dout4, Dout5, Dout6, Dout7, Dout8, Dout9, Dout10;
 	
-	always @ (negedge CLK )
+	always @ (posedge CLK )
 		begin
 			 if (ld ==1'b1)
 				begin

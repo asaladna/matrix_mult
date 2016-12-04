@@ -110,8 +110,8 @@ applicable agreement for further details.
 	(port
 		(pt 240 176)
 		(output)
-		(text "demux16bit_sel1[1..0]" (rect 0 0 142 15)(font "Arial" ))
-		(text "demux16bit_sel1[1..0]" (rect 77 171 219 186)(font "Arial" ))
+		(text "demux16bit_sel1[2..0]" (rect 0 0 142 15)(font "Arial" ))
+		(text "demux16bit_sel1[2..0]" (rect 77 171 219 186)(font "Arial" ))
 		(line (pt 240 176)(pt 224 176)(line_width 3))
 	)
 	(port
@@ -144,67 +144,127 @@ applicable agreement for further details.
 	)
 	(parameter
 		"S0"
-		"0000"
+		"00000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S1"
-		"0001"
+		"00001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S2"
-		"0010"
+		"00010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S3"
-		"0011"
+		"00011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S4"
-		"0100"
+		"00100"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S5"
-		"0101"
+		"00101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S6"
-		"0110"
+		"00110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S7"
-		"0111"
+		"00111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S8"
-		"1000"
+		"01000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S9"
-		"1001"
+		"01001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S10"
-		"1010"
+		"01010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S11"
-		"1011"
+		"01011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"S12"
-		"1100"
+		"01100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S13"
+		"01101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S14"
+		"01110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S15"
+		"01111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S16"
+		"10000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S17"
+		"10001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S18"
+		"10010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S19"
+		"10011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S20"
+		"10100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S21"
+		"10101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S22"
+		"10110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S23"
+		"10111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S24"
+		"11000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing

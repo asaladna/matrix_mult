@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Sat Dec 03 22:05:21 2016
+Sat Dec 03 23:22:57 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -57,13 +57,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Dec 03 22:05:21 2016        ;
+; Analysis & Synthesis Status ; Successful - Sat Dec 03 23:22:57 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 806                                          ;
-; Total pins                  ; 90                                           ;
+; Total logic elements        ; 854                                          ;
+; Total pins                  ; 106                                          ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
 +-----------------------------+----------------------------------------------+
@@ -180,33 +180,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 806   ;
-;     -- Combinational with no register       ; 525   ;
-;     -- Register only                        ; 248   ;
+; Total logic elements                        ; 854   ;
+;     -- Combinational with no register       ; 540   ;
+;     -- Register only                        ; 281   ;
 ;     -- Combinational with a register        ; 33    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 298   ;
-;     -- 3 input functions                    ; 185   ;
-;     -- 2 input functions                    ; 61    ;
+;     -- 4 input functions                    ; 302   ;
+;     -- 3 input functions                    ; 191   ;
+;     -- 2 input functions                    ; 66    ;
 ;     -- 1 input functions                    ; 14    ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 694   ;
+;     -- normal mode                          ; 742   ;
 ;     -- arithmetic mode                      ; 112   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 25    ;
+;     -- asynchronous clear/load mode         ; 26    ;
 ;                                             ;       ;
-; Total registers                             ; 281   ;
+; Total registers                             ; 314   ;
 ; Total logic cells in carry chains           ; 124   ;
-; I/O pins                                    ; 90    ;
+; I/O pins                                    ; 106   ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 281   ;
-; Total fan-out                               ; 2722  ;
-; Average fan-out                             ; 3.04  ;
+; Maximum fan-out                             ; 315   ;
+; Total fan-out                               ; 2897  ;
+; Average fan-out                             ; 3.02  ;
 +---------------------------------------------+-------+
 
 
@@ -215,7 +215,7 @@ applicable agreement for further details.
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                             ; Library Name ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |transmult                                   ; 806 (0)     ; 281          ; 0          ; 90   ; 0            ; 525 (0)      ; 248 (0)           ; 33 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
+; |transmult                                   ; 854 (0)     ; 314          ; 0          ; 106  ; 0            ; 540 (0)      ; 281 (0)           ; 33 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
 ;    |MAC:inst4|                               ; 142 (0)     ; 32           ; 0          ; 0    ; 0            ; 110 (0)      ; 16 (0)            ; 16 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
 ;       |MAC_Checker:inst1|                    ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |transmult|MAC:inst4|MAC_Checker:inst1                                                                          ; work         ;
 ;       |lpm_add_sub0:inst6|                   ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6                                                                         ; work         ;
@@ -234,411 +234,334 @@ applicable agreement for further details.
 ;       |lpm_mult0:inst|                       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst                                                                             ; work         ;
 ;          |lpm_mult:lpm_mult_component|       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
 ;             |mult_0km:auto_generated|        ; 95 (95)     ; 0            ; 0          ; 0    ; 0            ; 95 (95)      ; 0 (0)             ; 0 (0)            ; 46 (46)         ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
-;    |controller:inst2|                        ; 119 (119)   ; 25           ; 0          ; 0    ; 0            ; 94 (94)      ; 24 (24)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
+;    |controller:inst2|                        ; 132 (132)   ; 26           ; 0          ; 0    ; 0            ; 106 (106)    ; 25 (25)           ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
 ;    |demux1to12:inst|                         ; 108 (108)   ; 96           ; 0          ; 0    ; 0            ; 12 (12)      ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
+;    |demux1to12_16bit:inst11|                 ; 17 (17)     ; 16           ; 0          ; 0    ; 0            ; 1 (1)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12_16bit:inst11                                                                              ; work         ;
 ;    |lpm_mux0:inst7|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                                                       ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component                                                             ; work         ;
 ;          |mux_9bc:auto_generated|            ; 67 (67)     ; 0            ; 0          ; 0    ; 0            ; 67 (67)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7|lpm_mux:lpm_mux_component|mux_9bc:auto_generated                                      ; work         ;
 ;    |lpm_mux0:inst8|                          ; 64 (0)      ; 0            ; 0          ; 0    ; 0            ; 64 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst8                                                                                       ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 64 (0)      ; 0            ; 0          ; 0    ; 0            ; 64 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst8|lpm_mux:lpm_mux_component                                                             ; work         ;
 ;          |mux_9bc:auto_generated|            ; 64 (64)     ; 0            ; 0          ; 0    ; 0            ; 64 (64)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst8|lpm_mux:lpm_mux_component|mux_9bc:auto_generated                                      ; work         ;
-;    |lpm_mux0:inst9|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9                                                                                       ; work         ;
-;       |lpm_mux:lpm_mux_component|            ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9|lpm_mux:lpm_mux_component                                                             ; work         ;
-;          |mux_9bc:auto_generated|            ; 67 (67)     ; 0            ; 0          ; 0    ; 0            ; 67 (67)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9|lpm_mux:lpm_mux_component|mux_9bc:auto_generated                                      ; work         ;
+;    |lpm_mux0:inst9|                          ; 69 (0)      ; 0            ; 0          ; 0    ; 0            ; 69 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9                                                                                       ; work         ;
+;       |lpm_mux:lpm_mux_component|            ; 69 (0)      ; 0            ; 0          ; 0    ; 0            ; 69 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9|lpm_mux:lpm_mux_component                                                             ; work         ;
+;          |mux_9bc:auto_generated|            ; 69 (69)     ; 0            ; 0          ; 0    ; 0            ; 69 (69)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst9|lpm_mux:lpm_mux_component|mux_9bc:auto_generated                                      ; work         ;
+;    |reg160bitV:inst1|                        ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|reg160bitV:inst1                                                                                     ; work         ;
 ;    |reg96bitV:inst18|                        ; 96 (96)     ; 96           ; 0          ; 0    ; 0            ; 0 (0)        ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|reg96bitV:inst18                                                                                     ; work         ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                                                                                                                                                    ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; Name       ; pstate.S24 ; pstate.S23 ; pstate.S22 ; pstate.S21 ; pstate.S20 ; pstate.S19 ; pstate.S18 ; pstate.S17 ; pstate.S16 ; pstate.S15 ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
-; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
-; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
-; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
-; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S13 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S14 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S15 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S16 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S17 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S18 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S19 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S20 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S21 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S22 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S23 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-; pstate.S24 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |transmult|controller:inst2|pstate                                                                                                                                                                                                                                                                                                 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name       ; pstate.S25 ; pstate.S24 ; pstate.S23 ; pstate.S22 ; pstate.S21 ; pstate.S20 ; pstate.S19 ; pstate.S18 ; pstate.S17 ; pstate.S16 ; pstate.S15 ; pstate.S14 ; pstate.S13 ; pstate.S12 ; pstate.S11 ; pstate.S10 ; pstate.S9 ; pstate.S8 ; pstate.S7 ; pstate.S6 ; pstate.S5 ; pstate.S4 ; pstate.S3 ; pstate.S2 ; pstate.S1 ; pstate.S0 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; pstate.S0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; pstate.S1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; pstate.S2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; pstate.S3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; pstate.S4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S13 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S14 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S15 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S16 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S17 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S18 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S19 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S20 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S21 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S22 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S23 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S24 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; pstate.S25 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                        ;
-+-----------------------------------------------------+-----------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
-+-----------------------------------------------------+-----------------------------+------------------------+
-; controller:inst2|MAC_Reset2                         ; controller:inst2|Selector84 ; yes                    ;
-; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector33 ; yes                    ;
-; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector33 ; yes                    ;
-; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector33 ; yes                    ;
-; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector33 ; yes                    ;
-; controller:inst2|mux_select2[3]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select2[0]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select2[1]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select2[2]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select3[3]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select3[0]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select3[1]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|mux_select3[2]                     ; controller:inst2|Selector15 ; yes                    ;
-; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector86 ; yes                    ;
-; controller:inst2|reg96_ld                           ; controller:inst2|WideOr66   ; yes                    ;
-; controller:inst2|nstate.S7_637                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S10_613                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S13_589                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S16_565                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S19_541                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S22_517                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S1_685                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S2_677                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S3_669                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S4_661                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S5_653                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S6_645                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S9_621                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S12_597                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S15_573                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S18_549                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S21_525                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S24_501                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S0_693                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S8_629                      ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S17_557                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S20_533                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S23_509                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S11_605                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|nstate.S14_581                     ; controller:inst2|pstate.S24 ; yes                    ;
-; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector23 ; yes                    ;
-; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector23 ; yes                    ;
-; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector23 ; yes                    ;
-; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector23 ; yes                    ;
-; Number of user-specified and inferred latches = 44  ;                             ;                        ;
-+-----------------------------------------------------+-----------------------------+------------------------+
++-------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                         ;
++-----------------------------------------------------+------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal          ; Free of Timing Hazards ;
++-----------------------------------------------------+------------------------------+------------------------+
+; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|Selector47  ; yes                    ;
+; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|Selector47  ; yes                    ;
+; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|Selector47  ; yes                    ;
+; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|Selector47  ; yes                    ;
+; controller:inst2|mux_select2[3]                     ; controller:inst2|Selector29  ; yes                    ;
+; controller:inst2|mux_select2[0]                     ; controller:inst2|Selector29  ; yes                    ;
+; controller:inst2|mux_select2[1]                     ; controller:inst2|Selector29  ; yes                    ;
+; controller:inst2|mux_select2[2]                     ; controller:inst2|Selector29  ; yes                    ;
+; controller:inst2|reg106_ld                          ; controller:inst2|Selector4   ; yes                    ;
+; controller:inst2|MAC_Reset1                         ; controller:inst2|Selector102 ; yes                    ;
+; controller:inst2|reg96_ld                           ; controller:inst2|WideOr79    ; yes                    ;
+; controller:inst2|MAC_Reset2                         ; controller:inst2|Selector100 ; yes                    ;
+; controller:inst2|demux16bit_sel2[0]                 ; controller:inst2|Selector0   ; yes                    ;
+; controller:inst2|demux16bit_sel2[1]                 ; controller:inst2|Selector0   ; yes                    ;
+; controller:inst2|demux16bit_sel2[2]                 ; controller:inst2|Selector0   ; yes                    ;
+; controller:inst2|nstate.S1_804                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S2_796                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S3_788                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S4_780                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S5_772                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S6_764                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S7_756                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S8_748                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S13_708                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S16_684                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S17_676                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S18_668                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S19_660                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S20_652                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S21_644                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S22_636                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S23_628                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S24_620                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S25_612                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S0_812                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S9_740                      ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S10_732                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S11_724                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S12_716                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S14_700                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|nstate.S15_692                     ; controller:inst2|pstate.S25  ; yes                    ;
+; controller:inst2|mux_select1[3]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select1[0]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select1[1]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select1[2]                     ; controller:inst2|Selector37  ; yes                    ;
+; controller:inst2|mux_select3[2]                     ; controller:inst2|Selector29  ; yes                    ;
+; controller:inst2|mux_select3[3]                     ; controller:inst2|Selector29  ; yes                    ;
+; controller:inst2|mux_select3[1]                     ; controller:inst2|Selector29  ; yes                    ;
+; controller:inst2|mux_select3[0]                     ; controller:inst2|Selector29  ; yes                    ;
+; Number of user-specified and inferred latches = 49  ;                              ;                        ;
++-----------------------------------------------------+------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                      ;
-+-------------------------------------------+---------------------------------------------+
-; Register name                             ; Reason for Removal                          ;
-+-------------------------------------------+---------------------------------------------+
-; inst6                                     ; Stuck at GND due to stuck port clock        ;
-; reg160bitV:inst1|Dout10[0..15]            ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout9[0..15]             ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout8[0..15]             ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout7[0..15]             ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout6[0..15]             ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout5[0]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[0]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[1]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[1]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[2]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[2]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[3]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[3]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[4]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[4]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[5]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[5]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[6]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[6]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[7]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[7]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[8]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[8]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[9]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[9]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[10]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[10]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[11]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[11]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[12]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[12]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[13]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[13]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[14]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[14]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout5[15]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out5[15]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout4[0..15]             ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout3[0..15]             ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout2[0..15]             ; Stuck at GND due to stuck port clock_enable ;
-; reg160bitV:inst1|Dout1[0]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[0]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[1]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[1]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[2]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[2]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[3]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[3]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[4]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[4]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[5]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[5]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[6]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[6]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[7]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[7]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[8]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[8]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[9]                 ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[9]      ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[10]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[10]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[11]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[11]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[12]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[12]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[13]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[13]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[14]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[14]     ; Lost fanout                                 ;
-; reg160bitV:inst1|Dout1[15]                ; Stuck at GND due to stuck port clock_enable ;
-; demux1to12_16bit:inst11|Data_out1[15]     ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out10[0..15] ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out9[0..15]  ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out8[0..15]  ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out7[0..15]  ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out6[0..15]  ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out4[0..15]  ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out3[0..15]  ; Lost fanout                                 ;
-; demux1to12_16bit:inst11|Data_out2[0..15]  ; Lost fanout                                 ;
-; controller:inst2|pstate~10                ; Lost fanout                                 ;
-; controller:inst2|pstate~11                ; Lost fanout                                 ;
-; controller:inst2|pstate~12                ; Lost fanout                                 ;
-; controller:inst2|pstate~13                ; Lost fanout                                 ;
-; controller:inst2|pstate~14                ; Lost fanout                                 ;
-; Total Number of Removed Registers = 326   ;                                             ;
-+-------------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++-----------------------------------------+--------------------------------------+
+; Register name                           ; Reason for Removal                   ;
++-----------------------------------------+--------------------------------------+
+; inst6                                   ; Stuck at GND due to stuck port clock ;
+; reg160bitV:inst1|Dout2[0]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[0]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[0]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[0]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[0]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[0]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[0]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[0]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[10]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[10]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[10]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[10]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[10]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[10]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[10]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[10]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[11]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[11]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[11]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[11]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[11]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[11]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[11]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[11]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[12]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[12]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[12]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[12]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[12]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[12]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[12]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[12]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[13]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[13]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[13]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[13]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[13]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[13]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[13]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[13]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[14]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[14]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[14]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[14]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[14]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[14]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[14]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[14]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[15]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[15]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[15]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[15]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[15]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[15]              ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[15]   ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[15]              ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[1]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[1]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[1]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[1]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[1]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[1]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[1]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[1]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[2]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[2]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[2]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[2]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[2]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[2]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[2]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[2]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[3]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[3]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[3]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[3]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[3]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[3]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[3]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[3]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[4]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[4]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[4]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[4]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[4]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[4]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[4]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[4]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[5]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[5]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[5]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout3[5]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout4[5]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout5[5]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out5[5]    ; Lost fanout                          ;
+; reg160bitV:inst1|Dout6[5]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout2[6]               ; Lost fanout                          ;
+; reg160bitV:inst1|Dout1[6]               ; Lost fanout                          ;
+; demux1to12_16bit:inst11|Data_out1[6]    ; Lost fanout                          ;
+; Total Number of Removed Registers = 294 ;                                      ;
++-----------------------------------------+--------------------------------------+
+* Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                           ;
-+-----------------------------+--------------------------------+----------------------------------------+
-; Register name               ; Reason for Removal             ; Registers Removed due to This Register ;
-+-----------------------------+--------------------------------+----------------------------------------+
-; reg160bitV:inst1|Dout10[0]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[0]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[1]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[1]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[2]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[2]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[3]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[3]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[4]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[4]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[5]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[5]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[6]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[6]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[7]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[7]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[8]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[8]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[9]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[9]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[10] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[10] ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[11] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[11] ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[12] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[12] ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[13] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[13] ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[14] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[14] ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout10[15] ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out10[15] ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[0]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[1]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[2]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[3]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[4]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[5]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[6]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[7]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[8]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[9]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[10]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[11]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[12]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[13]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[14]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout9[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out9[15]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[0]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[1]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[2]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[3]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[4]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[5]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[6]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[7]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[8]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[9]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[10]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[11]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[12]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[13]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[14]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout8[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out8[15]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[0]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[1]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[2]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[3]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[4]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[5]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[6]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[7]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[8]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[9]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[10]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[11]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[12]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[13]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[14]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout7[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out7[15]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[0]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[1]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[2]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[3]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[4]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[5]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[6]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[7]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[8]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[9]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[10]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[11]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[12]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[13]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[14]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout6[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out6[15]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[0]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[1]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[2]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[3]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[4]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[4]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[5]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[5]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[6]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[6]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[7]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[7]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[8]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[8]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[9]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[9]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[10]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[10]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[11]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[11]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[12]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[12]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[13]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[13]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[14]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[14]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout5[15]  ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out5[15]  ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout4[0]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[0]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout4[1]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[1]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout4[2]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[2]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-; reg160bitV:inst1|Dout4[3]   ; Stuck at GND                   ; demux1to12_16bit:inst11|Data_out4[3]   ;
-;                             ; due to stuck port clock_enable ;                                        ;
-+-----------------------------+--------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                              ;
++----------------------------+--------------------+----------------------------------------+
+; Register name              ; Reason for Removal ; Registers Removed due to This Register ;
++----------------------------+--------------------+----------------------------------------+
+; reg160bitV:inst1|Dout2[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[0]   ;
+; reg160bitV:inst1|Dout1[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[0]   ;
+; reg160bitV:inst1|Dout3[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[0]   ;
+; reg160bitV:inst1|Dout4[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[0]   ;
+; reg160bitV:inst1|Dout5[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[0]   ;
+; reg160bitV:inst1|Dout6[0]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[0]   ;
+; reg160bitV:inst1|Dout2[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[10]  ;
+; reg160bitV:inst1|Dout1[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[10]  ;
+; reg160bitV:inst1|Dout3[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[10]  ;
+; reg160bitV:inst1|Dout4[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[10]  ;
+; reg160bitV:inst1|Dout5[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[10]  ;
+; reg160bitV:inst1|Dout6[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[10]  ;
+; reg160bitV:inst1|Dout2[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[11]  ;
+; reg160bitV:inst1|Dout1[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[11]  ;
+; reg160bitV:inst1|Dout3[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[11]  ;
+; reg160bitV:inst1|Dout4[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[11]  ;
+; reg160bitV:inst1|Dout5[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[11]  ;
+; reg160bitV:inst1|Dout6[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[11]  ;
+; reg160bitV:inst1|Dout2[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[12]  ;
+; reg160bitV:inst1|Dout1[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[12]  ;
+; reg160bitV:inst1|Dout3[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[12]  ;
+; reg160bitV:inst1|Dout4[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[12]  ;
+; reg160bitV:inst1|Dout5[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[12]  ;
+; reg160bitV:inst1|Dout6[12] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[12]  ;
+; reg160bitV:inst1|Dout2[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[13]  ;
+; reg160bitV:inst1|Dout1[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[13]  ;
+; reg160bitV:inst1|Dout3[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[13]  ;
+; reg160bitV:inst1|Dout4[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[13]  ;
+; reg160bitV:inst1|Dout5[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[13]  ;
+; reg160bitV:inst1|Dout6[13] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[13]  ;
+; reg160bitV:inst1|Dout2[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[14]  ;
+; reg160bitV:inst1|Dout1[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[14]  ;
+; reg160bitV:inst1|Dout3[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[14]  ;
+; reg160bitV:inst1|Dout4[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[14]  ;
+; reg160bitV:inst1|Dout5[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[14]  ;
+; reg160bitV:inst1|Dout6[14] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[14]  ;
+; reg160bitV:inst1|Dout2[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[15]  ;
+; reg160bitV:inst1|Dout1[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[15]  ;
+; reg160bitV:inst1|Dout3[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[15]  ;
+; reg160bitV:inst1|Dout4[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[15]  ;
+; reg160bitV:inst1|Dout5[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[15]  ;
+; reg160bitV:inst1|Dout6[15] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[15]  ;
+; reg160bitV:inst1|Dout2[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[1]   ;
+; reg160bitV:inst1|Dout1[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[1]   ;
+; reg160bitV:inst1|Dout3[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[1]   ;
+; reg160bitV:inst1|Dout4[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[1]   ;
+; reg160bitV:inst1|Dout5[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[1]   ;
+; reg160bitV:inst1|Dout6[1]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[1]   ;
+; reg160bitV:inst1|Dout2[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[2]   ;
+; reg160bitV:inst1|Dout1[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[2]   ;
+; reg160bitV:inst1|Dout3[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[2]   ;
+; reg160bitV:inst1|Dout4[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[2]   ;
+; reg160bitV:inst1|Dout5[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[2]   ;
+; reg160bitV:inst1|Dout6[2]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[2]   ;
+; reg160bitV:inst1|Dout2[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[3]   ;
+; reg160bitV:inst1|Dout1[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[3]   ;
+; reg160bitV:inst1|Dout3[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[3]   ;
+; reg160bitV:inst1|Dout4[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[3]   ;
+; reg160bitV:inst1|Dout5[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[3]   ;
+; reg160bitV:inst1|Dout6[3]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[3]   ;
+; reg160bitV:inst1|Dout2[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[4]   ;
+; reg160bitV:inst1|Dout1[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[4]   ;
+; reg160bitV:inst1|Dout3[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[4]   ;
+; reg160bitV:inst1|Dout4[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[4]   ;
+; reg160bitV:inst1|Dout5[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[4]   ;
+; reg160bitV:inst1|Dout6[4]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[4]   ;
+; reg160bitV:inst1|Dout2[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[5]   ;
+; reg160bitV:inst1|Dout1[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[5]   ;
+; reg160bitV:inst1|Dout3[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[5]   ;
+; reg160bitV:inst1|Dout4[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[5]   ;
+; reg160bitV:inst1|Dout5[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[5]   ;
+; reg160bitV:inst1|Dout6[5]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[5]   ;
+; reg160bitV:inst1|Dout2[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[6]   ;
+; reg160bitV:inst1|Dout1[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[6]   ;
+; reg160bitV:inst1|Dout3[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[6]   ;
+; reg160bitV:inst1|Dout4[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[6]   ;
+; reg160bitV:inst1|Dout5[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[6]   ;
+; reg160bitV:inst1|Dout6[6]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[6]   ;
+; reg160bitV:inst1|Dout2[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[7]   ;
+; reg160bitV:inst1|Dout1[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[7]   ;
+; reg160bitV:inst1|Dout3[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[7]   ;
+; reg160bitV:inst1|Dout4[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[7]   ;
+; reg160bitV:inst1|Dout5[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[7]   ;
+; reg160bitV:inst1|Dout6[7]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[7]   ;
+; reg160bitV:inst1|Dout2[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[8]   ;
+; reg160bitV:inst1|Dout1[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[8]   ;
+; reg160bitV:inst1|Dout3[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[8]   ;
+; reg160bitV:inst1|Dout4[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[8]   ;
+; reg160bitV:inst1|Dout5[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[8]   ;
+; reg160bitV:inst1|Dout6[8]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[8]   ;
+; reg160bitV:inst1|Dout2[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out2[9]   ;
+; reg160bitV:inst1|Dout1[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out1[9]   ;
+; reg160bitV:inst1|Dout3[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out3[9]   ;
+; reg160bitV:inst1|Dout4[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out4[9]   ;
+; reg160bitV:inst1|Dout5[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out5[9]   ;
+; reg160bitV:inst1|Dout6[9]  ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out6[9]   ;
+; reg160bitV:inst1|Dout7[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out7[10]  ;
+; reg160bitV:inst1|Dout8[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out8[10]  ;
+; reg160bitV:inst1|Dout9[10] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out9[10]  ;
+; reg160bitV:inst1|Dout7[11] ; Lost Fanouts       ; demux1to12_16bit:inst11|Data_out7[11]  ;
++----------------------------+--------------------+----------------------------------------+
 * Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
@@ -647,12 +570,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 281   ;
+; Total registers                              ; 314   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Clear ; 26    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 224   ;
+; Number of registers using Clock Enable       ; 256   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -705,6 +628,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; S22            ; 10110 ; Unsigned Binary                      ;
 ; S23            ; 10111 ; Unsigned Binary                      ;
 ; S24            ; 11000 ; Unsigned Binary                      ;
+; S25            ; 11001 ; Unsigned Binary                      ;
 +----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -968,7 +892,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 03 22:05:18 2016
+    Info: Processing started: Sat Dec 03 23:22:53 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -984,6 +908,7 @@ Info: Found 1 design units, including 1 entities, in source file reg96bit.bdf
     Info: Found entity 1: reg96bit
 Info: Found 1 design units, including 1 entities, in source file demux1to12.v
     Info: Found entity 1: demux1to12
+Warning (10238): Verilog Module Declaration warning at demux1to12_16bit.v(3): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "demux1to12_16bit"
 Info: Found 1 design units, including 1 entities, in source file demux1to12_16bit.v
     Info: Found entity 1: demux1to12_16bit
 Info: Found 1 design units, including 1 entities, in source file reg16bit.bdf
@@ -1004,73 +929,78 @@ Info: Elaborating entity "transmult" for the top level hierarchy
 Warning: Port "CLK" of type SRFF and instance "inst6" is missing source signal
 Warning: Pin "load_input" not connected
 Info: Elaborating entity "controller" for hierarchy "controller:inst2"
-Warning (10036): Verilog HDL or VHDL warning at controller.v(40): object "output_set" assigned a value but never read
-Warning (10235): Verilog HDL Always Construct warning at controller.v(48): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10270): Verilog HDL Case Statement warning at controller.v(46): incomplete case statement has no default case item
-Info (10264): Verilog HDL Case Statement information at controller.v(46): all case item expressions in this case statement are onehot
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "MAC_Reset1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "MAC_Reset2", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "nstate", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "demuxto12_sel", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "mux_select1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "mux_select2", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "mux_select3", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at controller.v(31): inferring latch(es) for variable "reg96_ld", which holds its previous value in one or more paths through the always construct
+Warning (10036): Verilog HDL or VHDL warning at controller.v(41): object "output_set" assigned a value but never read
+Warning (10235): Verilog HDL Always Construct warning at controller.v(49): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at controller.v(47): incomplete case statement has no default case item
+Info (10264): Verilog HDL Case Statement information at controller.v(47): all case item expressions in this case statement are onehot
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "MAC_Reset1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "MAC_Reset2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "nstate", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "demuxto12_sel", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "mux_select1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "mux_select2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "mux_select3", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "demux16bit_sel1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "demux16bit_sel2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "reg96_ld", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.v(32): inferring latch(es) for variable "reg106_ld", which holds its previous value in one or more paths through the always construct
 Warning (10034): Output port "output_set" at controller.v(6) has no driver
-Warning (10034): Output port "reg106_ld" at controller.v(7) has no driver
-Warning (10034): Output port "demux16bit_sel1[1]" at controller.v(10) has no driver
-Warning (10034): Output port "demux16bit_sel1[0]" at controller.v(10) has no driver
-Warning (10034): Output port "demux16bit_sel2[2]" at controller.v(11) has no driver
-Warning (10034): Output port "demux16bit_sel2[1]" at controller.v(11) has no driver
-Warning (10034): Output port "demux16bit_sel2[0]" at controller.v(11) has no driver
 Warning (10034): Output port "final_mux_sel[3]" at controller.v(13) has no driver
 Warning (10034): Output port "final_mux_sel[2]" at controller.v(13) has no driver
 Warning (10034): Output port "final_mux_sel[1]" at controller.v(13) has no driver
 Warning (10034): Output port "final_mux_sel[0]" at controller.v(13) has no driver
-Info (10041): Inferred latch for "reg96_ld" at controller.v(31)
-Info (10041): Inferred latch for "mux_select3[0]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select3[1]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select3[2]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select3[3]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select2[0]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select2[1]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select2[2]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select2[3]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select1[0]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select1[1]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select1[2]" at controller.v(31)
-Info (10041): Inferred latch for "mux_select1[3]" at controller.v(31)
-Info (10041): Inferred latch for "demuxto12_sel[0]" at controller.v(31)
-Info (10041): Inferred latch for "demuxto12_sel[1]" at controller.v(31)
-Info (10041): Inferred latch for "demuxto12_sel[2]" at controller.v(31)
-Info (10041): Inferred latch for "demuxto12_sel[3]" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S24" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S23" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S22" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S21" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S20" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S19" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S18" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S17" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S16" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S15" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S14" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S13" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S12" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S11" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S10" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S9" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S8" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S7" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S6" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S5" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S4" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S3" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S2" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S1" at controller.v(31)
-Info (10041): Inferred latch for "nstate.S0" at controller.v(31)
-Info (10041): Inferred latch for "MAC_Reset2" at controller.v(31)
-Info (10041): Inferred latch for "MAC_Reset1" at controller.v(31)
+Info (10041): Inferred latch for "reg106_ld" at controller.v(32)
+Info (10041): Inferred latch for "reg96_ld" at controller.v(32)
+Info (10041): Inferred latch for "demux16bit_sel2[0]" at controller.v(32)
+Info (10041): Inferred latch for "demux16bit_sel2[1]" at controller.v(32)
+Info (10041): Inferred latch for "demux16bit_sel2[2]" at controller.v(32)
+Info (10041): Inferred latch for "demux16bit_sel1[0]" at controller.v(32)
+Info (10041): Inferred latch for "demux16bit_sel1[1]" at controller.v(32)
+Info (10041): Inferred latch for "demux16bit_sel1[2]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select3[0]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select3[1]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select3[2]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select3[3]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select2[0]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select2[1]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select2[2]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select2[3]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select1[0]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select1[1]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select1[2]" at controller.v(32)
+Info (10041): Inferred latch for "mux_select1[3]" at controller.v(32)
+Info (10041): Inferred latch for "demuxto12_sel[0]" at controller.v(32)
+Info (10041): Inferred latch for "demuxto12_sel[1]" at controller.v(32)
+Info (10041): Inferred latch for "demuxto12_sel[2]" at controller.v(32)
+Info (10041): Inferred latch for "demuxto12_sel[3]" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S25" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S24" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S23" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S22" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S21" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S20" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S19" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S18" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S17" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S16" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S15" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S14" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S13" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S12" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S11" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S10" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S9" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S8" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S7" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S6" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S5" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S4" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S3" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S2" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S1" at controller.v(32)
+Info (10041): Inferred latch for "nstate.S0" at controller.v(32)
+Info (10041): Inferred latch for "MAC_Reset2" at controller.v(32)
+Info (10041): Inferred latch for "MAC_Reset1" at controller.v(32)
 Warning: Using design file lpm_mux1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: lpm_mux1
 Info: Elaborating entity "lpm_mux1" for hierarchy "lpm_mux1:inst13"
@@ -1141,142 +1071,126 @@ Info: Elaborating entity "reg96bitV" for hierarchy "reg96bitV:inst18"
 Info: Elaborating entity "demux1to12" for hierarchy "demux1to12:inst"
 Info: Ignored 220 buffer(s)
     Info: Ignored 220 SOFT buffer(s)
-Info: Ignored 156 buffer(s)
-    Info: Ignored 156 SOFT buffer(s)
-Warning: Latch controller:inst2|mux_select3[3] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S0
+Info: Ignored 182 buffer(s)
+    Info: Ignored 182 SOFT buffer(s)
+Warning: Latch controller:inst2|reg106_ld has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S6
 Warning: Latch controller:inst2|MAC_Reset1 has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S7
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S4
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "output_rdy" is stuck at GND
-    Warning (13410): Pin "dout[15]" is stuck at GND
-    Warning (13410): Pin "dout[14]" is stuck at GND
-    Warning (13410): Pin "dout[13]" is stuck at GND
-    Warning (13410): Pin "dout[12]" is stuck at GND
-    Warning (13410): Pin "dout[11]" is stuck at GND
-    Warning (13410): Pin "dout[10]" is stuck at GND
-    Warning (13410): Pin "dout[9]" is stuck at GND
-    Warning (13410): Pin "dout[8]" is stuck at GND
-    Warning (13410): Pin "dout[7]" is stuck at GND
-    Warning (13410): Pin "dout[6]" is stuck at GND
-    Warning (13410): Pin "dout[5]" is stuck at GND
-    Warning (13410): Pin "dout[4]" is stuck at GND
-    Warning (13410): Pin "dout[3]" is stuck at GND
-    Warning (13410): Pin "dout[2]" is stuck at GND
-    Warning (13410): Pin "dout[1]" is stuck at GND
-    Warning (13410): Pin "dout[0]" is stuck at GND
-Info: 165 registers lost all their fanouts during netlist optimizations. The first 100 are displayed below.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[9]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out5[15]" lost all its fanouts during netlist optimizations.
+Info: 293 registers lost all their fanouts during netlist optimizations. The first 100 are displayed below.
+    Info: Register "reg160bitV:inst1|Dout2[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[0]" lost all its fanouts during netlist optimizations.
     Info: Register "demux1to12_16bit:inst11|Data_out1[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out1[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[10]" lost all its fanouts during netlist optimizations.
     Info: Register "demux1to12_16bit:inst11|Data_out1[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[11]" lost all its fanouts during netlist optimizations.
     Info: Register "demux1to12_16bit:inst11|Data_out1[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[12]" lost all its fanouts during netlist optimizations.
     Info: Register "demux1to12_16bit:inst11|Data_out1[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[13]" lost all its fanouts during netlist optimizations.
     Info: Register "demux1to12_16bit:inst11|Data_out1[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[14]" lost all its fanouts during netlist optimizations.
     Info: Register "demux1to12_16bit:inst11|Data_out1[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[15]" lost all its fanouts during netlist optimizations.
     Info: Register "demux1to12_16bit:inst11|Data_out1[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[9]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out10[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[9]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out9[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[9]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out8[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[9]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[10]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[11]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[12]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[13]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[14]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out7[15]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out6[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out6[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out6[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "demux1to12_16bit:inst11|Data_out6[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout4[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout5[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out5[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout6[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout2[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout1[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "demux1to12_16bit:inst11|Data_out1[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "reg160bitV:inst1|Dout3[6]" lost all its fanouts during netlist optimizations.
     Info: List truncated at 100 items
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
-Info: Implemented 896 device resources after synthesis - the final resource count might be different
+Info: Implemented 960 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
-    Info: Implemented 78 output pins
-    Info: Implemented 806 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 227 megabytes
-    Info: Processing ended: Sat Dec 03 22:05:21 2016
-    Info: Elapsed time: 00:00:03
+    Info: Implemented 94 output pins
+    Info: Implemented 854 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 228 megabytes
+    Info: Processing ended: Sat Dec 03 23:22:57 2016
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 
