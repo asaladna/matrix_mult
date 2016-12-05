@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.055 ns
-From           : din[6]
-To             : demux1to12:inst|Data_out6[6]
+Actual Time    : 2.850 ns
+From           : din[1]
+To             : demux1to12:inst|Data_out3[1]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 21.819 ns
-From           : controller:inst2|mux_select2[0]
-To             : test0[5]
+Actual Time    : 22.513 ns
+From           : controller:inst2|mux_select2[1]
+To             : test0[3]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.760 ns
+Actual Time    : 5.579 ns
 From           : cf_load
 To             : controller:inst2|MAC_Reset1
 From Clock     : --
@@ -35,7 +35,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 13.95 MHz ( period = 71.710 ns )
+Actual Time    : 14.49 MHz ( period = 69.014 ns )
 From           : controller:inst2|mux_select1[1]
 To             : MAC:inst4|MAC_Checker:inst1|feedback[14]
 From Clock     : clk
@@ -46,11 +46,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : controller:inst2|pstate.S17
-To             : controller:inst2|final_mux_sel[2]
+From           : controller:inst2|pstate.S16
+To             : controller:inst2|MAC_Reset1
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 80
+Failed Paths   : 91
 
 Type           : Total number of failed paths
 Slack          : 
@@ -60,7 +60,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 80
+Failed Paths   : 91
 
 --------------------------------------------------------------------------------------
 

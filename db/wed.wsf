@@ -3801,11 +3801,11 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/finalPoject.sim.cv
 VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 9446584;
-		ZEND = 11462035;
+		ZBEGIN = 2149687;
+		ZEND = 4201251;
 		NUMERATOR = 1162;
 		DENOMINATOR = 1998255;
-		TOP_INDEX = 0;
+		TOP_INDEX = 3;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -4056,15 +4056,15 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "load_test[3]";
+		SIGNAL = "load_test";
 		INDEX = 30;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "load_test[2]";
+		SIGNAL = "load_test[3]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -4072,7 +4072,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "load_test[1]";
+		SIGNAL = "load_test[2]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -4080,7 +4080,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "load_test[0]";
+		SIGNAL = "load_test[1]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -4088,7 +4088,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[15]";
+		SIGNAL = "load_test[0]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -4096,7 +4096,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[14]";
+		SIGNAL = "load_input";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -4104,15 +4104,15 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[13]";
+		SIGNAL = "test1";
 		INDEX = 36;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[12]";
+		SIGNAL = "test1[15]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -4120,7 +4120,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[11]";
+		SIGNAL = "test1[14]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -4128,7 +4128,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[10]";
+		SIGNAL = "test1[13]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -4136,7 +4136,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[9]";
+		SIGNAL = "test1[12]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -4144,7 +4144,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[8]";
+		SIGNAL = "test1[11]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -4152,7 +4152,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[7]";
+		SIGNAL = "test1[10]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -4160,7 +4160,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[6]";
+		SIGNAL = "test1[9]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -4168,7 +4168,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[5]";
+		SIGNAL = "test1[8]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -4176,7 +4176,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[4]";
+		SIGNAL = "test1[7]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -4184,7 +4184,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[3]";
+		SIGNAL = "test1[6]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -4192,7 +4192,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[2]";
+		SIGNAL = "test1[5]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -4200,7 +4200,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[1]";
+		SIGNAL = "test1[4]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -4208,7 +4208,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MACsqrd[0]";
+		SIGNAL = "test1[3]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -4216,7 +4216,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[7]";
+		SIGNAL = "test1[2]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -4224,7 +4224,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[6]";
+		SIGNAL = "test1[1]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -4232,7 +4232,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[5]";
+		SIGNAL = "test1[0]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -4240,15 +4240,15 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[4]";
+		SIGNAL = "test2";
 		INDEX = 53;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[3]";
+		SIGNAL = "test2[3]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -4256,7 +4256,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[2]";
+		SIGNAL = "test2[2]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -4264,7 +4264,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[1]";
+		SIGNAL = "test2[1]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -4272,7 +4272,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test0[0]";
+		SIGNAL = "test2[0]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -4280,15 +4280,15 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[7]";
+		SIGNAL = "test4";
 		INDEX = 58;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[6]";
+		SIGNAL = "test4[7]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -4296,7 +4296,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[5]";
+		SIGNAL = "test4[6]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -4304,7 +4304,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[4]";
+		SIGNAL = "test4[5]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -4312,7 +4312,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[3]";
+		SIGNAL = "test4[4]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -4320,7 +4320,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[2]";
+		SIGNAL = "test4[3]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -4328,7 +4328,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[1]";
+		SIGNAL = "test4[2]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -4336,7 +4336,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test00[0]";
+		SIGNAL = "test4[1]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -4344,7 +4344,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[15]";
+		SIGNAL = "test4[0]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -4352,15 +4352,15 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[14]";
+		SIGNAL = "test0";
 		INDEX = 67;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[13]";
+		SIGNAL = "test0[7]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -4368,7 +4368,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[12]";
+		SIGNAL = "test0[6]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -4376,7 +4376,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[11]";
+		SIGNAL = "test0[5]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -4384,7 +4384,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[10]";
+		SIGNAL = "test0[4]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -4392,7 +4392,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[9]";
+		SIGNAL = "test0[3]";
 		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
@@ -4400,7 +4400,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[8]";
+		SIGNAL = "test0[2]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -4408,7 +4408,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[7]";
+		SIGNAL = "test0[1]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -4416,7 +4416,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[6]";
+		SIGNAL = "test0[0]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -4424,15 +4424,15 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[5]";
+		SIGNAL = "test00";
 		INDEX = 76;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[4]";
+		SIGNAL = "test00[7]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -4440,7 +4440,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[3]";
+		SIGNAL = "test00[6]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -4448,7 +4448,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[2]";
+		SIGNAL = "test00[5]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -4456,7 +4456,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[1]";
+		SIGNAL = "test00[4]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -4464,7 +4464,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test1[0]";
+		SIGNAL = "test00[3]";
 		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
@@ -4472,7 +4472,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test2[3]";
+		SIGNAL = "test00[2]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -4480,7 +4480,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test2[2]";
+		SIGNAL = "test00[1]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -4488,7 +4488,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test2[1]";
+		SIGNAL = "test00[0]";
 		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
@@ -4496,15 +4496,15 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test2[0]";
+		SIGNAL = "MACsqrd";
 		INDEX = 85;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[7]";
+		SIGNAL = "MACsqrd[15]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -4512,7 +4512,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[6]";
+		SIGNAL = "MACsqrd[14]";
 		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
@@ -4520,7 +4520,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[5]";
+		SIGNAL = "MACsqrd[13]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -4528,7 +4528,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[4]";
+		SIGNAL = "MACsqrd[12]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -4536,7 +4536,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[3]";
+		SIGNAL = "MACsqrd[11]";
 		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
@@ -4544,7 +4544,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[2]";
+		SIGNAL = "MACsqrd[10]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -4552,7 +4552,7 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[1]";
+		SIGNAL = "MACsqrd[9]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -4560,8 +4560,72 @@ VECTOR("C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/finalPoject.sim
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "test4[0]";
+		SIGNAL = "MACsqrd[8]";
 		INDEX = 93;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[7]";
+		INDEX = 94;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[6]";
+		INDEX = 95;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[5]";
+		INDEX = 96;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[4]";
+		INDEX = 97;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[3]";
+		INDEX = 98;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[2]";
+		INDEX = 99;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[1]";
+		INDEX = 100;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "MACsqrd[0]";
+		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

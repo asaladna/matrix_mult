@@ -101,9 +101,10 @@ load_input => ~NO_FANOUT~
 
 
 |transmult|pos_delay:inst10
-din => dout~reg0.DATAIN
-dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clk => dout~reg0.CLK
+din => dout.DATAIN
+dout <= din.DB_MAX_OUTPUT_PORT_TYPE
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
 
 
 |transmult|controller:inst2

@@ -78,4 +78,4 @@ set_global_assignment -name VERILOG_FILE dontCareFilter.v
 set_global_assignment -name VERILOG_FILE reg160bitV.v
 set_global_assignment -name VERILOG_FILE pos_delay.v
 set_global_assignment -name ZIP_VECTOR_WAVEFORM_FILE finalPoject.sim.cvwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE transmult.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE transmult_test.vwf
