@@ -113,7 +113,7 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					demuxto12_sel=4'b0011;
 					mux_select1 = 4'b0010;
 					reg96_ld = 1'b1;
-					
+					mux_select2 = 4'b1111;
 					MAC_Reset1 = 1'b1;
 					
 

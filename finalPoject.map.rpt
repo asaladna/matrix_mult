@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Mon Dec 05 00:11:13 2016
+Mon Dec 05 03:36:23 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -56,12 +56,12 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Dec 05 00:11:13 2016        ;
+; Analysis & Synthesis Status ; Successful - Mon Dec 05 03:36:23 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 1,024                                        ;
+; Total logic elements        ; 1,027                                        ;
 ; Total pins                  ; 94                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
@@ -132,44 +132,44 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
-; transmult.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Alex Saladna/Desktop/matrix_mult/transmult.bdf                 ;
-; MAC.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Alex Saladna/Desktop/matrix_mult/MAC.bdf                       ;
-; controller.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/controller.v                  ;
-; demux1to12.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/demux1to12.v                  ;
-; demux1to12_16bit.v               ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/demux1to12_16bit.v            ;
-; MAC_Checker.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/MAC_Checker.v                 ;
-; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/lpm_mux1.tdf                  ;
-; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.inc             ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.tdf             ;
-; aglobal90.inc                    ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/aglobal90.inc           ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/muxlut.inc              ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/bypassff.inc            ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/altshift.inc            ;
-; db/mux_gae.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Alex Saladna/Desktop/matrix_mult/db/mux_gae.tdf                ;
-; lpm_add_sub0.tdf                 ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/lpm_add_sub0.tdf              ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_add_sub.inc         ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;
-; addcore.inc                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/addcore.inc             ;
-; look_add.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/look_add.inc            ;
-; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;
-; alt_mercury_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/alt_mercury_add_sub.inc ;
-; addcore.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/addcore.tdf             ;
-; a_csnbuffer.inc                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/a_csnbuffer.inc         ;
-; a_csnbuffer.tdf                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/a_csnbuffer.tdf         ;
-; altshift.tdf                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/altshift.tdf            ;
-; lpm_mult0.tdf                    ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/lpm_mult0.tdf                 ;
-; lpm_mult.inc                     ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mult.inc            ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mult.tdf            ;
-; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/multcore.inc            ;
-; db/mult_0km.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Alex Saladna/Desktop/matrix_mult/db/mult_0km.tdf               ;
-; lpm_mux0.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/lpm_mux0.tdf                  ;
-; db/mux_9bc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Alex Saladna/Desktop/matrix_mult/db/mux_9bc.tdf                ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
+; transmult.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/transmult.bdf      ;
+; MAC.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/MAC.bdf            ;
+; controller.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/controller.v       ;
+; demux1to12.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/demux1to12.v       ;
+; demux1to12_16bit.v               ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/demux1to12_16bit.v ;
+; MAC_Checker.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/MAC_Checker.v      ;
+; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/lpm_mux1.tdf       ;
+; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.inc              ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.tdf              ;
+; aglobal90.inc                    ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/aglobal90.inc            ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/muxlut.inc               ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/bypassff.inc             ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/altshift.inc             ;
+; db/mux_gae.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/mux_gae.tdf     ;
+; lpm_add_sub0.tdf                 ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/lpm_add_sub0.tdf   ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_add_sub.inc          ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_add_sub.tdf          ;
+; addcore.inc                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/addcore.inc              ;
+; look_add.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/look_add.inc             ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/alt_stratix_add_sub.inc  ;
+; alt_mercury_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/alt_mercury_add_sub.inc  ;
+; addcore.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/addcore.tdf              ;
+; a_csnbuffer.inc                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/a_csnbuffer.inc          ;
+; a_csnbuffer.tdf                  ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/a_csnbuffer.tdf          ;
+; altshift.tdf                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/altshift.tdf             ;
+; lpm_mult0.tdf                    ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/lpm_mult0.tdf      ;
+; lpm_mult.inc                     ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mult.inc             ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mult.tdf             ;
+; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/multcore.inc             ;
+; db/mult_0km.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/mult_0km.tdf    ;
+; lpm_mux0.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/lpm_mux0.tdf       ;
+; db/mux_9bc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/db/mux_9bc.tdf     ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -177,20 +177,20 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 1024  ;
-;     -- Combinational with no register       ; 623   ;
+; Total logic elements                        ; 1027  ;
+;     -- Combinational with no register       ; 626   ;
 ;     -- Register only                        ; 319   ;
 ;     -- Combinational with a register        ; 82    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 414   ;
-;     -- 3 input functions                    ; 208   ;
-;     -- 2 input functions                    ; 69    ;
+;     -- 4 input functions                    ; 413   ;
+;     -- 3 input functions                    ; 209   ;
+;     -- 2 input functions                    ; 72    ;
 ;     -- 1 input functions                    ; 14    ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 912   ;
+;     -- normal mode                          ; 915   ;
 ;     -- arithmetic mode                      ; 112   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -202,8 +202,8 @@ applicable agreement for further details.
 ; I/O pins                                    ; 94    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 402   ;
-; Total fan-out                               ; 3552  ;
-; Average fan-out                             ; 3.18  ;
+; Total fan-out                               ; 3557  ;
+; Average fan-out                             ; 3.17  ;
 +---------------------------------------------+-------+
 
 
@@ -212,7 +212,7 @@ applicable agreement for further details.
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                             ; Library Name ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |transmult                                   ; 1024 (0)    ; 401          ; 0          ; 94   ; 0            ; 623 (0)      ; 319 (0)           ; 82 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
+; |transmult                                   ; 1027 (0)    ; 401          ; 0          ; 94   ; 0            ; 626 (0)      ; 319 (0)           ; 82 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
 ;    |MAC:inst4|                               ; 142 (0)     ; 32           ; 0          ; 0    ; 0            ; 110 (0)      ; 16 (0)            ; 16 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
 ;       |MAC_Checker:inst1|                    ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |transmult|MAC:inst4|MAC_Checker:inst1                                                                          ; work         ;
 ;       |lpm_add_sub0:inst6|                   ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6                                                                         ; work         ;
@@ -231,7 +231,7 @@ applicable agreement for further details.
 ;       |lpm_mult0:inst|                       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst                                                                             ; work         ;
 ;          |lpm_mult:lpm_mult_component|       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
 ;             |mult_0km:auto_generated|        ; 95 (95)     ; 0            ; 0          ; 0    ; 0            ; 95 (95)      ; 0 (0)             ; 0 (0)            ; 46 (46)         ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
-;    |controller:inst2|                        ; 133 (133)   ; 31           ; 0          ; 0    ; 0            ; 102 (102)    ; 29 (29)           ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
+;    |controller:inst2|                        ; 136 (136)   ; 31           ; 0          ; 0    ; 0            ; 105 (105)    ; 29 (29)           ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
 ;    |demux1to12:inst|                         ; 108 (108)   ; 96           ; 0          ; 0    ; 0            ; 12 (12)      ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
 ;    |demux1to12_16bit:inst11|                 ; 170 (170)   ; 160          ; 0          ; 0    ; 0            ; 10 (10)      ; 160 (160)         ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12_16bit:inst11                                                                              ; work         ;
 ;    |lpm_mux0:inst7|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                                                       ; work         ;
@@ -303,22 +303,22 @@ Encoding Type:  One-Hot
 ; controller:inst2|mux_select2[0]                     ; controller:inst2|WideOr24  ; yes                    ;
 ; controller:inst2|mux_select2[1]                     ; controller:inst2|WideOr24  ; yes                    ;
 ; controller:inst2|mux_select2[2]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select3[3]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select3[0]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select3[1]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select3[2]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|final_mux_sel[2]                   ; controller:inst2|WideOr55  ; yes                    ;
-; controller:inst2|final_mux_sel[3]                   ; controller:inst2|WideOr55  ; yes                    ;
-; controller:inst2|final_mux_sel[0]                   ; controller:inst2|WideOr55  ; yes                    ;
-; controller:inst2|final_mux_sel[1]                   ; controller:inst2|WideOr55  ; yes                    ;
+; controller:inst2|mux_select3[3]                     ; controller:inst2|WideOr33  ; yes                    ;
+; controller:inst2|mux_select3[0]                     ; controller:inst2|WideOr33  ; yes                    ;
+; controller:inst2|mux_select3[1]                     ; controller:inst2|WideOr33  ; yes                    ;
+; controller:inst2|mux_select3[2]                     ; controller:inst2|WideOr33  ; yes                    ;
+; controller:inst2|final_mux_sel[2]                   ; controller:inst2|WideOr56  ; yes                    ;
+; controller:inst2|final_mux_sel[3]                   ; controller:inst2|WideOr56  ; yes                    ;
+; controller:inst2|final_mux_sel[0]                   ; controller:inst2|WideOr56  ; yes                    ;
+; controller:inst2|final_mux_sel[1]                   ; controller:inst2|WideOr56  ; yes                    ;
 ; controller:inst2|MAC_Reset2                         ; controller:inst2|WideOr3   ; yes                    ;
 ; controller:inst2|MAC_Reset1                         ; controller:inst2|WideOr0   ; yes                    ;
-; controller:inst2|demux16bit_sel1[0]                 ; controller:inst2|WideOr41  ; yes                    ;
-; controller:inst2|demux16bit_sel1[1]                 ; controller:inst2|WideOr41  ; yes                    ;
-; controller:inst2|demux16bit_sel1[2]                 ; controller:inst2|WideOr41  ; yes                    ;
-; controller:inst2|demux16bit_sel2[0]                 ; controller:inst2|WideOr48  ; yes                    ;
-; controller:inst2|demux16bit_sel2[2]                 ; controller:inst2|WideOr48  ; yes                    ;
-; controller:inst2|demux16bit_sel2[1]                 ; controller:inst2|WideOr48  ; yes                    ;
+; controller:inst2|demux16bit_sel1[0]                 ; controller:inst2|WideOr42  ; yes                    ;
+; controller:inst2|demux16bit_sel1[1]                 ; controller:inst2|WideOr42  ; yes                    ;
+; controller:inst2|demux16bit_sel1[2]                 ; controller:inst2|WideOr42  ; yes                    ;
+; controller:inst2|demux16bit_sel2[0]                 ; controller:inst2|WideOr49  ; yes                    ;
+; controller:inst2|demux16bit_sel2[2]                 ; controller:inst2|WideOr49  ; yes                    ;
+; controller:inst2|demux16bit_sel2[1]                 ; controller:inst2|WideOr49  ; yes                    ;
 ; controller:inst2|mux_select1[3]                     ; controller:inst2|pstate.S1 ; yes                    ;
 ; controller:inst2|mux_select1[0]                     ; controller:inst2|pstate.S1 ; yes                    ;
 ; controller:inst2|mux_select1[1]                     ; controller:inst2|pstate.S1 ; yes                    ;
@@ -677,7 +677,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Dec 05 00:11:08 2016
+    Info: Processing started: Mon Dec 05 03:36:18 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -848,13 +848,13 @@ Info: 5 registers lost all their fanouts during netlist optimizations. The first
     Info: Register "controller:inst2|pstate~14" lost all its fanouts during netlist optimizations.
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
-Info: Implemented 1118 device resources after synthesis - the final resource count might be different
+Info: Implemented 1121 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
     Info: Implemented 82 output pins
-    Info: Implemented 1024 logic cells
+    Info: Implemented 1027 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 32 warnings
     Info: Peak virtual memory: 228 megabytes
-    Info: Processing ended: Mon Dec 05 00:11:13 2016
+    Info: Processing ended: Mon Dec 05 03:36:23 2016
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

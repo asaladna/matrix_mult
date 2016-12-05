@@ -496,7 +496,7 @@ module controller (clk, reset, cf_load, mux_select1, mux_select2, mux_select3, o
 					mux_select3 = 4'b1000;//9	
 					MAC_Reset2 = 1'b1;
 					
-					final_mux_sel = 4'b1111;
+					final_mux_sel = 4'b1011;
 				end	
 				S30:begin
 					nstate = S12;

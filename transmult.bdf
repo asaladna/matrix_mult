@@ -1500,12 +1500,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "dout6[7..0]" (rect 472 32 539 47)(font "Arial" ))
-	(pt 496 48)
-	(pt 472 48)
-	(bus)
-)
-(connector
 	(text "dout7[7..0]" (rect 472 16 539 31)(font "Arial" ))
 	(pt 496 32)
 	(pt 472 32)
@@ -1938,12 +1932,6 @@ applicable agreement for further details.
 	(pt 808 368)
 )
 (connector
-	(text "dout5[7..0]" (rect 112 -144 179 -129)(font "Arial" ))
-	(pt 48 -128)
-	(pt 136 -128)
-	(bus)
-)
-(connector
 	(text "dout9[7..0]" (rect 112 -80 179 -65)(font "Arial" ))
 	(pt 48 -64)
 	(pt 136 -64)
@@ -1959,12 +1947,6 @@ applicable agreement for further details.
 	(text "dout10[7..0]" (rect 112 -64 187 -49)(font "Arial" ))
 	(pt 48 -48)
 	(pt 136 -48)
-	(bus)
-)
-(connector
-	(text "dout11[7..0]" (rect 112 -48 187 -33)(font "Arial" ))
-	(pt 48 -32)
-	(pt 136 -32)
 	(bus)
 )
 (connector
@@ -2184,12 +2166,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "dout12[7..0]" (rect 112 -32 187 -17)(font "Arial" ))
-	(pt 48 -16)
-	(pt 136 -16)
-	(bus)
-)
-(connector
 	(pt 88 176)
 	(pt 728 176)
 )
@@ -2290,19 +2266,43 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 88 24)
-	(pt 88 -80)
-	(bus)
-)
-(connector
-	(pt 48 -80)
-	(pt 88 -80)
+	(text "dout6[7..0]" (rect 472 32 539 47)(font "Arial" ))
+	(pt 424 48)
+	(pt 496 48)
 	(bus)
 )
 (connector
 	(text "dout8[7..0]" (rect 112 -96 179 -81)(font "Arial" ))
-	(pt 88 -80)
+	(pt 48 -80)
 	(pt 136 -80)
+	(bus)
+)
+(connector
+	(text "dout5[7..0]" (rect 112 -144 179 -129)(font "Arial" ))
+	(pt 48 -128)
+	(pt 136 -128)
+	(bus)
+)
+(connector
+	(text "dout11[7..0]" (rect 112 -48 187 -33)(font "Arial" ))
+	(pt 48 -32)
+	(pt 136 -32)
+	(bus)
+)
+(connector
+	(pt 88 24)
+	(pt 88 -16)
+	(bus)
+)
+(connector
+	(pt 48 -16)
+	(pt 88 -16)
+	(bus)
+)
+(connector
+	(text "dout12[7..0]" (rect 112 -32 187 -17)(font "Arial" ))
+	(pt 88 -16)
+	(pt 136 -16)
 	(bus)
 )
 (junction (pt 760 -208))
@@ -2319,4 +2319,4 @@ applicable agreement for further details.
 (junction (pt 1048 -24))
 (junction (pt 696 192))
 (junction (pt 768 128))
-(junction (pt 88 -80))
+(junction (pt 88 -16))

@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 2.916 ns
-From           : din[4]
-To             : demux1to12:inst|Data_out5[4]
+Actual Time    : 2.795 ns
+From           : din[6]
+To             : demux1to12:inst|Data_out8[6]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 22.441 ns
-From           : controller:inst2|mux_select3[0]
-To             : test00[0]
+Actual Time    : 21.613 ns
+From           : controller:inst2|mux_select3[1]
+To             : test00[1]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.203 ns
+Actual Time    : 4.040 ns
 From           : cf_load
-To             : controller:inst2|MAC_Reset2
+To             : controller:inst2|MAC_Reset1
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -45,8 +45,8 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.31 MHz ( period = 69.868 ns )
-From           : controller:inst2|mux_select1[0]
+Actual Time    : 14.50 MHz ( period = 68.946 ns )
+From           : controller:inst2|mux_select1[1]
 To             : MAC:inst4|MAC_Checker:inst1|feedback[14]
 From Clock     : clk
 To Clock       : clk
@@ -56,11 +56,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : controller:inst2|pstate.S16
-To             : controller:inst2|MAC_Reset2
+From           : controller:inst2|pstate.S0
+To             : controller:inst2|MAC_Reset1
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 101
+Failed Paths   : 54
 
 Type           : Total number of failed paths
 Slack          : 
@@ -70,7 +70,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 101
+Failed Paths   : 54
 
 --------------------------------------------------------------------------------------
 
