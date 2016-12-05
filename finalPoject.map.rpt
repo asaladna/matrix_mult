@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalPoject
-Mon Dec 05 03:36:23 2016
+Mon Dec 05 04:10:48 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -56,13 +56,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Dec 05 03:36:23 2016        ;
+; Analysis & Synthesis Status ; Successful - Mon Dec 05 04:10:48 2016        ;
 ; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name               ; finalPoject                                  ;
 ; Top-level Entity Name       ; transmult                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 1,027                                        ;
-; Total pins                  ; 94                                           ;
+; Total logic elements        ; 1,030                                        ;
+; Total pins                  ; 93                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
 +-----------------------------+----------------------------------------------+
@@ -143,6 +143,7 @@ applicable agreement for further details.
 ; demux1to12.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/demux1to12.v       ;
 ; demux1to12_16bit.v               ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/demux1to12_16bit.v ;
 ; MAC_Checker.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/MAC_Checker.v      ;
+; pos_delay.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/pos_delay.v        ;
 ; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Alex Saladna/Desktop/matrix_mult/matrix_mult/lpm_mux1.tdf       ;
 ; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.inc              ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/90sp2/quartus/libraries/megafunctions/lpm_mux.tdf              ;
@@ -177,33 +178,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 1027  ;
-;     -- Combinational with no register       ; 626   ;
-;     -- Register only                        ; 319   ;
-;     -- Combinational with a register        ; 82    ;
+; Total logic elements                        ; 1030  ;
+;     -- Combinational with no register       ; 628   ;
+;     -- Register only                        ; 318   ;
+;     -- Combinational with a register        ; 84    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 413   ;
+;     -- 4 input functions                    ; 416   ;
 ;     -- 3 input functions                    ; 209   ;
-;     -- 2 input functions                    ; 72    ;
+;     -- 2 input functions                    ; 73    ;
 ;     -- 1 input functions                    ; 14    ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 915   ;
+;     -- normal mode                          ; 918   ;
 ;     -- arithmetic mode                      ; 112   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 31    ;
 ;                                             ;       ;
-; Total registers                             ; 401   ;
+; Total registers                             ; 402   ;
 ; Total logic cells in carry chains           ; 124   ;
-; I/O pins                                    ; 94    ;
+; I/O pins                                    ; 93    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 402   ;
-; Total fan-out                               ; 3557  ;
-; Average fan-out                             ; 3.17  ;
+; Total fan-out                               ; 3571  ;
+; Average fan-out                             ; 3.18  ;
 +---------------------------------------------+-------+
 
 
@@ -212,7 +213,7 @@ applicable agreement for further details.
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                             ; Library Name ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
-; |transmult                                   ; 1027 (0)    ; 401          ; 0          ; 94   ; 0            ; 626 (0)      ; 319 (0)           ; 82 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
+; |transmult                                   ; 1030 (0)    ; 402          ; 0          ; 93   ; 0            ; 628 (0)      ; 318 (0)           ; 84 (0)           ; 124 (0)         ; 0 (0)      ; |transmult                                                                                                      ; work         ;
 ;    |MAC:inst4|                               ; 142 (0)     ; 32           ; 0          ; 0    ; 0            ; 110 (0)      ; 16 (0)            ; 16 (0)           ; 62 (0)          ; 0 (0)      ; |transmult|MAC:inst4                                                                                            ; work         ;
 ;       |MAC_Checker:inst1|                    ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |transmult|MAC:inst4|MAC_Checker:inst1                                                                          ; work         ;
 ;       |lpm_add_sub0:inst6|                   ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |transmult|MAC:inst4|lpm_add_sub0:inst6                                                                         ; work         ;
@@ -231,7 +232,7 @@ applicable agreement for further details.
 ;       |lpm_mult0:inst|                       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst                                                                             ; work         ;
 ;          |lpm_mult:lpm_mult_component|       ; 95 (0)      ; 0            ; 0          ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; 46 (0)          ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component                                                 ; work         ;
 ;             |mult_0km:auto_generated|        ; 95 (95)     ; 0            ; 0          ; 0    ; 0            ; 95 (95)      ; 0 (0)             ; 0 (0)            ; 46 (46)         ; 0 (0)      ; |transmult|MAC:inst5|lpm_mult0:inst|lpm_mult:lpm_mult_component|mult_0km:auto_generated                         ; work         ;
-;    |controller:inst2|                        ; 136 (136)   ; 31           ; 0          ; 0    ; 0            ; 105 (105)    ; 29 (29)           ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
+;    |controller:inst2|                        ; 138 (138)   ; 31           ; 0          ; 0    ; 0            ; 107 (107)    ; 28 (28)           ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |transmult|controller:inst2                                                                                     ; work         ;
 ;    |demux1to12:inst|                         ; 108 (108)   ; 96           ; 0          ; 0    ; 0            ; 12 (12)      ; 96 (96)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12:inst                                                                                      ; work         ;
 ;    |demux1to12_16bit:inst11|                 ; 170 (170)   ; 160          ; 0          ; 0    ; 0            ; 10 (10)      ; 160 (160)         ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|demux1to12_16bit:inst11                                                                              ; work         ;
 ;    |lpm_mux0:inst7|                          ; 67 (0)      ; 0            ; 0          ; 0    ; 0            ; 67 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux0:inst7                                                                                       ; work         ;
@@ -246,6 +247,7 @@ applicable agreement for further details.
 ;    |lpm_mux1:inst13|                         ; 130 (0)     ; 50           ; 0          ; 0    ; 0            ; 80 (0)       ; 2 (0)             ; 48 (0)           ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux1:inst13                                                                                      ; work         ;
 ;       |lpm_mux:lpm_mux_component|            ; 130 (0)     ; 50           ; 0          ; 0    ; 0            ; 80 (0)       ; 2 (0)             ; 48 (0)           ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux1:inst13|lpm_mux:lpm_mux_component                                                            ; work         ;
 ;          |mux_gae:auto_generated|            ; 130 (130)   ; 50           ; 0          ; 0    ; 0            ; 80 (80)      ; 2 (2)             ; 48 (48)          ; 0 (0)           ; 0 (0)      ; |transmult|lpm_mux1:inst13|lpm_mux:lpm_mux_component|mux_gae:auto_generated                                     ; work         ;
+;    |pos_delay:inst10|                        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |transmult|pos_delay:inst10                                                                                     ; work         ;
 +----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -295,30 +297,30 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+----------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal        ; Free of Timing Hazards ;
 +-----------------------------------------------------+----------------------------+------------------------+
-; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|WideOr8   ; yes                    ;
-; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|WideOr8   ; yes                    ;
-; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|WideOr8   ; yes                    ;
-; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|WideOr8   ; yes                    ;
-; controller:inst2|mux_select2[3]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select2[0]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select2[1]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select2[2]                     ; controller:inst2|WideOr24  ; yes                    ;
-; controller:inst2|mux_select3[3]                     ; controller:inst2|WideOr33  ; yes                    ;
-; controller:inst2|mux_select3[0]                     ; controller:inst2|WideOr33  ; yes                    ;
-; controller:inst2|mux_select3[1]                     ; controller:inst2|WideOr33  ; yes                    ;
-; controller:inst2|mux_select3[2]                     ; controller:inst2|WideOr33  ; yes                    ;
-; controller:inst2|final_mux_sel[2]                   ; controller:inst2|WideOr56  ; yes                    ;
-; controller:inst2|final_mux_sel[3]                   ; controller:inst2|WideOr56  ; yes                    ;
-; controller:inst2|final_mux_sel[0]                   ; controller:inst2|WideOr56  ; yes                    ;
-; controller:inst2|final_mux_sel[1]                   ; controller:inst2|WideOr56  ; yes                    ;
-; controller:inst2|MAC_Reset2                         ; controller:inst2|WideOr3   ; yes                    ;
-; controller:inst2|MAC_Reset1                         ; controller:inst2|WideOr0   ; yes                    ;
-; controller:inst2|demux16bit_sel1[0]                 ; controller:inst2|WideOr42  ; yes                    ;
-; controller:inst2|demux16bit_sel1[1]                 ; controller:inst2|WideOr42  ; yes                    ;
-; controller:inst2|demux16bit_sel1[2]                 ; controller:inst2|WideOr42  ; yes                    ;
-; controller:inst2|demux16bit_sel2[0]                 ; controller:inst2|WideOr49  ; yes                    ;
-; controller:inst2|demux16bit_sel2[2]                 ; controller:inst2|WideOr49  ; yes                    ;
-; controller:inst2|demux16bit_sel2[1]                 ; controller:inst2|WideOr49  ; yes                    ;
+; controller:inst2|demuxto12_sel[3]                   ; controller:inst2|WideOr9   ; yes                    ;
+; controller:inst2|demuxto12_sel[2]                   ; controller:inst2|WideOr9   ; yes                    ;
+; controller:inst2|demuxto12_sel[1]                   ; controller:inst2|WideOr9   ; yes                    ;
+; controller:inst2|demuxto12_sel[0]                   ; controller:inst2|WideOr9   ; yes                    ;
+; controller:inst2|mux_select2[3]                     ; controller:inst2|WideOr25  ; yes                    ;
+; controller:inst2|mux_select2[0]                     ; controller:inst2|WideOr25  ; yes                    ;
+; controller:inst2|mux_select2[1]                     ; controller:inst2|WideOr25  ; yes                    ;
+; controller:inst2|mux_select2[2]                     ; controller:inst2|WideOr25  ; yes                    ;
+; controller:inst2|mux_select3[3]                     ; controller:inst2|WideOr34  ; yes                    ;
+; controller:inst2|mux_select3[0]                     ; controller:inst2|WideOr34  ; yes                    ;
+; controller:inst2|mux_select3[1]                     ; controller:inst2|WideOr34  ; yes                    ;
+; controller:inst2|mux_select3[2]                     ; controller:inst2|WideOr34  ; yes                    ;
+; controller:inst2|final_mux_sel[2]                   ; controller:inst2|WideOr57  ; yes                    ;
+; controller:inst2|final_mux_sel[3]                   ; controller:inst2|WideOr57  ; yes                    ;
+; controller:inst2|final_mux_sel[0]                   ; controller:inst2|WideOr57  ; yes                    ;
+; controller:inst2|final_mux_sel[1]                   ; controller:inst2|WideOr57  ; yes                    ;
+; controller:inst2|MAC_Reset2                         ; controller:inst2|WideOr4   ; yes                    ;
+; controller:inst2|MAC_Reset1                         ; controller:inst2|WideOr1   ; yes                    ;
+; controller:inst2|demux16bit_sel1[0]                 ; controller:inst2|WideOr43  ; yes                    ;
+; controller:inst2|demux16bit_sel1[1]                 ; controller:inst2|WideOr43  ; yes                    ;
+; controller:inst2|demux16bit_sel1[2]                 ; controller:inst2|WideOr43  ; yes                    ;
+; controller:inst2|demux16bit_sel2[0]                 ; controller:inst2|WideOr50  ; yes                    ;
+; controller:inst2|demux16bit_sel2[2]                 ; controller:inst2|WideOr50  ; yes                    ;
+; controller:inst2|demux16bit_sel2[1]                 ; controller:inst2|WideOr50  ; yes                    ;
 ; controller:inst2|mux_select1[3]                     ; controller:inst2|pstate.S1 ; yes                    ;
 ; controller:inst2|mux_select1[0]                     ; controller:inst2|pstate.S1 ; yes                    ;
 ; controller:inst2|mux_select1[1]                     ; controller:inst2|pstate.S1 ; yes                    ;
@@ -333,14 +335,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------+----------------------------------------+
 ; Register name                             ; Reason for Removal                     ;
 +-------------------------------------------+----------------------------------------+
-; inst6                                     ; Stuck at GND due to stuck port clock   ;
 ; demux1to12_16bit:inst11|Data_out12[0..15] ; Stuck at GND due to stuck port data_in ;
 ; controller:inst2|pstate~10                ; Lost fanout                            ;
 ; controller:inst2|pstate~11                ; Lost fanout                            ;
 ; controller:inst2|pstate~12                ; Lost fanout                            ;
 ; controller:inst2|pstate~13                ; Lost fanout                            ;
 ; controller:inst2|pstate~14                ; Lost fanout                            ;
-; Total Number of Removed Registers = 22    ;                                        ;
+; Total Number of Removed Registers = 21    ;                                        ;
 +-------------------------------------------+----------------------------------------+
 
 
@@ -349,7 +350,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 401   ;
+; Total registers                              ; 402   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 31    ;
@@ -677,7 +678,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Dec 05 03:36:18 2016
+    Info: Processing started: Mon Dec 05 04:10:44 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 Info: Found 1 design units, including 1 entities, in source file reg1bit.bdf
     Info: Found entity 1: reg1bit
@@ -713,12 +714,12 @@ Info: Found 1 design units, including 1 entities, in source file reg160bitV.v
 Info: Found 1 design units, including 1 entities, in source file pos_delay.v
     Info: Found entity 1: pos_delay
 Info: Elaborating entity "transmult" for the top level hierarchy
-Warning: Port "CLK" of type SRFF and instance "inst6" is missing source signal
 Warning: Pin "load_input" not connected
 Warning: Primitive "GND" of instance "inst3" not used
+Info: Elaborating entity "pos_delay" for hierarchy "pos_delay:inst10"
 Info: Elaborating entity "controller" for hierarchy "controller:inst2"
-Warning (10036): Verilog HDL or VHDL warning at controller.v(44): object "output_set" assigned a value but never read
-Warning (10235): Verilog HDL Always Construct warning at controller.v(52): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10036): Verilog HDL or VHDL warning at controller.v(47): object "mem_clr" assigned a value but never read
+Warning (10235): Verilog HDL Always Construct warning at controller.v(51): variable "cf_load" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "MAC_Reset1", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "MAC_Reset2", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "demuxto12_sel", which holds its previous value in one or more paths through the always construct
@@ -730,7 +731,8 @@ Warning (10240): Verilog HDL Always Construct warning at controller.v(35): infer
 Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "final_mux_sel", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "reg96_ld", which holds its previous value in one or more paths through the always construct
 Warning (10240): Verilog HDL Always Construct warning at controller.v(35): inferring latch(es) for variable "reg106_ld", which holds its previous value in one or more paths through the always construct
-Warning (10034): Output port "output_set" at controller.v(6) has no driver
+Warning (10034): Output port "output_clr" at controller.v(6) has no driver
+Warning (10034): Output port "mem_clr" at controller.v(6) has no driver
 Info (10041): Inferred latch for "reg106_ld" at controller.v(35)
 Info (10041): Inferred latch for "reg96_ld" at controller.v(35)
 Info (10041): Inferred latch for "final_mux_sel[0]" at controller.v(35)
@@ -833,13 +835,11 @@ Info: Ignored 220 buffer(s)
 Info: Ignored 156 buffer(s)
     Info: Ignored 156 SOFT buffer(s)
 Warning: Latch controller:inst2|demux16bit_sel1[0] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S11
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S5
 Warning: Latch controller:inst2|demux16bit_sel1[1] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S5
 Warning: Latch controller:inst2|demux16bit_sel1[2] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S11
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "output_rdy" is stuck at GND
+    Warning: Ports D and ENA on the latch are fed by the same signal controller:inst2|pstate.S5
 Info: 5 registers lost all their fanouts during netlist optimizations. The first 5 are displayed below.
     Info: Register "controller:inst2|pstate~10" lost all its fanouts during netlist optimizations.
     Info: Register "controller:inst2|pstate~11" lost all its fanouts during netlist optimizations.
@@ -848,14 +848,14 @@ Info: 5 registers lost all their fanouts during netlist optimizations. The first
     Info: Register "controller:inst2|pstate~14" lost all its fanouts during netlist optimizations.
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "load_input"
-Info: Implemented 1121 device resources after synthesis - the final resource count might be different
+Info: Implemented 1123 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
-    Info: Implemented 82 output pins
-    Info: Implemented 1027 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Implemented 81 output pins
+    Info: Implemented 1030 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 30 warnings
     Info: Peak virtual memory: 228 megabytes
-    Info: Processing ended: Mon Dec 05 03:36:23 2016
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Mon Dec 05 04:10:48 2016
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
 
 

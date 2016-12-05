@@ -1,7 +1,7 @@
 |transmult
-output_rdy <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+output_rdy <= pos_delay:inst10.dout
 clk => controller:inst2.clk
-clk => load_in.DATAIN
+clk => pos_delay:inst10.clk
 clk => lpm_mux1:inst13.clock
 clk => demux1to12_16bit:inst11.clk
 clk => MAC:inst4.clk
@@ -9,7 +9,6 @@ clk => demux1to12:inst.clk
 clk => MAC:inst5.clk
 reset => controller:inst2.reset
 cf_load => controller:inst2.cf_load
-load_in <= clk.DB_MAX_OUTPUT_PORT_TYPE
 dout[0] <= lpm_mux1:inst13.result[0]
 dout[1] <= lpm_mux1:inst13.result[1]
 dout[2] <= lpm_mux1:inst13.result[2]
@@ -101,6 +100,12 @@ test4[7] <= dout12[7].DB_MAX_OUTPUT_PORT_TYPE
 load_input => ~NO_FANOUT~
 
 
+|transmult|pos_delay:inst10
+din => dout~reg0.DATAIN
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => dout~reg0.CLK
+
+
 |transmult|controller:inst2
 cf_load => Selector13.IN5
 cf_load => nstate.S1.DATAB
@@ -120,7 +125,7 @@ mux_select3[0] <= mux_select3[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 mux_select3[1] <= mux_select3[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 mux_select3[2] <= mux_select3[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 mux_select3[3] <= mux_select3[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-output_set <= <GND>
+output_set <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 output_clr <= <GND>
 mem_clr <= <GND>
 demuxto12_sel[0] <= demuxto12_sel[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
