@@ -1,5 +1,5 @@
 Flow report for finalPoject
-Mon Dec 05 06:28:12 2016
+Tue Dec 06 11:16:42 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Mon Dec 05 06:28:12 2016        ;
+; Flow Status             ; Successful - Tue Dec 06 11:16:42 2016        ;
 ; Quartus II Version      ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name           ; finalPoject                                  ;
 ; Top-level Entity Name   ; transmult                                    ;
@@ -46,7 +46,7 @@ applicable agreement for further details.
 ; Device                  ; EPM1270F256A5                                ;
 ; Timing Models           ; Final                                        ;
 ; Met timing requirements ; No                                           ;
-; Total logic elements    ; 824 / 1,270 ( 65 % )                         ;
+; Total logic elements    ; 827 / 1,270 ( 65 % )                         ;
 ; Total pins              ; 93 / 212 ( 44 % )                            ;
 ; Total virtual pins      ; 0                                            ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                                ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/05/2016 06:27:56 ;
+; Start date & time ; 12/06/2016 11:16:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; finalPoject         ;
 +-------------------+---------------------+
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +---------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                       ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +---------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 165023370536.148094087608076 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                 ; 165023370536.148104458719156 ; --            ; --          ; --             ;
 ; FITTER_EFFORT                         ; Standard Fit                 ; Auto Fit      ; --          ; --             ;
 ; IP_TOOL_NAME                          ; LPM_FF                       ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                          ; LPM_MULT                     ; --            ; --          ; --             ;
@@ -77,6 +77,10 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                          ; LPM_ADD_SUB                  ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                          ; LPM_MUX                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                          ; LPM_MUX                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                       ; 9.0                          ; --            ; --          ; --             ;
@@ -103,6 +107,12 @@ applicable agreement for further details.
 ; MISC_FILE                             ; lpm_mux1.tdf                 ; --            ; --          ; --             ;
 ; MISC_FILE                             ; lpm_mux1.bsf                 ; --            ; --          ; --             ;
 ; MISC_FILE                             ; lpm_mux1.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux2.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux2.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux2.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux3.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux3.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux3.inc                 ; --            ; --          ; --             ;
 ; PARTITION_COLOR                       ; 16764057                     ; --            ; transmult   ; Top            ;
 ; PARTITION_NETLIST_TYPE                ; SOURCE                       ; --            ; transmult   ; Top            ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                         ; --            ; --          ; --             ;
@@ -119,7 +129,7 @@ applicable agreement for further details.
 ; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 228 MB              ; 00:00:05                           ;
 ; Fitter                  ; 00:00:06     ; 1.0                     ; 216 MB              ; 00:00:06                           ;
 ; Assembler               ; 00:00:00     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 169 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 170 MB              ; 00:00:02                           ;
 ; Total                   ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 

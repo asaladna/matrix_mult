@@ -1,6 +1,6 @@
 
 module pos_delay( din, dout, clk, reset);
-/*
+
 	input clk, reset;
 	input  din;
 	output  dout;
@@ -18,8 +18,8 @@ module pos_delay( din, dout, clk, reset);
 
 	
 endmodule
-*/
 
+/*
 	input clk, reset;
 	input  din;
 	output  dout;
@@ -48,3 +48,4 @@ endmodule
 		
 
 endmodule
+*/
