@@ -36,15 +36,13 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "MAX II"
-set_global_assignment -name DEVICE EPM1270F256A5
+set_global_assignment -name FAMILY Cyclone
+set_global_assignment -name DEVICE EP1C3T100A8
 set_global_assignment -name TOP_LEVEL_ENTITY transmult
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:56:42  NOVEMBER 28, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
 set_global_assignment -name BDF_FILE reg1bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE transmult_gold.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE transmult.vwf
@@ -64,7 +62,6 @@ set_global_assignment -name BDF_FILE reg16bit.bdf
 set_global_assignment -name BDF_FILE reg160bitFinal.bdf
 set_global_assignment -name QIP_FILE lpm_mux1.qip
 set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
-set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
 set_global_assignment -name VECTOR_WAVEFORM_FILE transmult_test.vwf
 set_global_assignment -name VERILOG_FILE reg96bitV.v
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
@@ -80,5 +77,7 @@ set_global_assignment -name VERILOG_FILE pos_delay.v
 set_global_assignment -name ZIP_VECTOR_WAVEFORM_FILE finalPoject.sim.cvwf
 set_global_assignment -name QIP_FILE lpm_mux2.qip
 set_global_assignment -name QIP_FILE lpm_mux3.qip
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE transmult.vwf
 set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE transmult.vwf
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name INCREMENTAL_COMPILATION OFF

@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 2.788 ns
-From           : din[3]
-To             : demux1to12:inst|Data_out3[3]
+Actual Time    : 1.124 ns
+From           : din[2]
+To             : demux1to12:inst|Data_out4[2]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 23.352 ns
-From           : controller:inst2|mux_select2[1]
-To             : test0[4]
+Actual Time    : 18.831 ns
+From           : lpm_mux1:inst13|lpm_mux:lpm_mux_component|mux_5ge:auto_generated|dffe1a[2]
+To             : dout[9]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.282 ns
+Actual Time    : 14.372 ns
 From           : reset
-To             : output_rdy
+To             : dout[10]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.145 ns
+Actual Time    : 5.916 ns
 From           : cf_load
-To             : controller:inst2|MAC_Reset1
+To             : controller:inst2|MAC_Reset2
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.57 MHz ( period = 79.536 ns )
+Actual Time    : 24.13 MHz ( period = 41.448 ns )
 From           : controller:inst2|mux_select1[0]
-To             : MAC:inst4|MAC_Checker:inst1|feedback[14]
+To             : MAC:inst4|MAC_Checker:inst1|feedback[13]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
@@ -56,11 +56,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : controller:inst2|pstate.S19
+From           : controller:inst2|pstate.S27
 To             : controller:inst2|final_mux_sel[3]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 112
+Failed Paths   : 205
 
 Type           : Total number of failed paths
 Slack          : 
@@ -70,7 +70,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 112
+Failed Paths   : 205
 
 --------------------------------------------------------------------------------------
 
