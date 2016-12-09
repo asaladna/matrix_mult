@@ -1,5 +1,5 @@
 Simulator report for finalPoject
-Tue Dec 06 15:31:25 2016
+Thu Dec 08 23:40:48 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -1466,9 +1466,9 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Dec 06 15:31:25 2016
+    Info: Processing started: Thu Dec 08 23:40:47 2016
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
-Info: Using vector source file "C:/Users/Alex Saladna/Desktop/matrix_mult/transmult.vwf"
+Info: Using vector source file "C:/Users/Alex Saladna/Desktop/speed/matrix_mult/transmult.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
@@ -1476,8 +1476,8 @@ Info: Simulation coverage is      88.86 %
 Info: Number of transitions in simulation is 165724
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 169 megabytes
-    Info: Processing ended: Tue Dec 06 15:31:25 2016
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Thu Dec 08 23:40:48 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

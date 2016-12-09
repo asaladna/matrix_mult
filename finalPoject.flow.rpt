@@ -1,5 +1,5 @@
 Flow report for finalPoject
-Tue Dec 06 15:40:34 2016
+Thu Dec 08 23:40:43 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -38,19 +38,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Tue Dec 06 15:40:34 2016        ;
+; Flow Status             ; Successful - Thu Dec 08 23:40:43 2016        ;
 ; Quartus II Version      ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name           ; finalPoject                                  ;
 ; Top-level Entity Name   ; transmult                                    ;
-; Family                  ; Cyclone                                      ;
-; Device                  ; EP1C3T100A8                                  ;
+; Family                  ; MAX II                                       ;
+; Device                  ; EPM1270F256A5                                ;
 ; Timing Models           ; Final                                        ;
 ; Met timing requirements ; No                                           ;
-; Total logic elements    ; 830 / 2,910 ( 29 % )                         ;
-; Total pins              ; 28 / 65 ( 43 % )                             ;
+; Total logic elements    ; 830 / 1,270 ( 65 % )                         ;
+; Total pins              ; 28 / 212 ( 13 % )                            ;
 ; Total virtual pins      ; 0                                            ;
-; Total memory bits       ; 0 / 59,904 ( 0 % )                           ;
-; Total PLLs              ; 0 / 1 ( 0 % )                                ;
+; UFM blocks              ; 0 / 1 ( 0 % )                                ;
 +-------------------------+----------------------------------------------+
 
 
@@ -59,65 +58,68 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2016 15:40:19 ;
+; Start date & time ; 12/08/2016 23:40:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; finalPoject         ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                ;
-+------------------------------------+------------------------------+------------------------------+-------------+----------------+
-; Assignment Name                    ; Value                        ; Default Value                ; Entity Name ; Section Id     ;
-+------------------------------------+------------------------------+------------------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 165023370536.148106041910604 ; --                           ; --          ; --             ;
-; FITTER_EFFORT                      ; Standard Fit                 ; Auto Fit                     ; --          ; --             ;
-; INCREMENTAL_COMPILATION            ; Off                          ; FULL_INCREMENTAL_COMPILATION ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_FF                       ; --                           ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MULT                     ; --                           ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_FF                       ; --                           ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_ADD_SUB                  ; --                           ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                      ; --                           ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                      ; --                           ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                      ; --                           ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                      ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                          ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff0.tdf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff0.bsf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff0.inc                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.tdf                ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.bsf                ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.inc                ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff1.tdf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff1.bsf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_dff1.inc                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.tdf             ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.bsf             ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.inc             ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.tdf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.bsf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.inc                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.tdf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.bsf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.inc                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux2.tdf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux2.bsf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux2.inc                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux3.tdf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux3.bsf                 ; --                           ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux3.inc                 ; --                           ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                     ; --                           ; transmult   ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                       ; --                           ; transmult   ; Top            ;
-; TOP_LEVEL_ENTITY                   ; transmult                    ; finalPoject                  ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                          ; --                           ; --          ; eda_blast_fpga ;
-+------------------------------------+------------------------------+------------------------------+-------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                   ;
++---------------------------------------+------------------------------+------------------------------+-------------+----------------+
+; Assignment Name                       ; Value                        ; Default Value                ; Entity Name ; Section Id     ;
++---------------------------------------+------------------------------+------------------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                 ; 165023370536.148126202808112 ; --                           ; --          ; --             ;
+; FITTER_EFFORT                         ; Standard Fit                 ; Auto Fit                     ; --          ; --             ;
+; INCREMENTAL_COMPILATION               ; Off                          ; FULL_INCREMENTAL_COMPILATION ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_FF                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MULT                     ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_FF                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_ADD_SUB                  ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                          ; LPM_MUX                      ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                       ; 9.0                          ; --                           ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP                ; 125                          ; --                           ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                ; -40                          ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff0.tdf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff0.bsf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff0.inc                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mult0.tdf                ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mult0.bsf                ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mult0.inc                ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff1.tdf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff1.bsf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_dff1.inc                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_add_sub0.tdf             ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_add_sub0.bsf             ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_add_sub0.inc             ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux0.tdf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux0.bsf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux0.inc                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux1.tdf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux1.bsf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux1.inc                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux2.tdf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux2.bsf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux2.inc                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux3.tdf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux3.bsf                 ; --                           ; --          ; --             ;
+; MISC_FILE                             ; lpm_mux3.inc                 ; --                           ; --          ; --             ;
+; PARTITION_COLOR                       ; 16764057                     ; --                           ; transmult   ; Top            ;
+; PARTITION_NETLIST_TYPE                ; SOURCE                       ; --                           ; transmult   ; Top            ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                         ; --                           ; --          ; --             ;
+; TOP_LEVEL_ENTITY                      ; transmult                    ; finalPoject                  ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                          ; --                           ; --          ; eda_blast_fpga ;
++---------------------------------------+------------------------------+------------------------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -125,11 +127,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 231 MB              ; 00:00:05                           ;
-; Fitter                  ; 00:00:07     ; 1.0                     ; 220 MB              ; 00:00:06                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 198 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 169 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:13     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 227 MB              ; 00:00:05                           ;
+; Fitter                  ; 00:00:06     ; 1.0                     ; 216 MB              ; 00:00:06                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 194 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 169 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -151,7 +153,7 @@ applicable agreement for further details.
 quartus_map --read_settings_files=on --write_settings_files=off finalPoject -c finalPoject
 quartus_fit --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
 quartus_asm --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
-quartus_tan --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject --timing_analysis_only
+quartus_tan --read_settings_files=off --write_settings_files=off finalPoject -c finalPoject
 
 
 

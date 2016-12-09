@@ -1567,10 +1567,6 @@ applicable agreement for further details.
 	(pt 72 480)
 )
 (connector
-	(pt 400 384)
-	(pt 400 536)
-)
-(connector
 	(pt 368 368)
 	(pt -232 368)
 	(bus)
@@ -1586,14 +1582,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 352 504)
-	(pt 336 504)
-)
-(connector
-	(pt 400 536)
-	(pt 336 536)
-)
-(connector
 	(pt 368 520)
 	(pt 336 520)
 	(bus)
@@ -1607,10 +1595,6 @@ applicable agreement for further details.
 	(pt 336 568)
 	(pt 1056 568)
 	(bus)
-)
-(connector
-	(pt 352 160)
-	(pt 352 504)
 )
 (connector
 	(pt 792 -160)
@@ -1684,10 +1668,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 400 384)
-	(pt 232 384)
-)
-(connector
 	(pt 72 480)
 	(pt 72 456)
 )
@@ -1706,14 +1686,6 @@ applicable agreement for further details.
 (connector
 	(pt 88 416)
 	(pt 88 424)
-)
-(connector
-	(pt 232 384)
-	(pt 232 224)
-)
-(connector
-	(pt 264 224)
-	(pt 232 224)
 )
 (connector
 	(text "dout12[7..0]" (rect 472 -336 547 -321)(font "Arial" ))
@@ -1737,26 +1709,6 @@ applicable agreement for further details.
 	(text "dout1[7..0]" (rect 472 -160 539 -145)(font "Arial" ))
 	(pt 472 -144)
 	(pt 496 -144)
-	(bus)
-)
-(connector
-	(pt -488 -64)
-	(pt -488 -128)
-	(bus)
-)
-(connector
-	(pt -232 -64)
-	(pt -488 -64)
-	(bus)
-)
-(connector
-	(pt -232 -176)
-	(pt -232 -64)
-	(bus)
-)
-(connector
-	(pt -232 -64)
-	(pt -232 368)
 	(bus)
 )
 (connector
@@ -1786,30 +1738,6 @@ applicable agreement for further details.
 (connector
 	(pt -200 -160)
 	(pt -192 -160)
-)
-(connector
-	(pt 784 -72)
-	(pt 768 -72)
-	(bus)
-)
-(connector
-	(pt 768 -72)
-	(pt 768 -24)
-	(bus)
-)
-(connector
-	(pt 752 -24)
-	(pt 768 -24)
-	(bus)
-)
-(connector
-	(pt 768 -24)
-	(pt 816 -24)
-	(bus)
-)
-(connector
-	(pt 264 16)
-	(pt 264 224)
 )
 (connector
 	(pt 664 40)
@@ -2045,84 +1973,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1200 -464)
-	(pt 1200 -472)
-	(bus)
-)
-(connector
-	(pt 1048 -472)
-	(pt 1200 -472)
-	(bus)
-)
-(connector
-	(pt 1048 -472)
-	(pt 1048 -224)
-	(bus)
-)
-(connector
-	(pt 1112 -224)
-	(pt 1048 -224)
-	(bus)
-)
-(connector
-	(pt 1048 -224)
-	(pt 1032 -224)
-	(bus)
-)
-(connector
 	(text "dout1[7..0]" (rect 88 -208 155 -193)(font "Arial" ))
 	(pt 48 -192)
 	(pt 136 -192)
-	(bus)
-)
-(connector
-	(pt 1048 0)
-	(pt 1048 -24)
-	(bus)
-)
-(connector
-	(pt 1040 -24)
-	(pt 1048 -24)
-	(bus)
-)
-(connector
-	(pt 1048 -24)
-	(pt 1088 -24)
-	(bus)
-)
-(connector
-	(pt 744 200)
-	(pt 744 192)
-	(bus)
-)
-(connector
-	(pt 744 192)
-	(pt 696 192)
-	(bus)
-)
-(connector
-	(pt 696 160)
-	(pt 696 192)
-	(bus)
-)
-(connector
-	(pt 696 192)
-	(pt 696 440)
-	(bus)
-)
-(connector
-	(pt 832 128)
-	(pt 768 128)
-	(bus)
-)
-(connector
-	(pt 768 -8)
-	(pt 768 128)
-	(bus)
-)
-(connector
-	(pt 768 128)
-	(pt 768 248)
 	(bus)
 )
 (connector
@@ -2146,22 +1999,6 @@ applicable agreement for further details.
 	(text "dout11[7..0]" (rect 112 -48 187 -33)(font "Arial" ))
 	(pt 48 -32)
 	(pt 136 -32)
-	(bus)
-)
-(connector
-	(pt 88 24)
-	(pt 88 -16)
-	(bus)
-)
-(connector
-	(pt 48 -16)
-	(pt 88 -16)
-	(bus)
-)
-(connector
-	(text "dout12[7..0]" (rect 112 -32 187 -17)(font "Arial" ))
-	(pt 88 -16)
-	(pt 136 -16)
 	(bus)
 )
 (connector
@@ -2298,19 +2135,48 @@ applicable agreement for further details.
 	(pt 496 48)
 	(bus)
 )
+(connector
+	(pt -232 -176)
+	(pt -232 368)
+	(bus)
+)
+(connector
+	(text "dout12[7..0]" (rect 112 -32 187 -17)(font "Arial" ))
+	(pt 48 -16)
+	(pt 136 -16)
+	(bus)
+)
+(connector
+	(pt 768 -8)
+	(pt 768 248)
+	(bus)
+)
+(connector
+	(pt 696 160)
+	(pt 696 440)
+	(bus)
+)
+(connector
+	(pt 752 -24)
+	(pt 816 -24)
+	(bus)
+)
+(connector
+	(pt 1040 -24)
+	(pt 1088 -24)
+	(bus)
+)
+(connector
+	(pt 1032 -224)
+	(pt 1112 -224)
+	(bus)
+)
 (junction (pt 760 -208))
 (junction (pt -8 416))
 (junction (pt 728 8))
 (junction (pt 88 416))
-(junction (pt -232 -64))
-(junction (pt 768 -24))
 (junction (pt 1392 152))
 (junction (pt 1040 -24))
-(junction (pt 1048 -224))
-(junction (pt 1048 -24))
-(junction (pt 696 192))
-(junction (pt 768 128))
-(junction (pt 88 -16))
 (junction (pt 440 176))
 (junction (pt 720 480))
 (junction (pt 24 440))
